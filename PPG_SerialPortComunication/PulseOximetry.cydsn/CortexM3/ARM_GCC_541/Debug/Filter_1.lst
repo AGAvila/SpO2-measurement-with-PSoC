@@ -1,0 +1,3029 @@
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"Filter_1.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Filter_1_Init,"ax",%progbits
+  20              		.align	2
+  21              		.global	Filter_1_Init
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	Filter_1_Init, %function
+  25              	Filter_1_Init:
+  26              	.LFB0:
+  27              		.file 1 "Generated_Source\\PSoC5\\Filter_1.c"
+   1:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/Filter_1.c **** * File Name: Filter_1.c
+   3:Generated_Source\PSoC5/Filter_1.c **** * Version 2.30
+   4:Generated_Source\PSoC5/Filter_1.c **** *
+   5:Generated_Source\PSoC5/Filter_1.c **** * Description:
+   6:Generated_Source\PSoC5/Filter_1.c **** *  This file provides the API source code for the FILT component.
+   7:Generated_Source\PSoC5/Filter_1.c **** *
+   8:Generated_Source\PSoC5/Filter_1.c **** * Note:
+   9:Generated_Source\PSoC5/Filter_1.c **** *  
+  10:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************
+  11:Generated_Source\PSoC5/Filter_1.c **** * Copyright 2008-2013, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC5/Filter_1.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:Generated_Source\PSoC5/Filter_1.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:Generated_Source\PSoC5/Filter_1.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************/
+  16:Generated_Source\PSoC5/Filter_1.c **** 
+  17:Generated_Source\PSoC5/Filter_1.c **** #include "Filter_1_PVT.h"
+  18:Generated_Source\PSoC5/Filter_1.c **** 
+  19:Generated_Source\PSoC5/Filter_1.c **** 
+  20:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+  21:Generated_Source\PSoC5/Filter_1.c **** * FILT component internal variables.
+  22:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+  23:Generated_Source\PSoC5/Filter_1.c **** 
+  24:Generated_Source\PSoC5/Filter_1.c **** uint8 Filter_1_initVar = 0x0u;
+  25:Generated_Source\PSoC5/Filter_1.c **** 
+  26:Generated_Source\PSoC5/Filter_1.c **** 
+  27:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+  28:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Init
+  29:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+  30:Generated_Source\PSoC5/Filter_1.c **** *
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 2
+
+
+  31:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+  32:Generated_Source\PSoC5/Filter_1.c **** *  Initialize component's parameters to the parameters set by user in the 
+  33:Generated_Source\PSoC5/Filter_1.c **** *  customizer of the component placed onto schematic. Usually called in 
+  34:Generated_Source\PSoC5/Filter_1.c **** *  Filter_1_Start().
+  35:Generated_Source\PSoC5/Filter_1.c **** *
+  36:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+  37:Generated_Source\PSoC5/Filter_1.c **** *  void
+  38:Generated_Source\PSoC5/Filter_1.c **** *
+  39:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+  40:Generated_Source\PSoC5/Filter_1.c **** *  void
+  41:Generated_Source\PSoC5/Filter_1.c **** *
+  42:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+  43:Generated_Source\PSoC5/Filter_1.c **** void Filter_1_Init(void) 
+  44:Generated_Source\PSoC5/Filter_1.c **** {
+  28              		.loc 1 44 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+  33              		.cfi_def_cfa_offset 24
+  34              		.cfi_offset 3, -24
+  35              		.cfi_offset 4, -20
+  36              		.cfi_offset 5, -16
+  37              		.cfi_offset 6, -12
+  38              		.cfi_offset 7, -8
+  39              		.cfi_offset 14, -4
+  45:Generated_Source\PSoC5/Filter_1.c ****         /* Power on DFB before initializing the RAMs */
+  46:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_PM_ACT_CFG_REG |= Filter_1_PM_ACT_MSK;
+  40              		.loc 1 46 0
+  41 0002 244A     		ldr	r2, .L4
+  42 0004 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  43 0006 43F01003 		orr	r3, r3, #16
+  44 000a 1370     		strb	r3, [r2]
+  47:Generated_Source\PSoC5/Filter_1.c **** 
+  48:Generated_Source\PSoC5/Filter_1.c ****     /* Turn off Run Bit */
+  49:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_CR_REG &= (uint8)~Filter_1_RUN_MASK;
+  45              		.loc 1 49 0
+  46 000c 02F50342 		add	r2, r2, #33536
+  47 0010 DA32     		adds	r2, r2, #218
+  48 0012 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  49 0014 03F0FE03 		and	r3, r3, #254
+  50 0018 1370     		strb	r3, [r2]
+  50:Generated_Source\PSoC5/Filter_1.c ****                 
+  51:Generated_Source\PSoC5/Filter_1.c ****     /* Enable the DFB RAMS */
+  52:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_RAM_EN_REG = Filter_1_RAM_DIR_BUS;
+  51              		.loc 1 52 0
+  52 001a 3F23     		movs	r3, #63
+  53 001c 0832     		adds	r2, r2, #8
+  54 001e 1370     		strb	r3, [r2]
+  53:Generated_Source\PSoC5/Filter_1.c ****         
+  54:Generated_Source\PSoC5/Filter_1.c ****     /* Put DFB RAM on the bus */
+  55:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_RAM_DIR_REG = Filter_1_RAM_DIR_BUS;
+  55              		.loc 1 55 0
+  56 0020 0432     		adds	r2, r2, #4
+  57 0022 1370     		strb	r3, [r2]
+  56:Generated_Source\PSoC5/Filter_1.c ****         
+  57:Generated_Source\PSoC5/Filter_1.c ****     /* Write DFB RAMs */
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 3
+
+
+  58:Generated_Source\PSoC5/Filter_1.c ****     /* Control Store RAMs */
+  59:Generated_Source\PSoC5/Filter_1.c ****     (void)memcpy( Filter_1_CSA_RAM,
+  58              		.loc 1 59 0
+  59 0024 1C4D     		ldr	r5, .L4+4
+  60 0026 4FF48074 		mov	r4, #256
+  61 002a 2246     		mov	r2, r4
+  62 002c 2946     		mov	r1, r5
+  63 002e 1B48     		ldr	r0, .L4+8
+  64 0030 FFF7FEFF 		bl	memcpy
+  65              	.LVL0:
+  60:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_control, Filter_1_CSA_RAM_SIZE); 
+  61:Generated_Source\PSoC5/Filter_1.c ****     (void)memcpy(Filter_1_CSB_RAM,
+  66              		.loc 1 61 0
+  67 0034 2246     		mov	r2, r4
+  68 0036 2946     		mov	r1, r5
+  69 0038 1948     		ldr	r0, .L4+12
+  70 003a FFF7FEFF 		bl	memcpy
+  71              	.LVL1:
+  62:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_control, Filter_1_CSB_RAM_SIZE); 
+  63:Generated_Source\PSoC5/Filter_1.c ****     /* CFSM RAM */
+  64:Generated_Source\PSoC5/Filter_1.c ****     (void)memcpy(Filter_1_CFSM_RAM,
+  72              		.loc 1 64 0
+  73 003e 2246     		mov	r2, r4
+  74 0040 1849     		ldr	r1, .L4+16
+  75 0042 1948     		ldr	r0, .L4+20
+  76 0044 FFF7FEFF 		bl	memcpy
+  77              	.LVL2:
+  65:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_cfsm, Filter_1_CFSM_RAM_SIZE); 
+  66:Generated_Source\PSoC5/Filter_1.c ****     /* Data RAMs */
+  67:Generated_Source\PSoC5/Filter_1.c ****     (void)memcpy(Filter_1_DA_RAM,
+  78              		.loc 1 67 0
+  79 0048 4FF40074 		mov	r4, #512
+  80 004c 2246     		mov	r2, r4
+  81 004e 1749     		ldr	r1, .L4+24
+  82 0050 1748     		ldr	r0, .L4+28
+  83 0052 FFF7FEFF 		bl	memcpy
+  84              	.LVL3:
+  68:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_data_a, Filter_1_DA_RAM_SIZE); 
+  69:Generated_Source\PSoC5/Filter_1.c ****     (void)memcpy(Filter_1_DB_RAM,
+  85              		.loc 1 69 0
+  86 0056 2246     		mov	r2, r4
+  87 0058 1649     		ldr	r1, .L4+32
+  88 005a 1748     		ldr	r0, .L4+36
+  89 005c FFF7FEFF 		bl	memcpy
+  90              	.LVL4:
+  70:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_data_b, Filter_1_DB_RAM_SIZE); 
+  71:Generated_Source\PSoC5/Filter_1.c ****     /* ACU RAM */
+  72:Generated_Source\PSoC5/Filter_1.c ****     (void)memcpy(Filter_1_ACU_RAM,
+  91              		.loc 1 72 0
+  92 0060 164C     		ldr	r4, .L4+40
+  93 0062 174E     		ldr	r6, .L4+44
+  94 0064 04F14007 		add	r7, r4, #64
+  95              	.L2:
+  96 0068 3546     		mov	r5, r6
+  97 006a 2068     		ldr	r0, [r4]	@ unaligned
+  98 006c 6168     		ldr	r1, [r4, #4]	@ unaligned
+  99 006e A268     		ldr	r2, [r4, #8]	@ unaligned
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 4
+
+
+ 100 0070 E368     		ldr	r3, [r4, #12]	@ unaligned
+ 101 0072 0FC5     		stmia	r5!, {r0, r1, r2, r3}
+ 102 0074 1034     		adds	r4, r4, #16
+ 103 0076 2E46     		mov	r6, r5
+ 104 0078 BC42     		cmp	r4, r7
+ 105 007a F5D1     		bne	.L2
+  73:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_acu, Filter_1_ACU_RAM_SIZE); 
+  74:Generated_Source\PSoC5/Filter_1.c **** 
+  75:Generated_Source\PSoC5/Filter_1.c ****     /* Take DFB RAM off the bus */
+  76:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_RAM_DIR_REG = Filter_1_RAM_DIR_DFB;
+ 106              		.loc 1 76 0
+ 107 007c 0020     		movs	r0, #0
+ 108 007e 114B     		ldr	r3, .L4+48
+ 109 0080 1870     		strb	r0, [r3]
+  77:Generated_Source\PSoC5/Filter_1.c **** 
+  78:Generated_Source\PSoC5/Filter_1.c ****     /* Set up interrupt and DMA events */
+  79:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_SetInterruptMode(Filter_1_INIT_INTERRUPT_MODE);
+ 110              		.loc 1 79 0
+ 111 0082 FFF7FEFF 		bl	Filter_1_SetInterruptMode
+ 112              	.LVL5:
+  80:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_SetDMAMode(Filter_1_INIT_DMA_MODE);
+ 113              		.loc 1 80 0
+ 114 0086 0120     		movs	r0, #1
+ 115 0088 FFF7FEFF 		bl	Filter_1_SetDMAMode
+ 116              	.LVL6:
+  81:Generated_Source\PSoC5/Filter_1.c ****         
+  82:Generated_Source\PSoC5/Filter_1.c ****     /* Clear any pending interrupts */
+  83:Generated_Source\PSoC5/Filter_1.c ****     /* Bits [2..0] of this register are readonly. */
+  84:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_SR_REG = 0xf8u;   
+ 117              		.loc 1 84 0
+ 118 008c F822     		movs	r2, #248
+ 119 008e 0E4B     		ldr	r3, .L4+52
+ 120 0090 1A70     		strb	r2, [r3]
+ 121 0092 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 122              	.L5:
+ 123              		.align	2
+ 124              	.L4:
+ 125 0094 A6430040 		.word	1073759142
+ 126 0098 00000000 		.word	Filter_1_control
+ 127 009c 00C40040 		.word	1073792000
+ 128 00a0 00C50040 		.word	1073792256
+ 129 00a4 00000000 		.word	Filter_1_cfsm
+ 130 00a8 00C60040 		.word	1073792512
+ 131 00ac 00000000 		.word	Filter_1_data_a
+ 132 00b0 00C00040 		.word	1073790976
+ 133 00b4 00000000 		.word	Filter_1_data_b
+ 134 00b8 00C20040 		.word	1073791488
+ 135 00bc 00000000 		.word	Filter_1_acu
+ 136 00c0 00C70040 		.word	1073792768
+ 137 00c4 8CC70040 		.word	1073792908
+ 138 00c8 84C70040 		.word	1073792900
+ 139              		.cfi_endproc
+ 140              	.LFE0:
+ 141              		.size	Filter_1_Init, .-Filter_1_Init
+ 142              		.section	.text.Filter_1_Enable,"ax",%progbits
+ 143              		.align	2
+ 144              		.global	Filter_1_Enable
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 5
+
+
+ 145              		.thumb
+ 146              		.thumb_func
+ 147              		.type	Filter_1_Enable, %function
+ 148              	Filter_1_Enable:
+ 149              	.LFB1:
+  85:Generated_Source\PSoC5/Filter_1.c **** }
+  86:Generated_Source\PSoC5/Filter_1.c **** 
+  87:Generated_Source\PSoC5/Filter_1.c **** 
+  88:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+  89:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Enable
+  90:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+  91:Generated_Source\PSoC5/Filter_1.c **** *  
+  92:Generated_Source\PSoC5/Filter_1.c **** * Summary: 
+  93:Generated_Source\PSoC5/Filter_1.c **** *  Enables the DFB run bit.
+  94:Generated_Source\PSoC5/Filter_1.c **** *
+  95:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+  96:Generated_Source\PSoC5/Filter_1.c **** *  void
+  97:Generated_Source\PSoC5/Filter_1.c **** *
+  98:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+  99:Generated_Source\PSoC5/Filter_1.c **** *  void
+ 100:Generated_Source\PSoC5/Filter_1.c **** *
+ 101:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 102:Generated_Source\PSoC5/Filter_1.c **** void Filter_1_Enable(void) 
+ 103:Generated_Source\PSoC5/Filter_1.c **** {
+ 150              		.loc 1 103 0
+ 151              		.cfi_startproc
+ 152              		@ args = 0, pretend = 0, frame = 0
+ 153              		@ frame_needed = 0, uses_anonymous_args = 0
+ 154              		@ link register save eliminated.
+ 104:Generated_Source\PSoC5/Filter_1.c ****     /* Power on DFB in Active mode */
+ 105:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_PM_ACT_CFG_REG |= Filter_1_PM_ACT_MSK;
+ 155              		.loc 1 105 0
+ 156 0000 084A     		ldr	r2, .L7
+ 157 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 158 0004 43F01003 		orr	r3, r3, #16
+ 159 0008 1370     		strb	r3, [r2]
+ 106:Generated_Source\PSoC5/Filter_1.c ****         
+ 107:Generated_Source\PSoC5/Filter_1.c ****     /* Power on DFB in Alternative Active mode */
+ 108:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_PM_STBY_CFG_REG |= Filter_1_PM_STBY_MSK;
+ 160              		.loc 1 108 0
+ 161 000a 1032     		adds	r2, r2, #16
+ 162 000c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 163 000e 43F01003 		orr	r3, r3, #16
+ 164 0012 1370     		strb	r3, [r2]
+ 109:Generated_Source\PSoC5/Filter_1.c **** 
+ 110:Generated_Source\PSoC5/Filter_1.c ****     /* Turn on Run Bit */
+ 111:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_CR_REG |= Filter_1_RUN_MASK;
+ 165              		.loc 1 111 0
+ 166 0014 02F50342 		add	r2, r2, #33536
+ 167 0018 CA32     		adds	r2, r2, #202
+ 168 001a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 169 001c 43F00103 		orr	r3, r3, #1
+ 170 0020 1370     		strb	r3, [r2]
+ 171 0022 7047     		bx	lr
+ 172              	.L8:
+ 173              		.align	2
+ 174              	.L7:
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 6
+
+
+ 175 0024 A6430040 		.word	1073759142
+ 176              		.cfi_endproc
+ 177              	.LFE1:
+ 178              		.size	Filter_1_Enable, .-Filter_1_Enable
+ 179              		.section	.text.Filter_1_Start,"ax",%progbits
+ 180              		.align	2
+ 181              		.global	Filter_1_Start
+ 182              		.thumb
+ 183              		.thumb_func
+ 184              		.type	Filter_1_Start, %function
+ 185              	Filter_1_Start:
+ 186              	.LFB2:
+ 112:Generated_Source\PSoC5/Filter_1.c **** }
+ 113:Generated_Source\PSoC5/Filter_1.c **** 
+ 114:Generated_Source\PSoC5/Filter_1.c **** 
+ 115:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 116:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Start
+ 117:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 118:Generated_Source\PSoC5/Filter_1.c **** *
+ 119:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 120:Generated_Source\PSoC5/Filter_1.c **** *  This method does the prep work necessary to setup DFB.  This includes loading 
+ 121:Generated_Source\PSoC5/Filter_1.c **** *
+ 122:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 123:Generated_Source\PSoC5/Filter_1.c **** *  void
+ 124:Generated_Source\PSoC5/Filter_1.c **** * 
+ 125:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 126:Generated_Source\PSoC5/Filter_1.c **** *  void
+ 127:Generated_Source\PSoC5/Filter_1.c **** *
+ 128:Generated_Source\PSoC5/Filter_1.c **** * Global variables:
+ 129:Generated_Source\PSoC5/Filter_1.c **** *  Filter_1_initVar:  Used to check the initial configuration,
+ 130:Generated_Source\PSoC5/Filter_1.c **** *  modified when this function is called for the first time.
+ 131:Generated_Source\PSoC5/Filter_1.c **** *
+ 132:Generated_Source\PSoC5/Filter_1.c **** * Note: 
+ 133:Generated_Source\PSoC5/Filter_1.c **** *  Use Filter_1_InterruptConfig to control which events trigger 
+ 134:Generated_Source\PSoC5/Filter_1.c **** *  interrupts in the DFB. 
+ 135:Generated_Source\PSoC5/Filter_1.c **** *
+ 136:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 137:Generated_Source\PSoC5/Filter_1.c **** void Filter_1_Start(void) 
+ 138:Generated_Source\PSoC5/Filter_1.c **** {
+ 187              		.loc 1 138 0
+ 188              		.cfi_startproc
+ 189              		@ args = 0, pretend = 0, frame = 0
+ 190              		@ frame_needed = 0, uses_anonymous_args = 0
+ 191 0000 08B5     		push	{r3, lr}
+ 192              		.cfi_def_cfa_offset 8
+ 193              		.cfi_offset 3, -8
+ 194              		.cfi_offset 14, -4
+ 139:Generated_Source\PSoC5/Filter_1.c ****      /* If not Initialized then initialize all required hardware and software */
+ 140:Generated_Source\PSoC5/Filter_1.c ****     if(Filter_1_initVar == 0u)
+ 195              		.loc 1 140 0
+ 196 0002 054B     		ldr	r3, .L12
+ 197 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 198 0006 23B9     		cbnz	r3, .L10
+ 141:Generated_Source\PSoC5/Filter_1.c ****     {
+ 142:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_Init();
+ 199              		.loc 1 142 0
+ 200 0008 FFF7FEFF 		bl	Filter_1_Init
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 7
+
+
+ 201              	.LVL7:
+ 143:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_initVar = 1u;
+ 202              		.loc 1 143 0
+ 203 000c 0122     		movs	r2, #1
+ 204 000e 024B     		ldr	r3, .L12
+ 205 0010 1A70     		strb	r2, [r3]
+ 206              	.L10:
+ 144:Generated_Source\PSoC5/Filter_1.c ****     }
+ 145:Generated_Source\PSoC5/Filter_1.c **** 
+ 146:Generated_Source\PSoC5/Filter_1.c ****     /* Enable the DFB block */
+ 147:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_Enable();
+ 207              		.loc 1 147 0
+ 208 0012 FFF7FEFF 		bl	Filter_1_Enable
+ 209              	.LVL8:
+ 210 0016 08BD     		pop	{r3, pc}
+ 211              	.L13:
+ 212              		.align	2
+ 213              	.L12:
+ 214 0018 00000000 		.word	.LANCHOR0
+ 215              		.cfi_endproc
+ 216              	.LFE2:
+ 217              		.size	Filter_1_Start, .-Filter_1_Start
+ 218              		.section	.text.Filter_1_Stop,"ax",%progbits
+ 219              		.align	2
+ 220              		.global	Filter_1_Stop
+ 221              		.thumb
+ 222              		.thumb_func
+ 223              		.type	Filter_1_Stop, %function
+ 224              	Filter_1_Stop:
+ 225              	.LFB3:
+ 148:Generated_Source\PSoC5/Filter_1.c **** }
+ 149:Generated_Source\PSoC5/Filter_1.c **** 
+ 150:Generated_Source\PSoC5/Filter_1.c **** 
+ 151:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 152:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Stop
+ 153:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 154:Generated_Source\PSoC5/Filter_1.c **** *
+ 155:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 156:Generated_Source\PSoC5/Filter_1.c **** *  Turn off the run bit.  If DMA control is used to feed the channels, allow 
+ 157:Generated_Source\PSoC5/Filter_1.c **** *  arguments to turn one of the TD channels off. 
+ 158:Generated_Source\PSoC5/Filter_1.c **** *
+ 159:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 160:Generated_Source\PSoC5/Filter_1.c **** *  void
+ 161:Generated_Source\PSoC5/Filter_1.c **** *
+ 162:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 163:Generated_Source\PSoC5/Filter_1.c **** *  void
+ 164:Generated_Source\PSoC5/Filter_1.c **** *
+ 165:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 166:Generated_Source\PSoC5/Filter_1.c **** void Filter_1_Stop(void) 
+ 167:Generated_Source\PSoC5/Filter_1.c **** {
+ 226              		.loc 1 167 0
+ 227              		.cfi_startproc
+ 228              		@ args = 0, pretend = 0, frame = 0
+ 229              		@ frame_needed = 0, uses_anonymous_args = 0
+ 230              		@ link register save eliminated.
+ 168:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_CR_REG &= (uint8)~(Filter_1_RUN_MASK);
+ 231              		.loc 1 168 0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 8
+
+
+ 232 0000 084A     		ldr	r2, .L15
+ 233 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 234 0004 03F0FE03 		and	r3, r3, #254
+ 235 0008 1370     		strb	r3, [r2]
+ 169:Generated_Source\PSoC5/Filter_1.c **** 
+ 170:Generated_Source\PSoC5/Filter_1.c ****     /* Power off DFB in Active mode */
+ 171:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_PM_ACT_CFG_REG &= (uint8)~Filter_1_PM_ACT_MSK;
+ 236              		.loc 1 171 0
+ 237 000a A2F50342 		sub	r2, r2, #33536
+ 238 000e DA3A     		subs	r2, r2, #218
+ 239 0010 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 240 0012 03F0EF03 		and	r3, r3, #239
+ 241 0016 1370     		strb	r3, [r2]
+ 172:Generated_Source\PSoC5/Filter_1.c ****     
+ 173:Generated_Source\PSoC5/Filter_1.c ****     /* Power off DFB in Alternative Active mode */
+ 174:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_PM_STBY_CFG_REG &= (uint8)~Filter_1_PM_STBY_MSK;
+ 242              		.loc 1 174 0
+ 243 0018 1032     		adds	r2, r2, #16
+ 244 001a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 245 001c 03F0EF03 		and	r3, r3, #239
+ 246 0020 1370     		strb	r3, [r2]
+ 247 0022 7047     		bx	lr
+ 248              	.L16:
+ 249              		.align	2
+ 250              	.L15:
+ 251 0024 80C70040 		.word	1073792896
+ 252              		.cfi_endproc
+ 253              	.LFE3:
+ 254              		.size	Filter_1_Stop, .-Filter_1_Stop
+ 255              		.section	.text.Filter_1_Read8,"ax",%progbits
+ 256              		.align	2
+ 257              		.global	Filter_1_Read8
+ 258              		.thumb
+ 259              		.thumb_func
+ 260              		.type	Filter_1_Read8, %function
+ 261              	Filter_1_Read8:
+ 262              	.LFB4:
+ 175:Generated_Source\PSoC5/Filter_1.c **** }
+ 176:Generated_Source\PSoC5/Filter_1.c **** 
+ 177:Generated_Source\PSoC5/Filter_1.c **** 
+ 178:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 179:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Read8
+ 180:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 181:Generated_Source\PSoC5/Filter_1.c **** *
+ 182:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 183:Generated_Source\PSoC5/Filter_1.c **** *  Get the value in one of the DFB Output Holding Registers 
+ 184:Generated_Source\PSoC5/Filter_1.c **** *
+ 185:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 186:Generated_Source\PSoC5/Filter_1.c **** *  channel:  Filter_1_CHANNEL_A or Filter_1_CHANNEL_B
+ 187:Generated_Source\PSoC5/Filter_1.c **** *            
+ 188:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 189:Generated_Source\PSoC5/Filter_1.c **** *  The most significant 8 bits of the current output value sitting in the 
+ 190:Generated_Source\PSoC5/Filter_1.c **** *  selected channel's holding register or 0x00 for invalid channel numbers.
+ 191:Generated_Source\PSoC5/Filter_1.c **** *
+ 192:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 193:Generated_Source\PSoC5/Filter_1.c **** uint8 Filter_1_Read8(uint8 channel) 
+ 194:Generated_Source\PSoC5/Filter_1.c **** {
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 9
+
+
+ 263              		.loc 1 194 0
+ 264              		.cfi_startproc
+ 265              		@ args = 0, pretend = 0, frame = 0
+ 266              		@ frame_needed = 0, uses_anonymous_args = 0
+ 267              		@ link register save eliminated.
+ 268              	.LVL9:
+ 195:Generated_Source\PSoC5/Filter_1.c ****     uint8 value;
+ 196:Generated_Source\PSoC5/Filter_1.c **** 
+ 197:Generated_Source\PSoC5/Filter_1.c ****     if (channel == Filter_1_CHANNEL_A)
+ 269              		.loc 1 197 0
+ 270 0000 18B9     		cbnz	r0, .L18
+ 198:Generated_Source\PSoC5/Filter_1.c ****     {
+ 199:Generated_Source\PSoC5/Filter_1.c ****         value = Filter_1_HOLDAH_REG;
+ 271              		.loc 1 199 0
+ 272 0002 064B     		ldr	r3, .L21
+ 273 0004 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 274              	.LVL10:
+ 275 0006 C0B2     		uxtb	r0, r0
+ 276              	.LVL11:
+ 277 0008 7047     		bx	lr
+ 278              	.LVL12:
+ 279              	.L18:
+ 200:Generated_Source\PSoC5/Filter_1.c ****     }
+ 201:Generated_Source\PSoC5/Filter_1.c ****     else if (channel == Filter_1_CHANNEL_B)
+ 280              		.loc 1 201 0
+ 281 000a 0128     		cmp	r0, #1
+ 282 000c 03D1     		bne	.L20
+ 202:Generated_Source\PSoC5/Filter_1.c ****     {
+ 203:Generated_Source\PSoC5/Filter_1.c ****         value = Filter_1_HOLDBH_REG;
+ 283              		.loc 1 203 0
+ 284 000e 044B     		ldr	r3, .L21+4
+ 285 0010 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 286              	.LVL13:
+ 287 0012 C0B2     		uxtb	r0, r0
+ 288              	.LVL14:
+ 289 0014 7047     		bx	lr
+ 290              	.LVL15:
+ 291              	.L20:
+ 204:Generated_Source\PSoC5/Filter_1.c ****     }
+ 205:Generated_Source\PSoC5/Filter_1.c ****     else
+ 206:Generated_Source\PSoC5/Filter_1.c ****     {
+ 207:Generated_Source\PSoC5/Filter_1.c ****         value = 0x0u;
+ 292              		.loc 1 207 0
+ 293 0016 0020     		movs	r0, #0
+ 294              	.LVL16:
+ 208:Generated_Source\PSoC5/Filter_1.c ****     }
+ 209:Generated_Source\PSoC5/Filter_1.c ****     return value;
+ 210:Generated_Source\PSoC5/Filter_1.c **** }
+ 295              		.loc 1 210 0
+ 296 0018 7047     		bx	lr
+ 297              	.L22:
+ 298 001a 00BF     		.align	2
+ 299              	.L21:
+ 300 001c AAC70040 		.word	1073792938
+ 301 0020 AEC70040 		.word	1073792942
+ 302              		.cfi_endproc
+ 303              	.LFE4:
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 10
+
+
+ 304              		.size	Filter_1_Read8, .-Filter_1_Read8
+ 305              		.section	.text.Filter_1_Read16,"ax",%progbits
+ 306              		.align	2
+ 307              		.global	Filter_1_Read16
+ 308              		.thumb
+ 309              		.thumb_func
+ 310              		.type	Filter_1_Read16, %function
+ 311              	Filter_1_Read16:
+ 312              	.LFB5:
+ 211:Generated_Source\PSoC5/Filter_1.c **** 
+ 212:Generated_Source\PSoC5/Filter_1.c **** 
+ 213:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 214:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Read16
+ 215:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 216:Generated_Source\PSoC5/Filter_1.c **** *
+ 217:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 218:Generated_Source\PSoC5/Filter_1.c **** *  Get the value in one of the DFB Output Holding Registers 
+ 219:Generated_Source\PSoC5/Filter_1.c **** *
+ 220:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 221:Generated_Source\PSoC5/Filter_1.c **** *  channel:  Filter_1_CHANNEL_A or Filter_1_CHANNEL_B
+ 222:Generated_Source\PSoC5/Filter_1.c **** *            
+ 223:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 224:Generated_Source\PSoC5/Filter_1.c **** *  The most significant 16 bits of the current output value sitting in the 
+ 225:Generated_Source\PSoC5/Filter_1.c **** *  selected channel's holding register or 0x0000 for invalid channel numbers
+ 226:Generated_Source\PSoC5/Filter_1.c **** *
+ 227:Generated_Source\PSoC5/Filter_1.c **** * Note:
+ 228:Generated_Source\PSoC5/Filter_1.c **** *  Order of the read is important.  On the read of the high byte, the DFB clears
+ 229:Generated_Source\PSoC5/Filter_1.c **** *  the data ready bit.
+ 230:Generated_Source\PSoC5/Filter_1.c **** *
+ 231:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 232:Generated_Source\PSoC5/Filter_1.c **** #if defined(__C51__) || defined(__CX51__) 
+ 233:Generated_Source\PSoC5/Filter_1.c **** 
+ 234:Generated_Source\PSoC5/Filter_1.c ****     uint16 Filter_1_Read16(uint8 channel) 
+ 235:Generated_Source\PSoC5/Filter_1.c ****     {
+ 236:Generated_Source\PSoC5/Filter_1.c ****         uint16 val;
+ 237:Generated_Source\PSoC5/Filter_1.c ****     
+ 238:Generated_Source\PSoC5/Filter_1.c ****         if (channel == Filter_1_CHANNEL_A)
+ 239:Generated_Source\PSoC5/Filter_1.c ****         {        
+ 240:Generated_Source\PSoC5/Filter_1.c ****             val = Filter_1_HOLDAM_REG;
+ 241:Generated_Source\PSoC5/Filter_1.c ****             val |= (uint16)(Filter_1_HOLDAH_REG) << 8u;
+ 242:Generated_Source\PSoC5/Filter_1.c ****         }
+ 243:Generated_Source\PSoC5/Filter_1.c ****         else if (channel == Filter_1_CHANNEL_B)
+ 244:Generated_Source\PSoC5/Filter_1.c ****         {      
+ 245:Generated_Source\PSoC5/Filter_1.c ****             val = Filter_1_HOLDBM_REG;
+ 246:Generated_Source\PSoC5/Filter_1.c ****             val |= (uint16)Filter_1_HOLDBH_REG << 8u;
+ 247:Generated_Source\PSoC5/Filter_1.c ****         }
+ 248:Generated_Source\PSoC5/Filter_1.c ****         else
+ 249:Generated_Source\PSoC5/Filter_1.c ****         {
+ 250:Generated_Source\PSoC5/Filter_1.c ****             val = 0x0u;
+ 251:Generated_Source\PSoC5/Filter_1.c ****         }
+ 252:Generated_Source\PSoC5/Filter_1.c ****         return val;
+ 253:Generated_Source\PSoC5/Filter_1.c ****     }
+ 254:Generated_Source\PSoC5/Filter_1.c **** 
+ 255:Generated_Source\PSoC5/Filter_1.c **** #else
+ 256:Generated_Source\PSoC5/Filter_1.c **** 
+ 257:Generated_Source\PSoC5/Filter_1.c ****     uint16 Filter_1_Read16(uint8 channel) 
+ 258:Generated_Source\PSoC5/Filter_1.c ****     {
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 11
+
+
+ 313              		.loc 1 258 0
+ 314              		.cfi_startproc
+ 315              		@ args = 0, pretend = 0, frame = 0
+ 316              		@ frame_needed = 0, uses_anonymous_args = 0
+ 317              		@ link register save eliminated.
+ 318              	.LVL17:
+ 259:Generated_Source\PSoC5/Filter_1.c ****         uint16 val;
+ 260:Generated_Source\PSoC5/Filter_1.c **** 
+ 261:Generated_Source\PSoC5/Filter_1.c ****         if (channel == Filter_1_CHANNEL_A)
+ 319              		.loc 1 261 0
+ 320 0000 10B9     		cbnz	r0, .L24
+ 262:Generated_Source\PSoC5/Filter_1.c ****         {        
+ 263:Generated_Source\PSoC5/Filter_1.c ****             val = Filter_1_HOLDA16_REG;
+ 321              		.loc 1 263 0
+ 322 0002 054B     		ldr	r3, .L27
+ 323 0004 1888     		ldrh	r0, [r3]	@ unaligned
+ 324              	.LVL18:
+ 325 0006 7047     		bx	lr
+ 326              	.LVL19:
+ 327              	.L24:
+ 264:Generated_Source\PSoC5/Filter_1.c ****         }
+ 265:Generated_Source\PSoC5/Filter_1.c ****         else if (channel == Filter_1_CHANNEL_B)
+ 328              		.loc 1 265 0
+ 329 0008 0128     		cmp	r0, #1
+ 330 000a 02D1     		bne	.L26
+ 266:Generated_Source\PSoC5/Filter_1.c ****         {      
+ 267:Generated_Source\PSoC5/Filter_1.c ****             val = Filter_1_HOLDB16_REG;
+ 331              		.loc 1 267 0
+ 332 000c 034B     		ldr	r3, .L27+4
+ 333 000e 1888     		ldrh	r0, [r3]	@ unaligned
+ 334              	.LVL20:
+ 335 0010 7047     		bx	lr
+ 336              	.LVL21:
+ 337              	.L26:
+ 268:Generated_Source\PSoC5/Filter_1.c ****         }
+ 269:Generated_Source\PSoC5/Filter_1.c ****         else
+ 270:Generated_Source\PSoC5/Filter_1.c ****         {
+ 271:Generated_Source\PSoC5/Filter_1.c ****             val = 0x0u;
+ 338              		.loc 1 271 0
+ 339 0012 0020     		movs	r0, #0
+ 340              	.LVL22:
+ 272:Generated_Source\PSoC5/Filter_1.c ****         }
+ 273:Generated_Source\PSoC5/Filter_1.c ****         return val;
+ 274:Generated_Source\PSoC5/Filter_1.c ****     }
+ 341              		.loc 1 274 0
+ 342 0014 7047     		bx	lr
+ 343              	.L28:
+ 344 0016 00BF     		.align	2
+ 345              	.L27:
+ 346 0018 A9C70040 		.word	1073792937
+ 347 001c ADC70040 		.word	1073792941
+ 348              		.cfi_endproc
+ 349              	.LFE5:
+ 350              		.size	Filter_1_Read16, .-Filter_1_Read16
+ 351              		.section	.text.Filter_1_Read24,"ax",%progbits
+ 352              		.align	2
+ 353              		.global	Filter_1_Read24
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 12
+
+
+ 354              		.thumb
+ 355              		.thumb_func
+ 356              		.type	Filter_1_Read24, %function
+ 357              	Filter_1_Read24:
+ 358              	.LFB6:
+ 275:Generated_Source\PSoC5/Filter_1.c **** 
+ 276:Generated_Source\PSoC5/Filter_1.c **** #endif /* defined(__C51__) || defined(__CX51__) */
+ 277:Generated_Source\PSoC5/Filter_1.c **** 
+ 278:Generated_Source\PSoC5/Filter_1.c **** 
+ 279:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 280:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Read24
+ 281:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 282:Generated_Source\PSoC5/Filter_1.c **** *
+ 283:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 284:Generated_Source\PSoC5/Filter_1.c **** *  Get the value in one of the DFB Output Holding Registers 
+ 285:Generated_Source\PSoC5/Filter_1.c **** *
+ 286:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 287:Generated_Source\PSoC5/Filter_1.c **** *  channel:  Filter_1_CHANNEL_A or Filter_1_CHANNEL_B
+ 288:Generated_Source\PSoC5/Filter_1.c **** *            
+ 289:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 290:Generated_Source\PSoC5/Filter_1.c **** *  The current 24-bit output value sitting in the selected channel's
+ 291:Generated_Source\PSoC5/Filter_1.c **** *  holding register or 0x00000000 for invalid channel numbers
+ 292:Generated_Source\PSoC5/Filter_1.c **** *
+ 293:Generated_Source\PSoC5/Filter_1.c **** * Note:
+ 294:Generated_Source\PSoC5/Filter_1.c **** *  Order of the read is important.  On the read of the high byte, the DFB clears
+ 295:Generated_Source\PSoC5/Filter_1.c **** *  the data ready bit.
+ 296:Generated_Source\PSoC5/Filter_1.c **** *
+ 297:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 298:Generated_Source\PSoC5/Filter_1.c **** #if defined(__C51__) || defined(__CX51__)
+ 299:Generated_Source\PSoC5/Filter_1.c **** 
+ 300:Generated_Source\PSoC5/Filter_1.c ****     uint32 Filter_1_Read24(uint8 channel) 
+ 301:Generated_Source\PSoC5/Filter_1.c ****     {
+ 302:Generated_Source\PSoC5/Filter_1.c ****         uint32 val;
+ 303:Generated_Source\PSoC5/Filter_1.c ****     
+ 304:Generated_Source\PSoC5/Filter_1.c ****         if (channel == Filter_1_CHANNEL_A)
+ 305:Generated_Source\PSoC5/Filter_1.c ****         {        
+ 306:Generated_Source\PSoC5/Filter_1.c ****             val = Filter_1_HOLDA_REG;
+ 307:Generated_Source\PSoC5/Filter_1.c ****             val |= (uint32)(Filter_1_HOLDAM_REG) << 8u;
+ 308:Generated_Source\PSoC5/Filter_1.c ****             val |= (uint32)(Filter_1_HOLDAH_REG) << 16u;
+ 309:Generated_Source\PSoC5/Filter_1.c ****             
+ 310:Generated_Source\PSoC5/Filter_1.c ****             /* SignExtend */
+ 311:Generated_Source\PSoC5/Filter_1.c ****             if((val & Filter_1_SIGN_BIT) == Filter_1_SIGN_BIT)
+ 312:Generated_Source\PSoC5/Filter_1.c ****             {    
+ 313:Generated_Source\PSoC5/Filter_1.c **** 				val |= Filter_1_SIGN_BYTE;
+ 314:Generated_Source\PSoC5/Filter_1.c **** 			}
+ 315:Generated_Source\PSoC5/Filter_1.c ****         }
+ 316:Generated_Source\PSoC5/Filter_1.c ****         else if (channel == Filter_1_CHANNEL_B)
+ 317:Generated_Source\PSoC5/Filter_1.c ****         {      
+ 318:Generated_Source\PSoC5/Filter_1.c ****             val = Filter_1_HOLDB_REG;
+ 319:Generated_Source\PSoC5/Filter_1.c ****             val |= (uint32)Filter_1_HOLDBM_REG << 8u;
+ 320:Generated_Source\PSoC5/Filter_1.c ****             val |= (uint32)Filter_1_HOLDBH_REG << 16u;
+ 321:Generated_Source\PSoC5/Filter_1.c ****             
+ 322:Generated_Source\PSoC5/Filter_1.c ****             /* SignExtend */
+ 323:Generated_Source\PSoC5/Filter_1.c ****             if((val & Filter_1_SIGN_BIT) == Filter_1_SIGN_BIT)
+ 324:Generated_Source\PSoC5/Filter_1.c ****             {
+ 325:Generated_Source\PSoC5/Filter_1.c **** 				val |= Filter_1_SIGN_BYTE;
+ 326:Generated_Source\PSoC5/Filter_1.c **** 			}
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 13
+
+
+ 327:Generated_Source\PSoC5/Filter_1.c ****         }
+ 328:Generated_Source\PSoC5/Filter_1.c ****         else
+ 329:Generated_Source\PSoC5/Filter_1.c ****         {
+ 330:Generated_Source\PSoC5/Filter_1.c ****             val = 0x0u;
+ 331:Generated_Source\PSoC5/Filter_1.c ****         }
+ 332:Generated_Source\PSoC5/Filter_1.c ****         return val;
+ 333:Generated_Source\PSoC5/Filter_1.c ****     }
+ 334:Generated_Source\PSoC5/Filter_1.c **** 
+ 335:Generated_Source\PSoC5/Filter_1.c **** #else
+ 336:Generated_Source\PSoC5/Filter_1.c **** 
+ 337:Generated_Source\PSoC5/Filter_1.c ****     uint32 Filter_1_Read24(uint8 channel) 
+ 338:Generated_Source\PSoC5/Filter_1.c ****     {
+ 359              		.loc 1 338 0
+ 360              		.cfi_startproc
+ 361              		@ args = 0, pretend = 0, frame = 0
+ 362              		@ frame_needed = 0, uses_anonymous_args = 0
+ 363              		@ link register save eliminated.
+ 364              	.LVL23:
+ 339:Generated_Source\PSoC5/Filter_1.c ****         uint32 val;
+ 340:Generated_Source\PSoC5/Filter_1.c ****          
+ 341:Generated_Source\PSoC5/Filter_1.c ****         if (channel == Filter_1_CHANNEL_A)
+ 365              		.loc 1 341 0
+ 366 0000 10B9     		cbnz	r0, .L30
+ 342:Generated_Source\PSoC5/Filter_1.c ****         {        
+ 343:Generated_Source\PSoC5/Filter_1.c ****             val = Filter_1_HOLDA24_REG;
+ 367              		.loc 1 343 0
+ 368 0002 054B     		ldr	r3, .L33
+ 369 0004 1868     		ldr	r0, [r3]
+ 370              	.LVL24:
+ 371 0006 7047     		bx	lr
+ 372              	.LVL25:
+ 373              	.L30:
+ 344:Generated_Source\PSoC5/Filter_1.c ****         }
+ 345:Generated_Source\PSoC5/Filter_1.c ****         else if (channel == Filter_1_CHANNEL_B)
+ 374              		.loc 1 345 0
+ 375 0008 0128     		cmp	r0, #1
+ 376 000a 02D1     		bne	.L32
+ 346:Generated_Source\PSoC5/Filter_1.c ****         {      
+ 347:Generated_Source\PSoC5/Filter_1.c ****             val = Filter_1_HOLDB24_REG;
+ 377              		.loc 1 347 0
+ 378 000c 034B     		ldr	r3, .L33+4
+ 379 000e 1868     		ldr	r0, [r3]
+ 380              	.LVL26:
+ 381 0010 7047     		bx	lr
+ 382              	.LVL27:
+ 383              	.L32:
+ 348:Generated_Source\PSoC5/Filter_1.c ****         }
+ 349:Generated_Source\PSoC5/Filter_1.c ****         else
+ 350:Generated_Source\PSoC5/Filter_1.c ****         {
+ 351:Generated_Source\PSoC5/Filter_1.c ****             val = 0x0u;
+ 384              		.loc 1 351 0
+ 385 0012 0020     		movs	r0, #0
+ 386              	.LVL28:
+ 352:Generated_Source\PSoC5/Filter_1.c ****         }
+ 353:Generated_Source\PSoC5/Filter_1.c ****         return val;
+ 354:Generated_Source\PSoC5/Filter_1.c ****     }
+ 387              		.loc 1 354 0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 14
+
+
+ 388 0014 7047     		bx	lr
+ 389              	.L34:
+ 390 0016 00BF     		.align	2
+ 391              	.L33:
+ 392 0018 A8C70040 		.word	1073792936
+ 393 001c ACC70040 		.word	1073792940
+ 394              		.cfi_endproc
+ 395              	.LFE6:
+ 396              		.size	Filter_1_Read24, .-Filter_1_Read24
+ 397              		.section	.text.Filter_1_Write8,"ax",%progbits
+ 398              		.align	2
+ 399              		.global	Filter_1_Write8
+ 400              		.thumb
+ 401              		.thumb_func
+ 402              		.type	Filter_1_Write8, %function
+ 403              	Filter_1_Write8:
+ 404              	.LFB7:
+ 355:Generated_Source\PSoC5/Filter_1.c **** 
+ 356:Generated_Source\PSoC5/Filter_1.c **** #endif /* defined(__C51__) || defined(__CX51__) */
+ 357:Generated_Source\PSoC5/Filter_1.c **** 
+ 358:Generated_Source\PSoC5/Filter_1.c **** 
+ 359:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 360:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Write8
+ 361:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 362:Generated_Source\PSoC5/Filter_1.c **** *
+ 363:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 364:Generated_Source\PSoC5/Filter_1.c **** *  Set the value in one of the DFB Input Staging Registers 
+ 365:Generated_Source\PSoC5/Filter_1.c **** *
+ 366:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 367:Generated_Source\PSoC5/Filter_1.c **** *  channel:  Use either Filter_1_CHANNEL_A or 
+ 368:Generated_Source\PSoC5/Filter_1.c **** *            Filter_1_CHANNEL_B as arguments to the function.  
+ 369:Generated_Source\PSoC5/Filter_1.c **** *  sample:   The 8-bit, right justified input sample. 
+ 370:Generated_Source\PSoC5/Filter_1.c **** *
+ 371:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 372:Generated_Source\PSoC5/Filter_1.c **** *  void
+ 373:Generated_Source\PSoC5/Filter_1.c **** *
+ 374:Generated_Source\PSoC5/Filter_1.c **** * Note:
+ 375:Generated_Source\PSoC5/Filter_1.c **** *  Order of the write is important.  On the load of the high byte, the DFB sets
+ 376:Generated_Source\PSoC5/Filter_1.c **** *  the input ready bit.
+ 377:Generated_Source\PSoC5/Filter_1.c **** *
+ 378:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 379:Generated_Source\PSoC5/Filter_1.c **** void Filter_1_Write8(uint8 channel, uint8 sample) 
+ 380:Generated_Source\PSoC5/Filter_1.c **** {
+ 405              		.loc 1 380 0
+ 406              		.cfi_startproc
+ 407              		@ args = 0, pretend = 0, frame = 0
+ 408              		@ frame_needed = 0, uses_anonymous_args = 0
+ 409              		@ link register save eliminated.
+ 410              	.LVL29:
+ 381:Generated_Source\PSoC5/Filter_1.c ****     if (channel == Filter_1_CHANNEL_A)
+ 411              		.loc 1 381 0
+ 412 0000 10B9     		cbnz	r0, .L36
+ 382:Generated_Source\PSoC5/Filter_1.c ****     {
+ 383:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_STAGEAH_REG = sample;
+ 413              		.loc 1 383 0
+ 414 0002 044B     		ldr	r3, .L38
+ 415 0004 1970     		strb	r1, [r3]
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 15
+
+
+ 416 0006 7047     		bx	lr
+ 417              	.L36:
+ 384:Generated_Source\PSoC5/Filter_1.c ****     }
+ 385:Generated_Source\PSoC5/Filter_1.c ****     else if (channel == Filter_1_CHANNEL_B)
+ 418              		.loc 1 385 0
+ 419 0008 0128     		cmp	r0, #1
+ 420 000a 01D1     		bne	.L35
+ 386:Generated_Source\PSoC5/Filter_1.c ****     {
+ 387:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_STAGEBH_REG = sample;
+ 421              		.loc 1 387 0
+ 422 000c 024B     		ldr	r3, .L38+4
+ 423 000e 1970     		strb	r1, [r3]
+ 424              	.L35:
+ 425 0010 7047     		bx	lr
+ 426              	.L39:
+ 427 0012 00BF     		.align	2
+ 428              	.L38:
+ 429 0014 A2C70040 		.word	1073792930
+ 430 0018 A6C70040 		.word	1073792934
+ 431              		.cfi_endproc
+ 432              	.LFE7:
+ 433              		.size	Filter_1_Write8, .-Filter_1_Write8
+ 434              		.section	.text.Filter_1_Write16,"ax",%progbits
+ 435              		.align	2
+ 436              		.global	Filter_1_Write16
+ 437              		.thumb
+ 438              		.thumb_func
+ 439              		.type	Filter_1_Write16, %function
+ 440              	Filter_1_Write16:
+ 441              	.LFB8:
+ 388:Generated_Source\PSoC5/Filter_1.c ****     }
+ 389:Generated_Source\PSoC5/Filter_1.c **** 	else
+ 390:Generated_Source\PSoC5/Filter_1.c **** 	{
+ 391:Generated_Source\PSoC5/Filter_1.c **** 		/* No value is loaded on bad channel input */
+ 392:Generated_Source\PSoC5/Filter_1.c **** 	}
+ 393:Generated_Source\PSoC5/Filter_1.c **** }
+ 394:Generated_Source\PSoC5/Filter_1.c **** 
+ 395:Generated_Source\PSoC5/Filter_1.c **** 
+ 396:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 397:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Write16
+ 398:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 399:Generated_Source\PSoC5/Filter_1.c **** *
+ 400:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 401:Generated_Source\PSoC5/Filter_1.c **** *  Set the value in one of the DFB Input Staging Registers 
+ 402:Generated_Source\PSoC5/Filter_1.c **** *
+ 403:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 404:Generated_Source\PSoC5/Filter_1.c **** *  channel:  Use either Filter_1_CHANNEL_A or 
+ 405:Generated_Source\PSoC5/Filter_1.c **** *            Filter_1_CHANNEL_B as arguments to the function.  
+ 406:Generated_Source\PSoC5/Filter_1.c **** *  sample:   The 16-bit, right justified input sample. 
+ 407:Generated_Source\PSoC5/Filter_1.c **** *
+ 408:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 409:Generated_Source\PSoC5/Filter_1.c **** *  void
+ 410:Generated_Source\PSoC5/Filter_1.c **** *
+ 411:Generated_Source\PSoC5/Filter_1.c **** * Note:
+ 412:Generated_Source\PSoC5/Filter_1.c **** *  Order of the write is important.  On the load of the high byte, the DFB sets
+ 413:Generated_Source\PSoC5/Filter_1.c **** *  the input ready bit.
+ 414:Generated_Source\PSoC5/Filter_1.c **** *
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 16
+
+
+ 415:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 416:Generated_Source\PSoC5/Filter_1.c **** #if defined(__C51__) || defined(__CX51__)
+ 417:Generated_Source\PSoC5/Filter_1.c **** 
+ 418:Generated_Source\PSoC5/Filter_1.c ****     void Filter_1_Write16(uint8 channel, uint16 sample) 
+ 419:Generated_Source\PSoC5/Filter_1.c ****     {
+ 420:Generated_Source\PSoC5/Filter_1.c ****         /* Write the STAGE MSB reg last as it signals a complete wrote to the 
+ 421:Generated_Source\PSoC5/Filter_1.c ****            DFB.*/
+ 422:Generated_Source\PSoC5/Filter_1.c ****         if (channel == Filter_1_CHANNEL_A)
+ 423:Generated_Source\PSoC5/Filter_1.c ****         {
+ 424:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEAM_REG = (uint8)(sample);
+ 425:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEAH_REG = (uint8)(sample >> 8u);
+ 426:Generated_Source\PSoC5/Filter_1.c ****         }
+ 427:Generated_Source\PSoC5/Filter_1.c ****         else if (channel == Filter_1_CHANNEL_B)
+ 428:Generated_Source\PSoC5/Filter_1.c ****         {
+ 429:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEBM_REG = (uint8)(sample);
+ 430:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEBH_REG = (uint8)(sample >> 8u);
+ 431:Generated_Source\PSoC5/Filter_1.c ****         }
+ 432:Generated_Source\PSoC5/Filter_1.c ****         else
+ 433:Generated_Source\PSoC5/Filter_1.c **** 		{
+ 434:Generated_Source\PSoC5/Filter_1.c **** 			/* No value is loaded on bad channel input */
+ 435:Generated_Source\PSoC5/Filter_1.c **** 		}
+ 436:Generated_Source\PSoC5/Filter_1.c ****     }
+ 437:Generated_Source\PSoC5/Filter_1.c **** 
+ 438:Generated_Source\PSoC5/Filter_1.c **** #else
+ 439:Generated_Source\PSoC5/Filter_1.c **** 
+ 440:Generated_Source\PSoC5/Filter_1.c ****     void Filter_1_Write16(uint8 channel, uint16 sample) 
+ 441:Generated_Source\PSoC5/Filter_1.c ****     {
+ 442              		.loc 1 441 0
+ 443              		.cfi_startproc
+ 444              		@ args = 0, pretend = 0, frame = 0
+ 445              		@ frame_needed = 0, uses_anonymous_args = 0
+ 446              		@ link register save eliminated.
+ 447              	.LVL30:
+ 442:Generated_Source\PSoC5/Filter_1.c ****         if (channel == Filter_1_CHANNEL_A)
+ 448              		.loc 1 442 0
+ 449 0000 10B9     		cbnz	r0, .L41
+ 443:Generated_Source\PSoC5/Filter_1.c ****         {
+ 444:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEA16_REG = sample;
+ 450              		.loc 1 444 0
+ 451 0002 044B     		ldr	r3, .L43
+ 452 0004 1980     		strh	r1, [r3]	@ unaligned
+ 453 0006 7047     		bx	lr
+ 454              	.L41:
+ 445:Generated_Source\PSoC5/Filter_1.c ****         }
+ 446:Generated_Source\PSoC5/Filter_1.c ****         else if (channel == Filter_1_CHANNEL_B)
+ 455              		.loc 1 446 0
+ 456 0008 0128     		cmp	r0, #1
+ 457 000a 01D1     		bne	.L40
+ 447:Generated_Source\PSoC5/Filter_1.c ****         {
+ 448:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEB16_REG = sample;
+ 458              		.loc 1 448 0
+ 459 000c 024B     		ldr	r3, .L43+4
+ 460 000e 1980     		strh	r1, [r3]	@ unaligned
+ 461              	.L40:
+ 462 0010 7047     		bx	lr
+ 463              	.L44:
+ 464 0012 00BF     		.align	2
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 17
+
+
+ 465              	.L43:
+ 466 0014 A1C70040 		.word	1073792929
+ 467 0018 A5C70040 		.word	1073792933
+ 468              		.cfi_endproc
+ 469              	.LFE8:
+ 470              		.size	Filter_1_Write16, .-Filter_1_Write16
+ 471              		.section	.text.Filter_1_Write24,"ax",%progbits
+ 472              		.align	2
+ 473              		.global	Filter_1_Write24
+ 474              		.thumb
+ 475              		.thumb_func
+ 476              		.type	Filter_1_Write24, %function
+ 477              	Filter_1_Write24:
+ 478              	.LFB9:
+ 449:Generated_Source\PSoC5/Filter_1.c ****         }
+ 450:Generated_Source\PSoC5/Filter_1.c ****         else
+ 451:Generated_Source\PSoC5/Filter_1.c **** 		{
+ 452:Generated_Source\PSoC5/Filter_1.c **** 			/* No value is loaded on bad channel input */
+ 453:Generated_Source\PSoC5/Filter_1.c **** 		}
+ 454:Generated_Source\PSoC5/Filter_1.c ****     }
+ 455:Generated_Source\PSoC5/Filter_1.c **** 
+ 456:Generated_Source\PSoC5/Filter_1.c **** #endif /* defined(__C51__) || defined(__CX51__) */
+ 457:Generated_Source\PSoC5/Filter_1.c **** 
+ 458:Generated_Source\PSoC5/Filter_1.c **** 
+ 459:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 460:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_Write24
+ 461:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 462:Generated_Source\PSoC5/Filter_1.c **** *
+ 463:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 464:Generated_Source\PSoC5/Filter_1.c **** *  Set the value in one of the DFB Input Staging Registers 
+ 465:Generated_Source\PSoC5/Filter_1.c **** *
+ 466:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 467:Generated_Source\PSoC5/Filter_1.c **** *  channel:  Use either Filter_1_CHANNEL_A or 
+ 468:Generated_Source\PSoC5/Filter_1.c **** *            Filter_1_CHANNEL_B as arguments to the function.  
+ 469:Generated_Source\PSoC5/Filter_1.c **** *  sample:   The 24-bit, right justified input sample inside of a uint32. 
+ 470:Generated_Source\PSoC5/Filter_1.c **** *
+ 471:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 472:Generated_Source\PSoC5/Filter_1.c **** *  void
+ 473:Generated_Source\PSoC5/Filter_1.c **** *
+ 474:Generated_Source\PSoC5/Filter_1.c **** * Note:
+ 475:Generated_Source\PSoC5/Filter_1.c **** *  Order of the write is important.  On the load of the high byte, the DFB sets
+ 476:Generated_Source\PSoC5/Filter_1.c **** *  the input ready bit.
+ 477:Generated_Source\PSoC5/Filter_1.c **** *
+ 478:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 479:Generated_Source\PSoC5/Filter_1.c **** #if defined(__C51__) || defined(__CX51__)
+ 480:Generated_Source\PSoC5/Filter_1.c **** 
+ 481:Generated_Source\PSoC5/Filter_1.c ****     void Filter_1_Write24(uint8 channel, uint32 sample) 
+ 482:Generated_Source\PSoC5/Filter_1.c ****     {
+ 483:Generated_Source\PSoC5/Filter_1.c ****         /* Write the STAGE LSB reg last as it signals a complete wrote to 
+ 484:Generated_Source\PSoC5/Filter_1.c ****            the DFB.*/
+ 485:Generated_Source\PSoC5/Filter_1.c ****         if (channel == Filter_1_CHANNEL_A)
+ 486:Generated_Source\PSoC5/Filter_1.c ****         {
+ 487:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEA_REG  = (uint8)(sample);
+ 488:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEAM_REG = (uint8)(sample >> 8u);
+ 489:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEAH_REG = (uint8)(sample >> 16u);
+ 490:Generated_Source\PSoC5/Filter_1.c ****         }
+ 491:Generated_Source\PSoC5/Filter_1.c ****         else if (channel == Filter_1_CHANNEL_B)
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 18
+
+
+ 492:Generated_Source\PSoC5/Filter_1.c ****         {
+ 493:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEB_REG = (uint8)(sample);
+ 494:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEBM_REG = (uint8)(sample >> 8u);
+ 495:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEBH_REG = (uint8)(sample >> 16u);
+ 496:Generated_Source\PSoC5/Filter_1.c ****         }
+ 497:Generated_Source\PSoC5/Filter_1.c ****         else
+ 498:Generated_Source\PSoC5/Filter_1.c **** 		{
+ 499:Generated_Source\PSoC5/Filter_1.c **** 			/* No value is loaded on bad channel input */
+ 500:Generated_Source\PSoC5/Filter_1.c **** 		}
+ 501:Generated_Source\PSoC5/Filter_1.c ****     }
+ 502:Generated_Source\PSoC5/Filter_1.c **** 
+ 503:Generated_Source\PSoC5/Filter_1.c **** #else
+ 504:Generated_Source\PSoC5/Filter_1.c **** 
+ 505:Generated_Source\PSoC5/Filter_1.c ****     void Filter_1_Write24(uint8 channel, uint32 sample) 
+ 506:Generated_Source\PSoC5/Filter_1.c ****     {
+ 479              		.loc 1 506 0
+ 480              		.cfi_startproc
+ 481              		@ args = 0, pretend = 0, frame = 0
+ 482              		@ frame_needed = 0, uses_anonymous_args = 0
+ 483              		@ link register save eliminated.
+ 484              	.LVL31:
+ 507:Generated_Source\PSoC5/Filter_1.c ****         if (channel == Filter_1_CHANNEL_A)
+ 485              		.loc 1 507 0
+ 486 0000 10B9     		cbnz	r0, .L46
+ 508:Generated_Source\PSoC5/Filter_1.c ****         {
+ 509:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEA24_REG = sample;
+ 487              		.loc 1 509 0
+ 488 0002 044B     		ldr	r3, .L48
+ 489 0004 1960     		str	r1, [r3]
+ 490 0006 7047     		bx	lr
+ 491              	.L46:
+ 510:Generated_Source\PSoC5/Filter_1.c ****         }
+ 511:Generated_Source\PSoC5/Filter_1.c ****         else if (channel == Filter_1_CHANNEL_B)
+ 492              		.loc 1 511 0
+ 493 0008 0128     		cmp	r0, #1
+ 494 000a 01D1     		bne	.L45
+ 512:Generated_Source\PSoC5/Filter_1.c ****         {
+ 513:Generated_Source\PSoC5/Filter_1.c ****             Filter_1_STAGEB24_REG = sample;
+ 495              		.loc 1 513 0
+ 496 000c 024B     		ldr	r3, .L48+4
+ 497 000e 1960     		str	r1, [r3]
+ 498              	.L45:
+ 499 0010 7047     		bx	lr
+ 500              	.L49:
+ 501 0012 00BF     		.align	2
+ 502              	.L48:
+ 503 0014 A0C70040 		.word	1073792928
+ 504 0018 A4C70040 		.word	1073792932
+ 505              		.cfi_endproc
+ 506              	.LFE9:
+ 507              		.size	Filter_1_Write24, .-Filter_1_Write24
+ 508              		.section	.text.Filter_1_SetCoherency,"ax",%progbits
+ 509              		.align	2
+ 510              		.global	Filter_1_SetCoherency
+ 511              		.thumb
+ 512              		.thumb_func
+ 513              		.type	Filter_1_SetCoherency, %function
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 19
+
+
+ 514              	Filter_1_SetCoherency:
+ 515              	.LFB10:
+ 514:Generated_Source\PSoC5/Filter_1.c ****         }
+ 515:Generated_Source\PSoC5/Filter_1.c ****         else
+ 516:Generated_Source\PSoC5/Filter_1.c **** 		{
+ 517:Generated_Source\PSoC5/Filter_1.c **** 			/* No value is loaded on bad channel input */
+ 518:Generated_Source\PSoC5/Filter_1.c **** 		}
+ 519:Generated_Source\PSoC5/Filter_1.c ****     }
+ 520:Generated_Source\PSoC5/Filter_1.c **** 
+ 521:Generated_Source\PSoC5/Filter_1.c **** #endif /* defined(__C51__) || defined(__CX51__) */
+ 522:Generated_Source\PSoC5/Filter_1.c **** 
+ 523:Generated_Source\PSoC5/Filter_1.c **** 
+ 524:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 525:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_SetCoherency
+ 526:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 527:Generated_Source\PSoC5/Filter_1.c **** *
+ 528:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 529:Generated_Source\PSoC5/Filter_1.c **** *  Sets the DFB coherency register with the user provided input 
+ 530:Generated_Source\PSoC5/Filter_1.c **** *
+ 531:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 532:Generated_Source\PSoC5/Filter_1.c **** *  channel:  Filter_1_CHANNEL_A or Filter_1_CHANNEL_B
+ 533:Generated_Source\PSoC5/Filter_1.c **** *  byteSelect:  High byte, Middle byte or Low byte as the key coherency byte.
+ 534:Generated_Source\PSoC5/Filter_1.c **** *            
+ 535:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 536:Generated_Source\PSoC5/Filter_1.c **** *  None.
+ 537:Generated_Source\PSoC5/Filter_1.c **** *
+ 538:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 539:Generated_Source\PSoC5/Filter_1.c **** void Filter_1_SetCoherency(uint8 channel, uint8 byteSelect) 
+ 540:Generated_Source\PSoC5/Filter_1.c **** {
+ 516              		.loc 1 540 0
+ 517              		.cfi_startproc
+ 518              		@ args = 0, pretend = 0, frame = 0
+ 519              		@ frame_needed = 0, uses_anonymous_args = 0
+ 520              		@ link register save eliminated.
+ 521              	.LVL32:
+ 541:Generated_Source\PSoC5/Filter_1.c ****     if (channel == Filter_1_CHANNEL_A)
+ 522              		.loc 1 541 0
+ 523 0000 68B9     		cbnz	r0, .L51
+ 542:Generated_Source\PSoC5/Filter_1.c ****     {
+ 543:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_COHER_REG &= 
+ 524              		.loc 1 543 0
+ 525 0002 104B     		ldr	r3, .L53
+ 526 0004 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 527 0006 02F0CC02 		and	r2, r2, #204
+ 528 000a 1A70     		strb	r2, [r3]
+ 544:Generated_Source\PSoC5/Filter_1.c ****                 (uint8)(~(uint8)(Filter_1_STAGEA_COHER_MASK | Filter_1_HOLDA_COHER_MASK));
+ 545:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_COHER_REG |= byteSelect;
+ 529              		.loc 1 545 0
+ 530 000c 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 531 000e 0A43     		orrs	r2, r2, r1
+ 532 0010 1A70     		strb	r2, [r3]
+ 546:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_COHER_REG |= (uint8)((uint8)byteSelect << 4u);
+ 533              		.loc 1 546 0
+ 534 0012 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 535 0014 0901     		lsls	r1, r1, #4
+ 536              	.LVL33:
+ 537 0016 C9B2     		uxtb	r1, r1
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 20
+
+
+ 538 0018 1143     		orrs	r1, r1, r2
+ 539 001a 1970     		strb	r1, [r3]
+ 540 001c 7047     		bx	lr
+ 541              	.LVL34:
+ 542              	.L51:
+ 547:Generated_Source\PSoC5/Filter_1.c ****     }
+ 548:Generated_Source\PSoC5/Filter_1.c ****     else if (channel == Filter_1_CHANNEL_B)
+ 543              		.loc 1 548 0
+ 544 001e 0128     		cmp	r0, #1
+ 545 0020 0ED1     		bne	.L50
+ 549:Generated_Source\PSoC5/Filter_1.c ****     {
+ 550:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_COHER_REG &= 
+ 546              		.loc 1 550 0
+ 547 0022 084B     		ldr	r3, .L53
+ 548 0024 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 549 0026 02F03302 		and	r2, r2, #51
+ 550 002a 1A70     		strb	r2, [r3]
+ 551:Generated_Source\PSoC5/Filter_1.c ****                 (uint8)(~(uint8)(Filter_1_STAGEB_COHER_MASK | Filter_1_HOLDB_COHER_MASK));
+ 552:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_COHER_REG |= (uint8)((uint8)byteSelect << 2u);
+ 551              		.loc 1 552 0
+ 552 002c 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 553              	.LVL35:
+ 554 002e 8A00     		lsls	r2, r1, #2
+ 555 0030 D2B2     		uxtb	r2, r2
+ 556 0032 0243     		orrs	r2, r2, r0
+ 557 0034 1A70     		strb	r2, [r3]
+ 553:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_COHER_REG |= (uint8)((uint8)byteSelect << 6u);
+ 558              		.loc 1 553 0
+ 559 0036 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 560 0038 8901     		lsls	r1, r1, #6
+ 561              	.LVL36:
+ 562 003a C9B2     		uxtb	r1, r1
+ 563 003c 1143     		orrs	r1, r1, r2
+ 564 003e 1970     		strb	r1, [r3]
+ 565              	.L50:
+ 566 0040 7047     		bx	lr
+ 567              	.L54:
+ 568 0042 00BF     		.align	2
+ 569              	.L53:
+ 570 0044 B0C70040 		.word	1073792944
+ 571              		.cfi_endproc
+ 572              	.LFE10:
+ 573              		.size	Filter_1_SetCoherency, .-Filter_1_SetCoherency
+ 574              		.section	.text.Filter_1_SetCoherencyEx,"ax",%progbits
+ 575              		.align	2
+ 576              		.global	Filter_1_SetCoherencyEx
+ 577              		.thumb
+ 578              		.thumb_func
+ 579              		.type	Filter_1_SetCoherencyEx, %function
+ 580              	Filter_1_SetCoherencyEx:
+ 581              	.LFB11:
+ 554:Generated_Source\PSoC5/Filter_1.c ****     }
+ 555:Generated_Source\PSoC5/Filter_1.c ****     else
+ 556:Generated_Source\PSoC5/Filter_1.c ****     {
+ 557:Generated_Source\PSoC5/Filter_1.c ****         /* Invalid channel value */
+ 558:Generated_Source\PSoC5/Filter_1.c ****     }
+ 559:Generated_Source\PSoC5/Filter_1.c **** }
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 21
+
+
+ 560:Generated_Source\PSoC5/Filter_1.c **** 
+ 561:Generated_Source\PSoC5/Filter_1.c **** 
+ 562:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 563:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_SetCoherencyEx
+ 564:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 565:Generated_Source\PSoC5/Filter_1.c **** * 
+ 566:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 567:Generated_Source\PSoC5/Filter_1.c **** *  Configures the DFB coherency register for each of the staging and holding 
+ 568:Generated_Source\PSoC5/Filter_1.c **** *  registers. Allows multiple registers with the same configuration to be set 
+ 569:Generated_Source\PSoC5/Filter_1.c **** *  at the same time. This API should be used when the coherency of the staging 
+ 570:Generated_Source\PSoC5/Filter_1.c **** *  and holding register of a channel is different. 
+ 571:Generated_Source\PSoC5/Filter_1.c **** *
+ 572:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 573:Generated_Source\PSoC5/Filter_1.c **** *  regSelect: This parameter is used to specify the registers that will undergo
+ 574:Generated_Source\PSoC5/Filter_1.c **** *             the change in coherency. These are maskable and multiple registers
+ 575:Generated_Source\PSoC5/Filter_1.c **** *             with the same configuration can passed by performing an OR 
+ 576:Generated_Source\PSoC5/Filter_1.c **** *             operation on the following definitions. 
+ 577:Generated_Source\PSoC5/Filter_1.c **** *            Filter_1_STAGEA_COHER, 
+ 578:Generated_Source\PSoC5/Filter_1.c **** *            Filter_1_STAGEB_COHER,
+ 579:Generated_Source\PSoC5/Filter_1.c **** *            Filter_1_HOLDA_COHER,
+ 580:Generated_Source\PSoC5/Filter_1.c **** *            Filter_1_HOLDB_COHER.
+ 581:Generated_Source\PSoC5/Filter_1.c **** *  key: The key coherency byte that will be chosen for the register(s).
+ 582:Generated_Source\PSoC5/Filter_1.c **** *       Filter_1_KEY_LOW, 
+ 583:Generated_Source\PSoC5/Filter_1.c **** *       Filter_1_KEY_MID,
+ 584:Generated_Source\PSoC5/Filter_1.c **** *       Filter_1_KEY_HIGH.
+ 585:Generated_Source\PSoC5/Filter_1.c **** *            
+ 586:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 587:Generated_Source\PSoC5/Filter_1.c **** *  None.
+ 588:Generated_Source\PSoC5/Filter_1.c **** *
+ 589:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 590:Generated_Source\PSoC5/Filter_1.c **** void Filter_1_SetCoherencyEx(uint8 regSelect, uint8 key) 
+ 591:Generated_Source\PSoC5/Filter_1.c **** {
+ 582              		.loc 1 591 0
+ 583              		.cfi_startproc
+ 584              		@ args = 0, pretend = 0, frame = 0
+ 585              		@ frame_needed = 0, uses_anonymous_args = 0
+ 586              		@ link register save eliminated.
+ 587              	.LVL37:
+ 592:Generated_Source\PSoC5/Filter_1.c ****     uint8 keyReg;
+ 593:Generated_Source\PSoC5/Filter_1.c ****     
+ 594:Generated_Source\PSoC5/Filter_1.c ****     keyReg = (uint8)(key << 2u) | key;
+ 588              		.loc 1 594 0
+ 589 0000 8B00     		lsls	r3, r1, #2
+ 590 0002 DBB2     		uxtb	r3, r3
+ 591 0004 1943     		orrs	r1, r1, r3
+ 592              	.LVL38:
+ 595:Generated_Source\PSoC5/Filter_1.c ****     keyReg |= (uint8)(keyReg << 4u);
+ 593              		.loc 1 595 0
+ 594 0006 0B01     		lsls	r3, r1, #4
+ 595 0008 DBB2     		uxtb	r3, r3
+ 596 000a 1943     		orrs	r1, r1, r3
+ 597              	.LVL39:
+ 596:Generated_Source\PSoC5/Filter_1.c ****     
+ 597:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_COHER_REG &= (uint8)~regSelect;
+ 598              		.loc 1 597 0
+ 599 000c 044B     		ldr	r3, .L56
+ 600 000e 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 22
+
+
+ 601 0010 22EA0002 		bic	r2, r2, r0
+ 602 0014 1A70     		strb	r2, [r3]
+ 598:Generated_Source\PSoC5/Filter_1.c ****     Filter_1_COHER_REG |= keyReg & regSelect;
+ 603              		.loc 1 598 0
+ 604 0016 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 605 0018 0840     		ands	r0, r0, r1
+ 606              	.LVL40:
+ 607 001a 1043     		orrs	r0, r0, r2
+ 608 001c 1870     		strb	r0, [r3]
+ 609 001e 7047     		bx	lr
+ 610              	.L57:
+ 611              		.align	2
+ 612              	.L56:
+ 613 0020 B0C70040 		.word	1073792944
+ 614              		.cfi_endproc
+ 615              	.LFE11:
+ 616              		.size	Filter_1_SetCoherencyEx, .-Filter_1_SetCoherencyEx
+ 617              		.section	.text.Filter_1_SetDalign,"ax",%progbits
+ 618              		.align	2
+ 619              		.global	Filter_1_SetDalign
+ 620              		.thumb
+ 621              		.thumb_func
+ 622              		.type	Filter_1_SetDalign, %function
+ 623              	Filter_1_SetDalign:
+ 624              	.LFB12:
+ 599:Generated_Source\PSoC5/Filter_1.c **** }
+ 600:Generated_Source\PSoC5/Filter_1.c **** 
+ 601:Generated_Source\PSoC5/Filter_1.c **** 
+ 602:Generated_Source\PSoC5/Filter_1.c **** /*******************************************************************************
+ 603:Generated_Source\PSoC5/Filter_1.c **** * Function Name: Filter_1_SetDalign
+ 604:Generated_Source\PSoC5/Filter_1.c **** ********************************************************************************
+ 605:Generated_Source\PSoC5/Filter_1.c **** * 
+ 606:Generated_Source\PSoC5/Filter_1.c **** * Summary:
+ 607:Generated_Source\PSoC5/Filter_1.c **** *  Configures the DFB dalign register for each of the staging and holding 
+ 608:Generated_Source\PSoC5/Filter_1.c **** *  registers. Allows multiple registers with the same configuration to be set
+ 609:Generated_Source\PSoC5/Filter_1.c **** *  at the same time. 
+ 610:Generated_Source\PSoC5/Filter_1.c **** *
+ 611:Generated_Source\PSoC5/Filter_1.c **** * Parameters:  
+ 612:Generated_Source\PSoC5/Filter_1.c **** *  regSelect: This parameter is used to specify the registers that will undergo
+ 613:Generated_Source\PSoC5/Filter_1.c **** *             the change in data alignment. These are maskable and multiple 
+ 614:Generated_Source\PSoC5/Filter_1.c **** *             registers with the same configuration can passed by performing 
+ 615:Generated_Source\PSoC5/Filter_1.c **** *             an OR operation on the following definitions.
+ 616:Generated_Source\PSoC5/Filter_1.c **** *             Filter_1_STAGEA_DALIGN, 
+ 617:Generated_Source\PSoC5/Filter_1.c **** *             Filter_1_STAGEB_DALIGN,
+ 618:Generated_Source\PSoC5/Filter_1.c **** *             Filter_1_HOLDA_DALIGN,
+ 619:Generated_Source\PSoC5/Filter_1.c **** *             Filter_1_HOLDB_DALIGN.
+ 620:Generated_Source\PSoC5/Filter_1.c **** *  state: The state is use to either enable the data alignment bits for the 
+ 621:Generated_Source\PSoC5/Filter_1.c **** *         corresponding registers or to disable them.
+ 622:Generated_Source\PSoC5/Filter_1.c **** *         Filter_1_ENABLED,
+ 623:Generated_Source\PSoC5/Filter_1.c **** *         Filter_1_DISABLED
+ 624:Generated_Source\PSoC5/Filter_1.c **** *            
+ 625:Generated_Source\PSoC5/Filter_1.c **** * Return: 
+ 626:Generated_Source\PSoC5/Filter_1.c **** *  None.
+ 627:Generated_Source\PSoC5/Filter_1.c **** *
+ 628:Generated_Source\PSoC5/Filter_1.c **** *******************************************************************************/
+ 629:Generated_Source\PSoC5/Filter_1.c **** void Filter_1_SetDalign(uint8 regSelect, uint8 state) 
+ 630:Generated_Source\PSoC5/Filter_1.c **** {    
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 23
+
+
+ 625              		.loc 1 630 0
+ 626              		.cfi_startproc
+ 627              		@ args = 0, pretend = 0, frame = 0
+ 628              		@ frame_needed = 0, uses_anonymous_args = 0
+ 629              		@ link register save eliminated.
+ 630              	.LVL41:
+ 631:Generated_Source\PSoC5/Filter_1.c ****     if (state == Filter_1_ENABLED)
+ 631              		.loc 1 631 0
+ 632 0000 0129     		cmp	r1, #1
+ 633 0002 04D1     		bne	.L59
+ 632:Generated_Source\PSoC5/Filter_1.c ****     {
+ 633:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_DALIGN_REG |= regSelect;
+ 634              		.loc 1 633 0
+ 635 0004 054B     		ldr	r3, .L61
+ 636 0006 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 637 0008 1043     		orrs	r0, r0, r2
+ 638              	.LVL42:
+ 639 000a 1870     		strb	r0, [r3]
+ 640 000c 7047     		bx	lr
+ 641              	.LVL43:
+ 642              	.L59:
+ 634:Generated_Source\PSoC5/Filter_1.c ****     }
+ 635:Generated_Source\PSoC5/Filter_1.c ****     else if (state == Filter_1_DISABLED)
+ 643              		.loc 1 635 0
+ 644 000e 21B9     		cbnz	r1, .L58
+ 636:Generated_Source\PSoC5/Filter_1.c ****     {
+ 637:Generated_Source\PSoC5/Filter_1.c ****         Filter_1_DALIGN_REG &= (uint8)(~regSelect);
+ 645              		.loc 1 637 0
+ 646 0010 024A     		ldr	r2, .L61
+ 647 0012 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 648 0014 23EA0000 		bic	r0, r3, r0
+ 649              	.LVL44:
+ 650 0018 1070     		strb	r0, [r2]
+ 651              	.L58:
+ 652 001a 7047     		bx	lr
+ 653              	.L62:
+ 654              		.align	2
+ 655              	.L61:
+ 656 001c B4C70040 		.word	1073792948
+ 657              		.cfi_endproc
+ 658              	.LFE12:
+ 659              		.size	Filter_1_SetDalign, .-Filter_1_SetDalign
+ 660              		.global	Filter_1_initVar
+ 661              		.bss
+ 662              		.set	.LANCHOR0,. + 0
+ 663              		.type	Filter_1_initVar, %object
+ 664              		.size	Filter_1_initVar, 1
+ 665              	Filter_1_initVar:
+ 666 0000 00       		.space	1
+ 667              		.text
+ 668              	.Letext0:
+ 669              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 670              		.file 3 "Generated_Source\\PSoC5\\Filter_1_PVT.h"
+ 671              		.section	.debug_info,"",%progbits
+ 672              	.Ldebug_info0:
+ 673 0000 AF040000 		.4byte	0x4af
+ 674 0004 0400     		.2byte	0x4
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 24
+
+
+ 675 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 676 000a 04       		.byte	0x4
+ 677 000b 01       		.uleb128 0x1
+ 678 000c 1C010000 		.4byte	.LASF48
+ 679 0010 0C       		.byte	0xc
+ 680 0011 DC000000 		.4byte	.LASF49
+ 681 0015 38020000 		.4byte	.LASF50
+ 682 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 683 001d 00000000 		.4byte	0
+ 684 0021 00000000 		.4byte	.Ldebug_line0
+ 685 0025 02       		.uleb128 0x2
+ 686 0026 04       		.byte	0x4
+ 687 0027 05       		.byte	0x5
+ 688 0028 696E7400 		.ascii	"int\000"
+ 689 002c 03       		.uleb128 0x3
+ 690 002d 04       		.byte	0x4
+ 691 002e 07       		.byte	0x7
+ 692 002f 04020000 		.4byte	.LASF0
+ 693 0033 03       		.uleb128 0x3
+ 694 0034 08       		.byte	0x8
+ 695 0035 05       		.byte	0x5
+ 696 0036 B8020000 		.4byte	.LASF1
+ 697 003a 03       		.uleb128 0x3
+ 698 003b 08       		.byte	0x8
+ 699 003c 04       		.byte	0x4
+ 700 003d 20030000 		.4byte	.LASF2
+ 701 0041 03       		.uleb128 0x3
+ 702 0042 01       		.byte	0x1
+ 703 0043 06       		.byte	0x6
+ 704 0044 2C030000 		.4byte	.LASF3
+ 705 0048 03       		.uleb128 0x3
+ 706 0049 01       		.byte	0x1
+ 707 004a 08       		.byte	0x8
+ 708 004b 0E010000 		.4byte	.LASF4
+ 709 004f 03       		.uleb128 0x3
+ 710 0050 02       		.byte	0x2
+ 711 0051 05       		.byte	0x5
+ 712 0052 F0020000 		.4byte	.LASF5
+ 713 0056 03       		.uleb128 0x3
+ 714 0057 02       		.byte	0x2
+ 715 0058 07       		.byte	0x7
+ 716 0059 5A000000 		.4byte	.LASF6
+ 717 005d 03       		.uleb128 0x3
+ 718 005e 04       		.byte	0x4
+ 719 005f 05       		.byte	0x5
+ 720 0060 51000000 		.4byte	.LASF7
+ 721 0064 03       		.uleb128 0x3
+ 722 0065 04       		.byte	0x4
+ 723 0066 07       		.byte	0x7
+ 724 0067 AF010000 		.4byte	.LASF8
+ 725 006b 03       		.uleb128 0x3
+ 726 006c 08       		.byte	0x8
+ 727 006d 07       		.byte	0x7
+ 728 006e 21020000 		.4byte	.LASF9
+ 729 0072 03       		.uleb128 0x3
+ 730 0073 04       		.byte	0x4
+ 731 0074 07       		.byte	0x7
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 25
+
+
+ 732 0075 AF020000 		.4byte	.LASF10
+ 733 0079 03       		.uleb128 0x3
+ 734 007a 01       		.byte	0x1
+ 735 007b 08       		.byte	0x8
+ 736 007c D4020000 		.4byte	.LASF11
+ 737 0080 04       		.uleb128 0x4
+ 738 0081 C1010000 		.4byte	.LASF12
+ 739 0085 02       		.byte	0x2
+ 740 0086 E901     		.2byte	0x1e9
+ 741 0088 48000000 		.4byte	0x48
+ 742 008c 04       		.uleb128 0x4
+ 743 008d E6010000 		.4byte	.LASF13
+ 744 0091 02       		.byte	0x2
+ 745 0092 EA01     		.2byte	0x1ea
+ 746 0094 56000000 		.4byte	0x56
+ 747 0098 04       		.uleb128 0x4
+ 748 0099 FD010000 		.4byte	.LASF14
+ 749 009d 02       		.byte	0x2
+ 750 009e EB01     		.2byte	0x1eb
+ 751 00a0 64000000 		.4byte	0x64
+ 752 00a4 03       		.uleb128 0x3
+ 753 00a5 04       		.byte	0x4
+ 754 00a6 04       		.byte	0x4
+ 755 00a7 D6000000 		.4byte	.LASF15
+ 756 00ab 03       		.uleb128 0x3
+ 757 00ac 08       		.byte	0x8
+ 758 00ad 04       		.byte	0x4
+ 759 00ae C7010000 		.4byte	.LASF16
+ 760 00b2 04       		.uleb128 0x4
+ 761 00b3 AA010000 		.4byte	.LASF17
+ 762 00b7 02       		.byte	0x2
+ 763 00b8 9302     		.2byte	0x293
+ 764 00ba BE000000 		.4byte	0xbe
+ 765 00be 05       		.uleb128 0x5
+ 766 00bf 80000000 		.4byte	0x80
+ 767 00c3 04       		.uleb128 0x4
+ 768 00c4 00000000 		.4byte	.LASF18
+ 769 00c8 02       		.byte	0x2
+ 770 00c9 9402     		.2byte	0x294
+ 771 00cb CF000000 		.4byte	0xcf
+ 772 00cf 05       		.uleb128 0x5
+ 773 00d0 8C000000 		.4byte	0x8c
+ 774 00d4 04       		.uleb128 0x4
+ 775 00d5 29000000 		.4byte	.LASF19
+ 776 00d9 02       		.byte	0x2
+ 777 00da 9502     		.2byte	0x295
+ 778 00dc E0000000 		.4byte	0xe0
+ 779 00e0 05       		.uleb128 0x5
+ 780 00e1 98000000 		.4byte	0x98
+ 781 00e5 06       		.uleb128 0x6
+ 782 00e6 FA020000 		.4byte	.LASF20
+ 783 00ea 01       		.byte	0x1
+ 784 00eb 2B       		.byte	0x2b
+ 785 00ec 00000000 		.4byte	.LFB0
+ 786 00f0 CC000000 		.4byte	.LFE0-.LFB0
+ 787 00f4 01       		.uleb128 0x1
+ 788 00f5 9C       		.byte	0x9c
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 26
+
+
+ 789 00f6 BA010000 		.4byte	0x1ba
+ 790 00fa 07       		.uleb128 0x7
+ 791 00fb 34000000 		.4byte	.LVL0
+ 792 00ff 93040000 		.4byte	0x493
+ 793 0103 1D010000 		.4byte	0x11d
+ 794 0107 08       		.uleb128 0x8
+ 795 0108 01       		.uleb128 0x1
+ 796 0109 50       		.byte	0x50
+ 797 010a 05       		.uleb128 0x5
+ 798 010b 0C       		.byte	0xc
+ 799 010c 00C40040 		.4byte	0x4000c400
+ 800 0110 08       		.uleb128 0x8
+ 801 0111 01       		.uleb128 0x1
+ 802 0112 51       		.byte	0x51
+ 803 0113 02       		.uleb128 0x2
+ 804 0114 75       		.byte	0x75
+ 805 0115 00       		.sleb128 0
+ 806 0116 08       		.uleb128 0x8
+ 807 0117 01       		.uleb128 0x1
+ 808 0118 52       		.byte	0x52
+ 809 0119 02       		.uleb128 0x2
+ 810 011a 74       		.byte	0x74
+ 811 011b 00       		.sleb128 0
+ 812 011c 00       		.byte	0
+ 813 011d 07       		.uleb128 0x7
+ 814 011e 3E000000 		.4byte	.LVL1
+ 815 0122 93040000 		.4byte	0x493
+ 816 0126 40010000 		.4byte	0x140
+ 817 012a 08       		.uleb128 0x8
+ 818 012b 01       		.uleb128 0x1
+ 819 012c 50       		.byte	0x50
+ 820 012d 05       		.uleb128 0x5
+ 821 012e 0C       		.byte	0xc
+ 822 012f 00C50040 		.4byte	0x4000c500
+ 823 0133 08       		.uleb128 0x8
+ 824 0134 01       		.uleb128 0x1
+ 825 0135 51       		.byte	0x51
+ 826 0136 02       		.uleb128 0x2
+ 827 0137 75       		.byte	0x75
+ 828 0138 00       		.sleb128 0
+ 829 0139 08       		.uleb128 0x8
+ 830 013a 01       		.uleb128 0x1
+ 831 013b 52       		.byte	0x52
+ 832 013c 02       		.uleb128 0x2
+ 833 013d 74       		.byte	0x74
+ 834 013e 00       		.sleb128 0
+ 835 013f 00       		.byte	0
+ 836 0140 07       		.uleb128 0x7
+ 837 0141 48000000 		.4byte	.LVL2
+ 838 0145 93040000 		.4byte	0x493
+ 839 0149 5D010000 		.4byte	0x15d
+ 840 014d 08       		.uleb128 0x8
+ 841 014e 01       		.uleb128 0x1
+ 842 014f 50       		.byte	0x50
+ 843 0150 05       		.uleb128 0x5
+ 844 0151 0C       		.byte	0xc
+ 845 0152 00C60040 		.4byte	0x4000c600
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 27
+
+
+ 846 0156 08       		.uleb128 0x8
+ 847 0157 01       		.uleb128 0x1
+ 848 0158 52       		.byte	0x52
+ 849 0159 02       		.uleb128 0x2
+ 850 015a 74       		.byte	0x74
+ 851 015b 00       		.sleb128 0
+ 852 015c 00       		.byte	0
+ 853 015d 07       		.uleb128 0x7
+ 854 015e 56000000 		.4byte	.LVL3
+ 855 0162 93040000 		.4byte	0x493
+ 856 0166 7A010000 		.4byte	0x17a
+ 857 016a 08       		.uleb128 0x8
+ 858 016b 01       		.uleb128 0x1
+ 859 016c 50       		.byte	0x50
+ 860 016d 05       		.uleb128 0x5
+ 861 016e 0C       		.byte	0xc
+ 862 016f 00C00040 		.4byte	0x4000c000
+ 863 0173 08       		.uleb128 0x8
+ 864 0174 01       		.uleb128 0x1
+ 865 0175 52       		.byte	0x52
+ 866 0176 02       		.uleb128 0x2
+ 867 0177 74       		.byte	0x74
+ 868 0178 00       		.sleb128 0
+ 869 0179 00       		.byte	0
+ 870 017a 07       		.uleb128 0x7
+ 871 017b 60000000 		.4byte	.LVL4
+ 872 017f 93040000 		.4byte	0x493
+ 873 0183 97010000 		.4byte	0x197
+ 874 0187 08       		.uleb128 0x8
+ 875 0188 01       		.uleb128 0x1
+ 876 0189 50       		.byte	0x50
+ 877 018a 05       		.uleb128 0x5
+ 878 018b 0C       		.byte	0xc
+ 879 018c 00C20040 		.4byte	0x4000c200
+ 880 0190 08       		.uleb128 0x8
+ 881 0191 01       		.uleb128 0x1
+ 882 0192 52       		.byte	0x52
+ 883 0193 02       		.uleb128 0x2
+ 884 0194 74       		.byte	0x74
+ 885 0195 00       		.sleb128 0
+ 886 0196 00       		.byte	0
+ 887 0197 07       		.uleb128 0x7
+ 888 0198 86000000 		.4byte	.LVL5
+ 889 019c 9C040000 		.4byte	0x49c
+ 890 01a0 AA010000 		.4byte	0x1aa
+ 891 01a4 08       		.uleb128 0x8
+ 892 01a5 01       		.uleb128 0x1
+ 893 01a6 50       		.byte	0x50
+ 894 01a7 01       		.uleb128 0x1
+ 895 01a8 30       		.byte	0x30
+ 896 01a9 00       		.byte	0
+ 897 01aa 09       		.uleb128 0x9
+ 898 01ab 8C000000 		.4byte	.LVL6
+ 899 01af A7040000 		.4byte	0x4a7
+ 900 01b3 08       		.uleb128 0x8
+ 901 01b4 01       		.uleb128 0x1
+ 902 01b5 50       		.byte	0x50
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 28
+
+
+ 903 01b6 01       		.uleb128 0x1
+ 904 01b7 31       		.byte	0x31
+ 905 01b8 00       		.byte	0
+ 906 01b9 00       		.byte	0
+ 907 01ba 0A       		.uleb128 0xa
+ 908 01bb ED010000 		.4byte	.LASF22
+ 909 01bf 01       		.byte	0x1
+ 910 01c0 66       		.byte	0x66
+ 911 01c1 00000000 		.4byte	.LFB1
+ 912 01c5 28000000 		.4byte	.LFE1-.LFB1
+ 913 01c9 01       		.uleb128 0x1
+ 914 01ca 9C       		.byte	0x9c
+ 915 01cb 06       		.uleb128 0x6
+ 916 01cc 06000000 		.4byte	.LASF21
+ 917 01d0 01       		.byte	0x1
+ 918 01d1 89       		.byte	0x89
+ 919 01d2 00000000 		.4byte	.LFB2
+ 920 01d6 1C000000 		.4byte	.LFE2-.LFB2
+ 921 01da 01       		.uleb128 0x1
+ 922 01db 9C       		.byte	0x9c
+ 923 01dc F3010000 		.4byte	0x1f3
+ 924 01e0 0B       		.uleb128 0xb
+ 925 01e1 0C000000 		.4byte	.LVL7
+ 926 01e5 E5000000 		.4byte	0xe5
+ 927 01e9 0B       		.uleb128 0xb
+ 928 01ea 16000000 		.4byte	.LVL8
+ 929 01ee BA010000 		.4byte	0x1ba
+ 930 01f2 00       		.byte	0
+ 931 01f3 0A       		.uleb128 0xa
+ 932 01f4 3D000000 		.4byte	.LASF23
+ 933 01f8 01       		.byte	0x1
+ 934 01f9 A6       		.byte	0xa6
+ 935 01fa 00000000 		.4byte	.LFB3
+ 936 01fe 28000000 		.4byte	.LFE3-.LFB3
+ 937 0202 01       		.uleb128 0x1
+ 938 0203 9C       		.byte	0x9c
+ 939 0204 0C       		.uleb128 0xc
+ 940 0205 A0020000 		.4byte	.LASF24
+ 941 0209 01       		.byte	0x1
+ 942 020a C1       		.byte	0xc1
+ 943 020b 80000000 		.4byte	0x80
+ 944 020f 00000000 		.4byte	.LFB4
+ 945 0213 24000000 		.4byte	.LFE4-.LFB4
+ 946 0217 01       		.uleb128 0x1
+ 947 0218 9C       		.byte	0x9c
+ 948 0219 3C020000 		.4byte	0x23c
+ 949 021d 0D       		.uleb128 0xd
+ 950 021e 2F000000 		.4byte	.LASF26
+ 951 0222 01       		.byte	0x1
+ 952 0223 C1       		.byte	0xc1
+ 953 0224 80000000 		.4byte	0x80
+ 954 0228 00000000 		.4byte	.LLST0
+ 955 022c 0E       		.uleb128 0xe
+ 956 022d 4B000000 		.4byte	.LASF27
+ 957 0231 01       		.byte	0x1
+ 958 0232 C3       		.byte	0xc3
+ 959 0233 80000000 		.4byte	0x80
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 29
+
+
+ 960 0237 53000000 		.4byte	.LLST1
+ 961 023b 00       		.byte	0
+ 962 023c 0F       		.uleb128 0xf
+ 963 023d E0020000 		.4byte	.LASF25
+ 964 0241 01       		.byte	0x1
+ 965 0242 0101     		.2byte	0x101
+ 966 0244 8C000000 		.4byte	0x8c
+ 967 0248 00000000 		.4byte	.LFB5
+ 968 024c 20000000 		.4byte	.LFE5-.LFB5
+ 969 0250 01       		.uleb128 0x1
+ 970 0251 9C       		.byte	0x9c
+ 971 0252 77020000 		.4byte	0x277
+ 972 0256 10       		.uleb128 0x10
+ 973 0257 2F000000 		.4byte	.LASF26
+ 974 025b 01       		.byte	0x1
+ 975 025c 0101     		.2byte	0x101
+ 976 025e 80000000 		.4byte	0x80
+ 977 0262 7C000000 		.4byte	.LLST2
+ 978 0266 11       		.uleb128 0x11
+ 979 0267 76616C00 		.ascii	"val\000"
+ 980 026b 01       		.byte	0x1
+ 981 026c 0301     		.2byte	0x103
+ 982 026e 8C000000 		.4byte	0x8c
+ 983 0272 CF000000 		.4byte	.LLST3
+ 984 0276 00       		.byte	0
+ 985 0277 0F       		.uleb128 0xf
+ 986 0278 FE000000 		.4byte	.LASF28
+ 987 027c 01       		.byte	0x1
+ 988 027d 5101     		.2byte	0x151
+ 989 027f 98000000 		.4byte	0x98
+ 990 0283 00000000 		.4byte	.LFB6
+ 991 0287 20000000 		.4byte	.LFE6-.LFB6
+ 992 028b 01       		.uleb128 0x1
+ 993 028c 9C       		.byte	0x9c
+ 994 028d B2020000 		.4byte	0x2b2
+ 995 0291 10       		.uleb128 0x10
+ 996 0292 2F000000 		.4byte	.LASF26
+ 997 0296 01       		.byte	0x1
+ 998 0297 5101     		.2byte	0x151
+ 999 0299 80000000 		.4byte	0x80
+ 1000 029d F8000000 		.4byte	.LLST4
+ 1001 02a1 11       		.uleb128 0x11
+ 1002 02a2 76616C00 		.ascii	"val\000"
+ 1003 02a6 01       		.byte	0x1
+ 1004 02a7 5301     		.2byte	0x153
+ 1005 02a9 98000000 		.4byte	0x98
+ 1006 02ad 4B010000 		.4byte	.LLST5
+ 1007 02b1 00       		.byte	0
+ 1008 02b2 12       		.uleb128 0x12
+ 1009 02b3 11020000 		.4byte	.LASF29
+ 1010 02b7 01       		.byte	0x1
+ 1011 02b8 7B01     		.2byte	0x17b
+ 1012 02ba 00000000 		.4byte	.LFB7
+ 1013 02be 1C000000 		.4byte	.LFE7-.LFB7
+ 1014 02c2 01       		.uleb128 0x1
+ 1015 02c3 9C       		.byte	0x9c
+ 1016 02c4 E5020000 		.4byte	0x2e5
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 30
+
+
+ 1017 02c8 13       		.uleb128 0x13
+ 1018 02c9 2F000000 		.4byte	.LASF26
+ 1019 02cd 01       		.byte	0x1
+ 1020 02ce 7B01     		.2byte	0x17b
+ 1021 02d0 80000000 		.4byte	0x80
+ 1022 02d4 01       		.uleb128 0x1
+ 1023 02d5 50       		.byte	0x50
+ 1024 02d6 13       		.uleb128 0x13
+ 1025 02d7 08030000 		.4byte	.LASF30
+ 1026 02db 01       		.byte	0x1
+ 1027 02dc 7B01     		.2byte	0x17b
+ 1028 02de 80000000 		.4byte	0x80
+ 1029 02e2 01       		.uleb128 0x1
+ 1030 02e3 51       		.byte	0x51
+ 1031 02e4 00       		.byte	0
+ 1032 02e5 12       		.uleb128 0x12
+ 1033 02e6 A3000000 		.4byte	.LASF31
+ 1034 02ea 01       		.byte	0x1
+ 1035 02eb B801     		.2byte	0x1b8
+ 1036 02ed 00000000 		.4byte	.LFB8
+ 1037 02f1 1C000000 		.4byte	.LFE8-.LFB8
+ 1038 02f5 01       		.uleb128 0x1
+ 1039 02f6 9C       		.byte	0x9c
+ 1040 02f7 18030000 		.4byte	0x318
+ 1041 02fb 13       		.uleb128 0x13
+ 1042 02fc 2F000000 		.4byte	.LASF26
+ 1043 0300 01       		.byte	0x1
+ 1044 0301 B801     		.2byte	0x1b8
+ 1045 0303 80000000 		.4byte	0x80
+ 1046 0307 01       		.uleb128 0x1
+ 1047 0308 50       		.byte	0x50
+ 1048 0309 13       		.uleb128 0x13
+ 1049 030a 08030000 		.4byte	.LASF30
+ 1050 030e 01       		.byte	0x1
+ 1051 030f B801     		.2byte	0x1b8
+ 1052 0311 8C000000 		.4byte	0x8c
+ 1053 0315 01       		.uleb128 0x1
+ 1054 0316 51       		.byte	0x51
+ 1055 0317 00       		.byte	0
+ 1056 0318 12       		.uleb128 0x12
+ 1057 0319 65030000 		.4byte	.LASF32
+ 1058 031d 01       		.byte	0x1
+ 1059 031e F901     		.2byte	0x1f9
+ 1060 0320 00000000 		.4byte	.LFB9
+ 1061 0324 1C000000 		.4byte	.LFE9-.LFB9
+ 1062 0328 01       		.uleb128 0x1
+ 1063 0329 9C       		.byte	0x9c
+ 1064 032a 4B030000 		.4byte	0x34b
+ 1065 032e 13       		.uleb128 0x13
+ 1066 032f 2F000000 		.4byte	.LASF26
+ 1067 0333 01       		.byte	0x1
+ 1068 0334 F901     		.2byte	0x1f9
+ 1069 0336 80000000 		.4byte	0x80
+ 1070 033a 01       		.uleb128 0x1
+ 1071 033b 50       		.byte	0x50
+ 1072 033c 13       		.uleb128 0x13
+ 1073 033d 08030000 		.4byte	.LASF30
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 31
+
+
+ 1074 0341 01       		.byte	0x1
+ 1075 0342 F901     		.2byte	0x1f9
+ 1076 0344 98000000 		.4byte	0x98
+ 1077 0348 01       		.uleb128 0x1
+ 1078 0349 51       		.byte	0x51
+ 1079 034a 00       		.byte	0
+ 1080 034b 12       		.uleb128 0x12
+ 1081 034c 8D000000 		.4byte	.LASF33
+ 1082 0350 01       		.byte	0x1
+ 1083 0351 1B02     		.2byte	0x21b
+ 1084 0353 00000000 		.4byte	.LFB10
+ 1085 0357 48000000 		.4byte	.LFE10-.LFB10
+ 1086 035b 01       		.uleb128 0x1
+ 1087 035c 9C       		.byte	0x9c
+ 1088 035d 82030000 		.4byte	0x382
+ 1089 0361 10       		.uleb128 0x10
+ 1090 0362 2F000000 		.4byte	.LASF26
+ 1091 0366 01       		.byte	0x1
+ 1092 0367 1B02     		.2byte	0x21b
+ 1093 0369 80000000 		.4byte	0x80
+ 1094 036d 74010000 		.4byte	.LLST6
+ 1095 0371 10       		.uleb128 0x10
+ 1096 0372 88020000 		.4byte	.LASF34
+ 1097 0376 01       		.byte	0x1
+ 1098 0377 1B02     		.2byte	0x21b
+ 1099 0379 80000000 		.4byte	0x80
+ 1100 037d 95010000 		.4byte	.LLST7
+ 1101 0381 00       		.byte	0
+ 1102 0382 12       		.uleb128 0x12
+ 1103 0383 CE010000 		.4byte	.LASF35
+ 1104 0387 01       		.byte	0x1
+ 1105 0388 4E02     		.2byte	0x24e
+ 1106 038a 00000000 		.4byte	.LFB11
+ 1107 038e 24000000 		.4byte	.LFE11-.LFB11
+ 1108 0392 01       		.uleb128 0x1
+ 1109 0393 9C       		.byte	0x9c
+ 1110 0394 C7030000 		.4byte	0x3c7
+ 1111 0398 10       		.uleb128 0x10
+ 1112 0399 16030000 		.4byte	.LASF36
+ 1113 039d 01       		.byte	0x1
+ 1114 039e 4E02     		.2byte	0x24e
+ 1115 03a0 80000000 		.4byte	0x80
+ 1116 03a4 CF010000 		.4byte	.LLST8
+ 1117 03a8 14       		.uleb128 0x14
+ 1118 03a9 6B657900 		.ascii	"key\000"
+ 1119 03ad 01       		.byte	0x1
+ 1120 03ae 4E02     		.2byte	0x24e
+ 1121 03b0 80000000 		.4byte	0x80
+ 1122 03b4 F0010000 		.4byte	.LLST9
+ 1123 03b8 15       		.uleb128 0x15
+ 1124 03b9 D9020000 		.4byte	.LASF37
+ 1125 03bd 01       		.byte	0x1
+ 1126 03be 5002     		.2byte	0x250
+ 1127 03c0 80000000 		.4byte	0x80
+ 1128 03c4 01       		.uleb128 0x1
+ 1129 03c5 51       		.byte	0x51
+ 1130 03c6 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 32
+
+
+ 1131 03c7 12       		.uleb128 0x12
+ 1132 03c8 38030000 		.4byte	.LASF38
+ 1133 03cc 01       		.byte	0x1
+ 1134 03cd 7502     		.2byte	0x275
+ 1135 03cf 00000000 		.4byte	.LFB12
+ 1136 03d3 20000000 		.4byte	.LFE12-.LFB12
+ 1137 03d7 01       		.uleb128 0x1
+ 1138 03d8 9C       		.byte	0x9c
+ 1139 03d9 FC030000 		.4byte	0x3fc
+ 1140 03dd 10       		.uleb128 0x10
+ 1141 03de 16030000 		.4byte	.LASF36
+ 1142 03e2 01       		.byte	0x1
+ 1143 03e3 7502     		.2byte	0x275
+ 1144 03e5 80000000 		.4byte	0x80
+ 1145 03e9 11020000 		.4byte	.LLST10
+ 1146 03ed 13       		.uleb128 0x13
+ 1147 03ee 37000000 		.4byte	.LASF39
+ 1148 03f2 01       		.byte	0x1
+ 1149 03f3 7502     		.2byte	0x275
+ 1150 03f5 80000000 		.4byte	0x80
+ 1151 03f9 01       		.uleb128 0x1
+ 1152 03fa 51       		.byte	0x51
+ 1153 03fb 00       		.byte	0
+ 1154 03fc 16       		.uleb128 0x16
+ 1155 03fd B4000000 		.4byte	.LASF40
+ 1156 0401 01       		.byte	0x1
+ 1157 0402 18       		.byte	0x18
+ 1158 0403 80000000 		.4byte	0x80
+ 1159 0407 05       		.uleb128 0x5
+ 1160 0408 03       		.byte	0x3
+ 1161 0409 00000000 		.4byte	Filter_1_initVar
+ 1162 040d 17       		.uleb128 0x17
+ 1163 040e 1D040000 		.4byte	0x41d
+ 1164 0412 1D040000 		.4byte	0x41d
+ 1165 0416 18       		.uleb128 0x18
+ 1166 0417 72000000 		.4byte	0x72
+ 1167 041b FF       		.byte	0xff
+ 1168 041c 00       		.byte	0
+ 1169 041d 19       		.uleb128 0x19
+ 1170 041e 80000000 		.4byte	0x80
+ 1171 0422 1A       		.uleb128 0x1a
+ 1172 0423 C5000000 		.4byte	.LASF41
+ 1173 0427 03       		.byte	0x3
+ 1174 0428 24       		.byte	0x24
+ 1175 0429 2D040000 		.4byte	0x42d
+ 1176 042d 19       		.uleb128 0x19
+ 1177 042e 0D040000 		.4byte	0x40d
+ 1178 0432 17       		.uleb128 0x17
+ 1179 0433 1D040000 		.4byte	0x41d
+ 1180 0437 43040000 		.4byte	0x443
+ 1181 043b 1B       		.uleb128 0x1b
+ 1182 043c 72000000 		.4byte	0x72
+ 1183 0440 FF01     		.2byte	0x1ff
+ 1184 0442 00       		.byte	0
+ 1185 0443 1A       		.uleb128 0x1a
+ 1186 0444 6D000000 		.4byte	.LASF42
+ 1187 0448 03       		.byte	0x3
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 33
+
+
+ 1188 0449 25       		.byte	0x25
+ 1189 044a 4E040000 		.4byte	0x44e
+ 1190 044e 19       		.uleb128 0x19
+ 1191 044f 32040000 		.4byte	0x432
+ 1192 0453 1A       		.uleb128 0x1a
+ 1193 0454 7D000000 		.4byte	.LASF43
+ 1194 0458 03       		.byte	0x3
+ 1195 0459 26       		.byte	0x26
+ 1196 045a 5E040000 		.4byte	0x45e
+ 1197 045e 19       		.uleb128 0x19
+ 1198 045f 32040000 		.4byte	0x432
+ 1199 0463 1A       		.uleb128 0x1a
+ 1200 0464 C6020000 		.4byte	.LASF44
+ 1201 0468 03       		.byte	0x3
+ 1202 0469 27       		.byte	0x27
+ 1203 046a 6E040000 		.4byte	0x46e
+ 1204 046e 19       		.uleb128 0x19
+ 1205 046f 0D040000 		.4byte	0x40d
+ 1206 0473 17       		.uleb128 0x17
+ 1207 0474 1D040000 		.4byte	0x41d
+ 1208 0478 83040000 		.4byte	0x483
+ 1209 047c 18       		.uleb128 0x18
+ 1210 047d 72000000 		.4byte	0x72
+ 1211 0481 3F       		.byte	0x3f
+ 1212 0482 00       		.byte	0
+ 1213 0483 1A       		.uleb128 0x1a
+ 1214 0484 93020000 		.4byte	.LASF45
+ 1215 0488 03       		.byte	0x3
+ 1216 0489 28       		.byte	0x28
+ 1217 048a 8E040000 		.4byte	0x48e
+ 1218 048e 19       		.uleb128 0x19
+ 1219 048f 73040000 		.4byte	0x473
+ 1220 0493 1C       		.uleb128 0x1c
+ 1221 0494 0F030000 		.4byte	.LASF51
+ 1222 0498 0F030000 		.4byte	.LASF51
+ 1223 049c 1D       		.uleb128 0x1d
+ 1224 049d 4B030000 		.4byte	.LASF46
+ 1225 04a1 4B030000 		.4byte	.LASF46
+ 1226 04a5 03       		.byte	0x3
+ 1227 04a6 1C       		.byte	0x1c
+ 1228 04a7 1D       		.uleb128 0x1d
+ 1229 04a8 15000000 		.4byte	.LASF47
+ 1230 04ac 15000000 		.4byte	.LASF47
+ 1231 04b0 03       		.byte	0x3
+ 1232 04b1 1D       		.byte	0x1d
+ 1233 04b2 00       		.byte	0
+ 1234              		.section	.debug_abbrev,"",%progbits
+ 1235              	.Ldebug_abbrev0:
+ 1236 0000 01       		.uleb128 0x1
+ 1237 0001 11       		.uleb128 0x11
+ 1238 0002 01       		.byte	0x1
+ 1239 0003 25       		.uleb128 0x25
+ 1240 0004 0E       		.uleb128 0xe
+ 1241 0005 13       		.uleb128 0x13
+ 1242 0006 0B       		.uleb128 0xb
+ 1243 0007 03       		.uleb128 0x3
+ 1244 0008 0E       		.uleb128 0xe
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 34
+
+
+ 1245 0009 1B       		.uleb128 0x1b
+ 1246 000a 0E       		.uleb128 0xe
+ 1247 000b 55       		.uleb128 0x55
+ 1248 000c 17       		.uleb128 0x17
+ 1249 000d 11       		.uleb128 0x11
+ 1250 000e 01       		.uleb128 0x1
+ 1251 000f 10       		.uleb128 0x10
+ 1252 0010 17       		.uleb128 0x17
+ 1253 0011 00       		.byte	0
+ 1254 0012 00       		.byte	0
+ 1255 0013 02       		.uleb128 0x2
+ 1256 0014 24       		.uleb128 0x24
+ 1257 0015 00       		.byte	0
+ 1258 0016 0B       		.uleb128 0xb
+ 1259 0017 0B       		.uleb128 0xb
+ 1260 0018 3E       		.uleb128 0x3e
+ 1261 0019 0B       		.uleb128 0xb
+ 1262 001a 03       		.uleb128 0x3
+ 1263 001b 08       		.uleb128 0x8
+ 1264 001c 00       		.byte	0
+ 1265 001d 00       		.byte	0
+ 1266 001e 03       		.uleb128 0x3
+ 1267 001f 24       		.uleb128 0x24
+ 1268 0020 00       		.byte	0
+ 1269 0021 0B       		.uleb128 0xb
+ 1270 0022 0B       		.uleb128 0xb
+ 1271 0023 3E       		.uleb128 0x3e
+ 1272 0024 0B       		.uleb128 0xb
+ 1273 0025 03       		.uleb128 0x3
+ 1274 0026 0E       		.uleb128 0xe
+ 1275 0027 00       		.byte	0
+ 1276 0028 00       		.byte	0
+ 1277 0029 04       		.uleb128 0x4
+ 1278 002a 16       		.uleb128 0x16
+ 1279 002b 00       		.byte	0
+ 1280 002c 03       		.uleb128 0x3
+ 1281 002d 0E       		.uleb128 0xe
+ 1282 002e 3A       		.uleb128 0x3a
+ 1283 002f 0B       		.uleb128 0xb
+ 1284 0030 3B       		.uleb128 0x3b
+ 1285 0031 05       		.uleb128 0x5
+ 1286 0032 49       		.uleb128 0x49
+ 1287 0033 13       		.uleb128 0x13
+ 1288 0034 00       		.byte	0
+ 1289 0035 00       		.byte	0
+ 1290 0036 05       		.uleb128 0x5
+ 1291 0037 35       		.uleb128 0x35
+ 1292 0038 00       		.byte	0
+ 1293 0039 49       		.uleb128 0x49
+ 1294 003a 13       		.uleb128 0x13
+ 1295 003b 00       		.byte	0
+ 1296 003c 00       		.byte	0
+ 1297 003d 06       		.uleb128 0x6
+ 1298 003e 2E       		.uleb128 0x2e
+ 1299 003f 01       		.byte	0x1
+ 1300 0040 3F       		.uleb128 0x3f
+ 1301 0041 19       		.uleb128 0x19
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 35
+
+
+ 1302 0042 03       		.uleb128 0x3
+ 1303 0043 0E       		.uleb128 0xe
+ 1304 0044 3A       		.uleb128 0x3a
+ 1305 0045 0B       		.uleb128 0xb
+ 1306 0046 3B       		.uleb128 0x3b
+ 1307 0047 0B       		.uleb128 0xb
+ 1308 0048 27       		.uleb128 0x27
+ 1309 0049 19       		.uleb128 0x19
+ 1310 004a 11       		.uleb128 0x11
+ 1311 004b 01       		.uleb128 0x1
+ 1312 004c 12       		.uleb128 0x12
+ 1313 004d 06       		.uleb128 0x6
+ 1314 004e 40       		.uleb128 0x40
+ 1315 004f 18       		.uleb128 0x18
+ 1316 0050 9742     		.uleb128 0x2117
+ 1317 0052 19       		.uleb128 0x19
+ 1318 0053 01       		.uleb128 0x1
+ 1319 0054 13       		.uleb128 0x13
+ 1320 0055 00       		.byte	0
+ 1321 0056 00       		.byte	0
+ 1322 0057 07       		.uleb128 0x7
+ 1323 0058 898201   		.uleb128 0x4109
+ 1324 005b 01       		.byte	0x1
+ 1325 005c 11       		.uleb128 0x11
+ 1326 005d 01       		.uleb128 0x1
+ 1327 005e 31       		.uleb128 0x31
+ 1328 005f 13       		.uleb128 0x13
+ 1329 0060 01       		.uleb128 0x1
+ 1330 0061 13       		.uleb128 0x13
+ 1331 0062 00       		.byte	0
+ 1332 0063 00       		.byte	0
+ 1333 0064 08       		.uleb128 0x8
+ 1334 0065 8A8201   		.uleb128 0x410a
+ 1335 0068 00       		.byte	0
+ 1336 0069 02       		.uleb128 0x2
+ 1337 006a 18       		.uleb128 0x18
+ 1338 006b 9142     		.uleb128 0x2111
+ 1339 006d 18       		.uleb128 0x18
+ 1340 006e 00       		.byte	0
+ 1341 006f 00       		.byte	0
+ 1342 0070 09       		.uleb128 0x9
+ 1343 0071 898201   		.uleb128 0x4109
+ 1344 0074 01       		.byte	0x1
+ 1345 0075 11       		.uleb128 0x11
+ 1346 0076 01       		.uleb128 0x1
+ 1347 0077 31       		.uleb128 0x31
+ 1348 0078 13       		.uleb128 0x13
+ 1349 0079 00       		.byte	0
+ 1350 007a 00       		.byte	0
+ 1351 007b 0A       		.uleb128 0xa
+ 1352 007c 2E       		.uleb128 0x2e
+ 1353 007d 00       		.byte	0
+ 1354 007e 3F       		.uleb128 0x3f
+ 1355 007f 19       		.uleb128 0x19
+ 1356 0080 03       		.uleb128 0x3
+ 1357 0081 0E       		.uleb128 0xe
+ 1358 0082 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 36
+
+
+ 1359 0083 0B       		.uleb128 0xb
+ 1360 0084 3B       		.uleb128 0x3b
+ 1361 0085 0B       		.uleb128 0xb
+ 1362 0086 27       		.uleb128 0x27
+ 1363 0087 19       		.uleb128 0x19
+ 1364 0088 11       		.uleb128 0x11
+ 1365 0089 01       		.uleb128 0x1
+ 1366 008a 12       		.uleb128 0x12
+ 1367 008b 06       		.uleb128 0x6
+ 1368 008c 40       		.uleb128 0x40
+ 1369 008d 18       		.uleb128 0x18
+ 1370 008e 9742     		.uleb128 0x2117
+ 1371 0090 19       		.uleb128 0x19
+ 1372 0091 00       		.byte	0
+ 1373 0092 00       		.byte	0
+ 1374 0093 0B       		.uleb128 0xb
+ 1375 0094 898201   		.uleb128 0x4109
+ 1376 0097 00       		.byte	0
+ 1377 0098 11       		.uleb128 0x11
+ 1378 0099 01       		.uleb128 0x1
+ 1379 009a 31       		.uleb128 0x31
+ 1380 009b 13       		.uleb128 0x13
+ 1381 009c 00       		.byte	0
+ 1382 009d 00       		.byte	0
+ 1383 009e 0C       		.uleb128 0xc
+ 1384 009f 2E       		.uleb128 0x2e
+ 1385 00a0 01       		.byte	0x1
+ 1386 00a1 3F       		.uleb128 0x3f
+ 1387 00a2 19       		.uleb128 0x19
+ 1388 00a3 03       		.uleb128 0x3
+ 1389 00a4 0E       		.uleb128 0xe
+ 1390 00a5 3A       		.uleb128 0x3a
+ 1391 00a6 0B       		.uleb128 0xb
+ 1392 00a7 3B       		.uleb128 0x3b
+ 1393 00a8 0B       		.uleb128 0xb
+ 1394 00a9 27       		.uleb128 0x27
+ 1395 00aa 19       		.uleb128 0x19
+ 1396 00ab 49       		.uleb128 0x49
+ 1397 00ac 13       		.uleb128 0x13
+ 1398 00ad 11       		.uleb128 0x11
+ 1399 00ae 01       		.uleb128 0x1
+ 1400 00af 12       		.uleb128 0x12
+ 1401 00b0 06       		.uleb128 0x6
+ 1402 00b1 40       		.uleb128 0x40
+ 1403 00b2 18       		.uleb128 0x18
+ 1404 00b3 9742     		.uleb128 0x2117
+ 1405 00b5 19       		.uleb128 0x19
+ 1406 00b6 01       		.uleb128 0x1
+ 1407 00b7 13       		.uleb128 0x13
+ 1408 00b8 00       		.byte	0
+ 1409 00b9 00       		.byte	0
+ 1410 00ba 0D       		.uleb128 0xd
+ 1411 00bb 05       		.uleb128 0x5
+ 1412 00bc 00       		.byte	0
+ 1413 00bd 03       		.uleb128 0x3
+ 1414 00be 0E       		.uleb128 0xe
+ 1415 00bf 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 37
+
+
+ 1416 00c0 0B       		.uleb128 0xb
+ 1417 00c1 3B       		.uleb128 0x3b
+ 1418 00c2 0B       		.uleb128 0xb
+ 1419 00c3 49       		.uleb128 0x49
+ 1420 00c4 13       		.uleb128 0x13
+ 1421 00c5 02       		.uleb128 0x2
+ 1422 00c6 17       		.uleb128 0x17
+ 1423 00c7 00       		.byte	0
+ 1424 00c8 00       		.byte	0
+ 1425 00c9 0E       		.uleb128 0xe
+ 1426 00ca 34       		.uleb128 0x34
+ 1427 00cb 00       		.byte	0
+ 1428 00cc 03       		.uleb128 0x3
+ 1429 00cd 0E       		.uleb128 0xe
+ 1430 00ce 3A       		.uleb128 0x3a
+ 1431 00cf 0B       		.uleb128 0xb
+ 1432 00d0 3B       		.uleb128 0x3b
+ 1433 00d1 0B       		.uleb128 0xb
+ 1434 00d2 49       		.uleb128 0x49
+ 1435 00d3 13       		.uleb128 0x13
+ 1436 00d4 02       		.uleb128 0x2
+ 1437 00d5 17       		.uleb128 0x17
+ 1438 00d6 00       		.byte	0
+ 1439 00d7 00       		.byte	0
+ 1440 00d8 0F       		.uleb128 0xf
+ 1441 00d9 2E       		.uleb128 0x2e
+ 1442 00da 01       		.byte	0x1
+ 1443 00db 3F       		.uleb128 0x3f
+ 1444 00dc 19       		.uleb128 0x19
+ 1445 00dd 03       		.uleb128 0x3
+ 1446 00de 0E       		.uleb128 0xe
+ 1447 00df 3A       		.uleb128 0x3a
+ 1448 00e0 0B       		.uleb128 0xb
+ 1449 00e1 3B       		.uleb128 0x3b
+ 1450 00e2 05       		.uleb128 0x5
+ 1451 00e3 27       		.uleb128 0x27
+ 1452 00e4 19       		.uleb128 0x19
+ 1453 00e5 49       		.uleb128 0x49
+ 1454 00e6 13       		.uleb128 0x13
+ 1455 00e7 11       		.uleb128 0x11
+ 1456 00e8 01       		.uleb128 0x1
+ 1457 00e9 12       		.uleb128 0x12
+ 1458 00ea 06       		.uleb128 0x6
+ 1459 00eb 40       		.uleb128 0x40
+ 1460 00ec 18       		.uleb128 0x18
+ 1461 00ed 9742     		.uleb128 0x2117
+ 1462 00ef 19       		.uleb128 0x19
+ 1463 00f0 01       		.uleb128 0x1
+ 1464 00f1 13       		.uleb128 0x13
+ 1465 00f2 00       		.byte	0
+ 1466 00f3 00       		.byte	0
+ 1467 00f4 10       		.uleb128 0x10
+ 1468 00f5 05       		.uleb128 0x5
+ 1469 00f6 00       		.byte	0
+ 1470 00f7 03       		.uleb128 0x3
+ 1471 00f8 0E       		.uleb128 0xe
+ 1472 00f9 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 38
+
+
+ 1473 00fa 0B       		.uleb128 0xb
+ 1474 00fb 3B       		.uleb128 0x3b
+ 1475 00fc 05       		.uleb128 0x5
+ 1476 00fd 49       		.uleb128 0x49
+ 1477 00fe 13       		.uleb128 0x13
+ 1478 00ff 02       		.uleb128 0x2
+ 1479 0100 17       		.uleb128 0x17
+ 1480 0101 00       		.byte	0
+ 1481 0102 00       		.byte	0
+ 1482 0103 11       		.uleb128 0x11
+ 1483 0104 34       		.uleb128 0x34
+ 1484 0105 00       		.byte	0
+ 1485 0106 03       		.uleb128 0x3
+ 1486 0107 08       		.uleb128 0x8
+ 1487 0108 3A       		.uleb128 0x3a
+ 1488 0109 0B       		.uleb128 0xb
+ 1489 010a 3B       		.uleb128 0x3b
+ 1490 010b 05       		.uleb128 0x5
+ 1491 010c 49       		.uleb128 0x49
+ 1492 010d 13       		.uleb128 0x13
+ 1493 010e 02       		.uleb128 0x2
+ 1494 010f 17       		.uleb128 0x17
+ 1495 0110 00       		.byte	0
+ 1496 0111 00       		.byte	0
+ 1497 0112 12       		.uleb128 0x12
+ 1498 0113 2E       		.uleb128 0x2e
+ 1499 0114 01       		.byte	0x1
+ 1500 0115 3F       		.uleb128 0x3f
+ 1501 0116 19       		.uleb128 0x19
+ 1502 0117 03       		.uleb128 0x3
+ 1503 0118 0E       		.uleb128 0xe
+ 1504 0119 3A       		.uleb128 0x3a
+ 1505 011a 0B       		.uleb128 0xb
+ 1506 011b 3B       		.uleb128 0x3b
+ 1507 011c 05       		.uleb128 0x5
+ 1508 011d 27       		.uleb128 0x27
+ 1509 011e 19       		.uleb128 0x19
+ 1510 011f 11       		.uleb128 0x11
+ 1511 0120 01       		.uleb128 0x1
+ 1512 0121 12       		.uleb128 0x12
+ 1513 0122 06       		.uleb128 0x6
+ 1514 0123 40       		.uleb128 0x40
+ 1515 0124 18       		.uleb128 0x18
+ 1516 0125 9742     		.uleb128 0x2117
+ 1517 0127 19       		.uleb128 0x19
+ 1518 0128 01       		.uleb128 0x1
+ 1519 0129 13       		.uleb128 0x13
+ 1520 012a 00       		.byte	0
+ 1521 012b 00       		.byte	0
+ 1522 012c 13       		.uleb128 0x13
+ 1523 012d 05       		.uleb128 0x5
+ 1524 012e 00       		.byte	0
+ 1525 012f 03       		.uleb128 0x3
+ 1526 0130 0E       		.uleb128 0xe
+ 1527 0131 3A       		.uleb128 0x3a
+ 1528 0132 0B       		.uleb128 0xb
+ 1529 0133 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 39
+
+
+ 1530 0134 05       		.uleb128 0x5
+ 1531 0135 49       		.uleb128 0x49
+ 1532 0136 13       		.uleb128 0x13
+ 1533 0137 02       		.uleb128 0x2
+ 1534 0138 18       		.uleb128 0x18
+ 1535 0139 00       		.byte	0
+ 1536 013a 00       		.byte	0
+ 1537 013b 14       		.uleb128 0x14
+ 1538 013c 05       		.uleb128 0x5
+ 1539 013d 00       		.byte	0
+ 1540 013e 03       		.uleb128 0x3
+ 1541 013f 08       		.uleb128 0x8
+ 1542 0140 3A       		.uleb128 0x3a
+ 1543 0141 0B       		.uleb128 0xb
+ 1544 0142 3B       		.uleb128 0x3b
+ 1545 0143 05       		.uleb128 0x5
+ 1546 0144 49       		.uleb128 0x49
+ 1547 0145 13       		.uleb128 0x13
+ 1548 0146 02       		.uleb128 0x2
+ 1549 0147 17       		.uleb128 0x17
+ 1550 0148 00       		.byte	0
+ 1551 0149 00       		.byte	0
+ 1552 014a 15       		.uleb128 0x15
+ 1553 014b 34       		.uleb128 0x34
+ 1554 014c 00       		.byte	0
+ 1555 014d 03       		.uleb128 0x3
+ 1556 014e 0E       		.uleb128 0xe
+ 1557 014f 3A       		.uleb128 0x3a
+ 1558 0150 0B       		.uleb128 0xb
+ 1559 0151 3B       		.uleb128 0x3b
+ 1560 0152 05       		.uleb128 0x5
+ 1561 0153 49       		.uleb128 0x49
+ 1562 0154 13       		.uleb128 0x13
+ 1563 0155 02       		.uleb128 0x2
+ 1564 0156 18       		.uleb128 0x18
+ 1565 0157 00       		.byte	0
+ 1566 0158 00       		.byte	0
+ 1567 0159 16       		.uleb128 0x16
+ 1568 015a 34       		.uleb128 0x34
+ 1569 015b 00       		.byte	0
+ 1570 015c 03       		.uleb128 0x3
+ 1571 015d 0E       		.uleb128 0xe
+ 1572 015e 3A       		.uleb128 0x3a
+ 1573 015f 0B       		.uleb128 0xb
+ 1574 0160 3B       		.uleb128 0x3b
+ 1575 0161 0B       		.uleb128 0xb
+ 1576 0162 49       		.uleb128 0x49
+ 1577 0163 13       		.uleb128 0x13
+ 1578 0164 3F       		.uleb128 0x3f
+ 1579 0165 19       		.uleb128 0x19
+ 1580 0166 02       		.uleb128 0x2
+ 1581 0167 18       		.uleb128 0x18
+ 1582 0168 00       		.byte	0
+ 1583 0169 00       		.byte	0
+ 1584 016a 17       		.uleb128 0x17
+ 1585 016b 01       		.uleb128 0x1
+ 1586 016c 01       		.byte	0x1
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 40
+
+
+ 1587 016d 49       		.uleb128 0x49
+ 1588 016e 13       		.uleb128 0x13
+ 1589 016f 01       		.uleb128 0x1
+ 1590 0170 13       		.uleb128 0x13
+ 1591 0171 00       		.byte	0
+ 1592 0172 00       		.byte	0
+ 1593 0173 18       		.uleb128 0x18
+ 1594 0174 21       		.uleb128 0x21
+ 1595 0175 00       		.byte	0
+ 1596 0176 49       		.uleb128 0x49
+ 1597 0177 13       		.uleb128 0x13
+ 1598 0178 2F       		.uleb128 0x2f
+ 1599 0179 0B       		.uleb128 0xb
+ 1600 017a 00       		.byte	0
+ 1601 017b 00       		.byte	0
+ 1602 017c 19       		.uleb128 0x19
+ 1603 017d 26       		.uleb128 0x26
+ 1604 017e 00       		.byte	0
+ 1605 017f 49       		.uleb128 0x49
+ 1606 0180 13       		.uleb128 0x13
+ 1607 0181 00       		.byte	0
+ 1608 0182 00       		.byte	0
+ 1609 0183 1A       		.uleb128 0x1a
+ 1610 0184 34       		.uleb128 0x34
+ 1611 0185 00       		.byte	0
+ 1612 0186 03       		.uleb128 0x3
+ 1613 0187 0E       		.uleb128 0xe
+ 1614 0188 3A       		.uleb128 0x3a
+ 1615 0189 0B       		.uleb128 0xb
+ 1616 018a 3B       		.uleb128 0x3b
+ 1617 018b 0B       		.uleb128 0xb
+ 1618 018c 49       		.uleb128 0x49
+ 1619 018d 13       		.uleb128 0x13
+ 1620 018e 3F       		.uleb128 0x3f
+ 1621 018f 19       		.uleb128 0x19
+ 1622 0190 3C       		.uleb128 0x3c
+ 1623 0191 19       		.uleb128 0x19
+ 1624 0192 00       		.byte	0
+ 1625 0193 00       		.byte	0
+ 1626 0194 1B       		.uleb128 0x1b
+ 1627 0195 21       		.uleb128 0x21
+ 1628 0196 00       		.byte	0
+ 1629 0197 49       		.uleb128 0x49
+ 1630 0198 13       		.uleb128 0x13
+ 1631 0199 2F       		.uleb128 0x2f
+ 1632 019a 05       		.uleb128 0x5
+ 1633 019b 00       		.byte	0
+ 1634 019c 00       		.byte	0
+ 1635 019d 1C       		.uleb128 0x1c
+ 1636 019e 2E       		.uleb128 0x2e
+ 1637 019f 00       		.byte	0
+ 1638 01a0 3F       		.uleb128 0x3f
+ 1639 01a1 19       		.uleb128 0x19
+ 1640 01a2 3C       		.uleb128 0x3c
+ 1641 01a3 19       		.uleb128 0x19
+ 1642 01a4 6E       		.uleb128 0x6e
+ 1643 01a5 0E       		.uleb128 0xe
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 41
+
+
+ 1644 01a6 03       		.uleb128 0x3
+ 1645 01a7 0E       		.uleb128 0xe
+ 1646 01a8 00       		.byte	0
+ 1647 01a9 00       		.byte	0
+ 1648 01aa 1D       		.uleb128 0x1d
+ 1649 01ab 2E       		.uleb128 0x2e
+ 1650 01ac 00       		.byte	0
+ 1651 01ad 3F       		.uleb128 0x3f
+ 1652 01ae 19       		.uleb128 0x19
+ 1653 01af 3C       		.uleb128 0x3c
+ 1654 01b0 19       		.uleb128 0x19
+ 1655 01b1 6E       		.uleb128 0x6e
+ 1656 01b2 0E       		.uleb128 0xe
+ 1657 01b3 03       		.uleb128 0x3
+ 1658 01b4 0E       		.uleb128 0xe
+ 1659 01b5 3A       		.uleb128 0x3a
+ 1660 01b6 0B       		.uleb128 0xb
+ 1661 01b7 3B       		.uleb128 0x3b
+ 1662 01b8 0B       		.uleb128 0xb
+ 1663 01b9 00       		.byte	0
+ 1664 01ba 00       		.byte	0
+ 1665 01bb 00       		.byte	0
+ 1666              		.section	.debug_loc,"",%progbits
+ 1667              	.Ldebug_loc0:
+ 1668              	.LLST0:
+ 1669 0000 00000000 		.4byte	.LVL9
+ 1670 0004 06000000 		.4byte	.LVL10
+ 1671 0008 0100     		.2byte	0x1
+ 1672 000a 50       		.byte	0x50
+ 1673 000b 06000000 		.4byte	.LVL10
+ 1674 000f 0A000000 		.4byte	.LVL12
+ 1675 0013 0400     		.2byte	0x4
+ 1676 0015 F3       		.byte	0xf3
+ 1677 0016 01       		.uleb128 0x1
+ 1678 0017 50       		.byte	0x50
+ 1679 0018 9F       		.byte	0x9f
+ 1680 0019 0A000000 		.4byte	.LVL12
+ 1681 001d 12000000 		.4byte	.LVL13
+ 1682 0021 0100     		.2byte	0x1
+ 1683 0023 50       		.byte	0x50
+ 1684 0024 12000000 		.4byte	.LVL13
+ 1685 0028 16000000 		.4byte	.LVL15
+ 1686 002c 0400     		.2byte	0x4
+ 1687 002e F3       		.byte	0xf3
+ 1688 002f 01       		.uleb128 0x1
+ 1689 0030 50       		.byte	0x50
+ 1690 0031 9F       		.byte	0x9f
+ 1691 0032 16000000 		.4byte	.LVL15
+ 1692 0036 18000000 		.4byte	.LVL16
+ 1693 003a 0100     		.2byte	0x1
+ 1694 003c 50       		.byte	0x50
+ 1695 003d 18000000 		.4byte	.LVL16
+ 1696 0041 24000000 		.4byte	.LFE4
+ 1697 0045 0400     		.2byte	0x4
+ 1698 0047 F3       		.byte	0xf3
+ 1699 0048 01       		.uleb128 0x1
+ 1700 0049 50       		.byte	0x50
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 42
+
+
+ 1701 004a 9F       		.byte	0x9f
+ 1702 004b 00000000 		.4byte	0
+ 1703 004f 00000000 		.4byte	0
+ 1704              	.LLST1:
+ 1705 0053 08000000 		.4byte	.LVL11
+ 1706 0057 0A000000 		.4byte	.LVL12
+ 1707 005b 0100     		.2byte	0x1
+ 1708 005d 50       		.byte	0x50
+ 1709 005e 14000000 		.4byte	.LVL14
+ 1710 0062 16000000 		.4byte	.LVL15
+ 1711 0066 0100     		.2byte	0x1
+ 1712 0068 50       		.byte	0x50
+ 1713 0069 18000000 		.4byte	.LVL16
+ 1714 006d 24000000 		.4byte	.LFE4
+ 1715 0071 0100     		.2byte	0x1
+ 1716 0073 50       		.byte	0x50
+ 1717 0074 00000000 		.4byte	0
+ 1718 0078 00000000 		.4byte	0
+ 1719              	.LLST2:
+ 1720 007c 00000000 		.4byte	.LVL17
+ 1721 0080 06000000 		.4byte	.LVL18
+ 1722 0084 0100     		.2byte	0x1
+ 1723 0086 50       		.byte	0x50
+ 1724 0087 06000000 		.4byte	.LVL18
+ 1725 008b 08000000 		.4byte	.LVL19
+ 1726 008f 0400     		.2byte	0x4
+ 1727 0091 F3       		.byte	0xf3
+ 1728 0092 01       		.uleb128 0x1
+ 1729 0093 50       		.byte	0x50
+ 1730 0094 9F       		.byte	0x9f
+ 1731 0095 08000000 		.4byte	.LVL19
+ 1732 0099 10000000 		.4byte	.LVL20
+ 1733 009d 0100     		.2byte	0x1
+ 1734 009f 50       		.byte	0x50
+ 1735 00a0 10000000 		.4byte	.LVL20
+ 1736 00a4 12000000 		.4byte	.LVL21
+ 1737 00a8 0400     		.2byte	0x4
+ 1738 00aa F3       		.byte	0xf3
+ 1739 00ab 01       		.uleb128 0x1
+ 1740 00ac 50       		.byte	0x50
+ 1741 00ad 9F       		.byte	0x9f
+ 1742 00ae 12000000 		.4byte	.LVL21
+ 1743 00b2 14000000 		.4byte	.LVL22
+ 1744 00b6 0100     		.2byte	0x1
+ 1745 00b8 50       		.byte	0x50
+ 1746 00b9 14000000 		.4byte	.LVL22
+ 1747 00bd 20000000 		.4byte	.LFE5
+ 1748 00c1 0400     		.2byte	0x4
+ 1749 00c3 F3       		.byte	0xf3
+ 1750 00c4 01       		.uleb128 0x1
+ 1751 00c5 50       		.byte	0x50
+ 1752 00c6 9F       		.byte	0x9f
+ 1753 00c7 00000000 		.4byte	0
+ 1754 00cb 00000000 		.4byte	0
+ 1755              	.LLST3:
+ 1756 00cf 06000000 		.4byte	.LVL18
+ 1757 00d3 08000000 		.4byte	.LVL19
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 43
+
+
+ 1758 00d7 0100     		.2byte	0x1
+ 1759 00d9 50       		.byte	0x50
+ 1760 00da 10000000 		.4byte	.LVL20
+ 1761 00de 12000000 		.4byte	.LVL21
+ 1762 00e2 0100     		.2byte	0x1
+ 1763 00e4 50       		.byte	0x50
+ 1764 00e5 14000000 		.4byte	.LVL22
+ 1765 00e9 20000000 		.4byte	.LFE5
+ 1766 00ed 0100     		.2byte	0x1
+ 1767 00ef 50       		.byte	0x50
+ 1768 00f0 00000000 		.4byte	0
+ 1769 00f4 00000000 		.4byte	0
+ 1770              	.LLST4:
+ 1771 00f8 00000000 		.4byte	.LVL23
+ 1772 00fc 06000000 		.4byte	.LVL24
+ 1773 0100 0100     		.2byte	0x1
+ 1774 0102 50       		.byte	0x50
+ 1775 0103 06000000 		.4byte	.LVL24
+ 1776 0107 08000000 		.4byte	.LVL25
+ 1777 010b 0400     		.2byte	0x4
+ 1778 010d F3       		.byte	0xf3
+ 1779 010e 01       		.uleb128 0x1
+ 1780 010f 50       		.byte	0x50
+ 1781 0110 9F       		.byte	0x9f
+ 1782 0111 08000000 		.4byte	.LVL25
+ 1783 0115 10000000 		.4byte	.LVL26
+ 1784 0119 0100     		.2byte	0x1
+ 1785 011b 50       		.byte	0x50
+ 1786 011c 10000000 		.4byte	.LVL26
+ 1787 0120 12000000 		.4byte	.LVL27
+ 1788 0124 0400     		.2byte	0x4
+ 1789 0126 F3       		.byte	0xf3
+ 1790 0127 01       		.uleb128 0x1
+ 1791 0128 50       		.byte	0x50
+ 1792 0129 9F       		.byte	0x9f
+ 1793 012a 12000000 		.4byte	.LVL27
+ 1794 012e 14000000 		.4byte	.LVL28
+ 1795 0132 0100     		.2byte	0x1
+ 1796 0134 50       		.byte	0x50
+ 1797 0135 14000000 		.4byte	.LVL28
+ 1798 0139 20000000 		.4byte	.LFE6
+ 1799 013d 0400     		.2byte	0x4
+ 1800 013f F3       		.byte	0xf3
+ 1801 0140 01       		.uleb128 0x1
+ 1802 0141 50       		.byte	0x50
+ 1803 0142 9F       		.byte	0x9f
+ 1804 0143 00000000 		.4byte	0
+ 1805 0147 00000000 		.4byte	0
+ 1806              	.LLST5:
+ 1807 014b 06000000 		.4byte	.LVL24
+ 1808 014f 08000000 		.4byte	.LVL25
+ 1809 0153 0100     		.2byte	0x1
+ 1810 0155 50       		.byte	0x50
+ 1811 0156 10000000 		.4byte	.LVL26
+ 1812 015a 12000000 		.4byte	.LVL27
+ 1813 015e 0100     		.2byte	0x1
+ 1814 0160 50       		.byte	0x50
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 44
+
+
+ 1815 0161 14000000 		.4byte	.LVL28
+ 1816 0165 20000000 		.4byte	.LFE6
+ 1817 0169 0100     		.2byte	0x1
+ 1818 016b 50       		.byte	0x50
+ 1819 016c 00000000 		.4byte	0
+ 1820 0170 00000000 		.4byte	0
+ 1821              	.LLST6:
+ 1822 0174 00000000 		.4byte	.LVL32
+ 1823 0178 2E000000 		.4byte	.LVL35
+ 1824 017c 0100     		.2byte	0x1
+ 1825 017e 50       		.byte	0x50
+ 1826 017f 2E000000 		.4byte	.LVL35
+ 1827 0183 48000000 		.4byte	.LFE10
+ 1828 0187 0400     		.2byte	0x4
+ 1829 0189 F3       		.byte	0xf3
+ 1830 018a 01       		.uleb128 0x1
+ 1831 018b 50       		.byte	0x50
+ 1832 018c 9F       		.byte	0x9f
+ 1833 018d 00000000 		.4byte	0
+ 1834 0191 00000000 		.4byte	0
+ 1835              	.LLST7:
+ 1836 0195 00000000 		.4byte	.LVL32
+ 1837 0199 16000000 		.4byte	.LVL33
+ 1838 019d 0100     		.2byte	0x1
+ 1839 019f 51       		.byte	0x51
+ 1840 01a0 16000000 		.4byte	.LVL33
+ 1841 01a4 1E000000 		.4byte	.LVL34
+ 1842 01a8 0400     		.2byte	0x4
+ 1843 01aa F3       		.byte	0xf3
+ 1844 01ab 01       		.uleb128 0x1
+ 1845 01ac 51       		.byte	0x51
+ 1846 01ad 9F       		.byte	0x9f
+ 1847 01ae 1E000000 		.4byte	.LVL34
+ 1848 01b2 3A000000 		.4byte	.LVL36
+ 1849 01b6 0100     		.2byte	0x1
+ 1850 01b8 51       		.byte	0x51
+ 1851 01b9 3A000000 		.4byte	.LVL36
+ 1852 01bd 48000000 		.4byte	.LFE10
+ 1853 01c1 0400     		.2byte	0x4
+ 1854 01c3 F3       		.byte	0xf3
+ 1855 01c4 01       		.uleb128 0x1
+ 1856 01c5 51       		.byte	0x51
+ 1857 01c6 9F       		.byte	0x9f
+ 1858 01c7 00000000 		.4byte	0
+ 1859 01cb 00000000 		.4byte	0
+ 1860              	.LLST8:
+ 1861 01cf 00000000 		.4byte	.LVL37
+ 1862 01d3 1A000000 		.4byte	.LVL40
+ 1863 01d7 0100     		.2byte	0x1
+ 1864 01d9 50       		.byte	0x50
+ 1865 01da 1A000000 		.4byte	.LVL40
+ 1866 01de 24000000 		.4byte	.LFE11
+ 1867 01e2 0400     		.2byte	0x4
+ 1868 01e4 F3       		.byte	0xf3
+ 1869 01e5 01       		.uleb128 0x1
+ 1870 01e6 50       		.byte	0x50
+ 1871 01e7 9F       		.byte	0x9f
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 45
+
+
+ 1872 01e8 00000000 		.4byte	0
+ 1873 01ec 00000000 		.4byte	0
+ 1874              	.LLST9:
+ 1875 01f0 00000000 		.4byte	.LVL37
+ 1876 01f4 06000000 		.4byte	.LVL38
+ 1877 01f8 0100     		.2byte	0x1
+ 1878 01fa 51       		.byte	0x51
+ 1879 01fb 06000000 		.4byte	.LVL38
+ 1880 01ff 24000000 		.4byte	.LFE11
+ 1881 0203 0400     		.2byte	0x4
+ 1882 0205 F3       		.byte	0xf3
+ 1883 0206 01       		.uleb128 0x1
+ 1884 0207 51       		.byte	0x51
+ 1885 0208 9F       		.byte	0x9f
+ 1886 0209 00000000 		.4byte	0
+ 1887 020d 00000000 		.4byte	0
+ 1888              	.LLST10:
+ 1889 0211 00000000 		.4byte	.LVL41
+ 1890 0215 0A000000 		.4byte	.LVL42
+ 1891 0219 0100     		.2byte	0x1
+ 1892 021b 50       		.byte	0x50
+ 1893 021c 0A000000 		.4byte	.LVL42
+ 1894 0220 0E000000 		.4byte	.LVL43
+ 1895 0224 0400     		.2byte	0x4
+ 1896 0226 F3       		.byte	0xf3
+ 1897 0227 01       		.uleb128 0x1
+ 1898 0228 50       		.byte	0x50
+ 1899 0229 9F       		.byte	0x9f
+ 1900 022a 0E000000 		.4byte	.LVL43
+ 1901 022e 18000000 		.4byte	.LVL44
+ 1902 0232 0100     		.2byte	0x1
+ 1903 0234 50       		.byte	0x50
+ 1904 0235 18000000 		.4byte	.LVL44
+ 1905 0239 20000000 		.4byte	.LFE12
+ 1906 023d 0400     		.2byte	0x4
+ 1907 023f F3       		.byte	0xf3
+ 1908 0240 01       		.uleb128 0x1
+ 1909 0241 50       		.byte	0x50
+ 1910 0242 9F       		.byte	0x9f
+ 1911 0243 00000000 		.4byte	0
+ 1912 0247 00000000 		.4byte	0
+ 1913              		.section	.debug_aranges,"",%progbits
+ 1914 0000 7C000000 		.4byte	0x7c
+ 1915 0004 0200     		.2byte	0x2
+ 1916 0006 00000000 		.4byte	.Ldebug_info0
+ 1917 000a 04       		.byte	0x4
+ 1918 000b 00       		.byte	0
+ 1919 000c 0000     		.2byte	0
+ 1920 000e 0000     		.2byte	0
+ 1921 0010 00000000 		.4byte	.LFB0
+ 1922 0014 CC000000 		.4byte	.LFE0-.LFB0
+ 1923 0018 00000000 		.4byte	.LFB1
+ 1924 001c 28000000 		.4byte	.LFE1-.LFB1
+ 1925 0020 00000000 		.4byte	.LFB2
+ 1926 0024 1C000000 		.4byte	.LFE2-.LFB2
+ 1927 0028 00000000 		.4byte	.LFB3
+ 1928 002c 28000000 		.4byte	.LFE3-.LFB3
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 46
+
+
+ 1929 0030 00000000 		.4byte	.LFB4
+ 1930 0034 24000000 		.4byte	.LFE4-.LFB4
+ 1931 0038 00000000 		.4byte	.LFB5
+ 1932 003c 20000000 		.4byte	.LFE5-.LFB5
+ 1933 0040 00000000 		.4byte	.LFB6
+ 1934 0044 20000000 		.4byte	.LFE6-.LFB6
+ 1935 0048 00000000 		.4byte	.LFB7
+ 1936 004c 1C000000 		.4byte	.LFE7-.LFB7
+ 1937 0050 00000000 		.4byte	.LFB8
+ 1938 0054 1C000000 		.4byte	.LFE8-.LFB8
+ 1939 0058 00000000 		.4byte	.LFB9
+ 1940 005c 1C000000 		.4byte	.LFE9-.LFB9
+ 1941 0060 00000000 		.4byte	.LFB10
+ 1942 0064 48000000 		.4byte	.LFE10-.LFB10
+ 1943 0068 00000000 		.4byte	.LFB11
+ 1944 006c 24000000 		.4byte	.LFE11-.LFB11
+ 1945 0070 00000000 		.4byte	.LFB12
+ 1946 0074 20000000 		.4byte	.LFE12-.LFB12
+ 1947 0078 00000000 		.4byte	0
+ 1948 007c 00000000 		.4byte	0
+ 1949              		.section	.debug_ranges,"",%progbits
+ 1950              	.Ldebug_ranges0:
+ 1951 0000 00000000 		.4byte	.LFB0
+ 1952 0004 CC000000 		.4byte	.LFE0
+ 1953 0008 00000000 		.4byte	.LFB1
+ 1954 000c 28000000 		.4byte	.LFE1
+ 1955 0010 00000000 		.4byte	.LFB2
+ 1956 0014 1C000000 		.4byte	.LFE2
+ 1957 0018 00000000 		.4byte	.LFB3
+ 1958 001c 28000000 		.4byte	.LFE3
+ 1959 0020 00000000 		.4byte	.LFB4
+ 1960 0024 24000000 		.4byte	.LFE4
+ 1961 0028 00000000 		.4byte	.LFB5
+ 1962 002c 20000000 		.4byte	.LFE5
+ 1963 0030 00000000 		.4byte	.LFB6
+ 1964 0034 20000000 		.4byte	.LFE6
+ 1965 0038 00000000 		.4byte	.LFB7
+ 1966 003c 1C000000 		.4byte	.LFE7
+ 1967 0040 00000000 		.4byte	.LFB8
+ 1968 0044 1C000000 		.4byte	.LFE8
+ 1969 0048 00000000 		.4byte	.LFB9
+ 1970 004c 1C000000 		.4byte	.LFE9
+ 1971 0050 00000000 		.4byte	.LFB10
+ 1972 0054 48000000 		.4byte	.LFE10
+ 1973 0058 00000000 		.4byte	.LFB11
+ 1974 005c 24000000 		.4byte	.LFE11
+ 1975 0060 00000000 		.4byte	.LFB12
+ 1976 0064 20000000 		.4byte	.LFE12
+ 1977 0068 00000000 		.4byte	0
+ 1978 006c 00000000 		.4byte	0
+ 1979              		.section	.debug_line,"",%progbits
+ 1980              	.Ldebug_line0:
+ 1981 0000 72010000 		.section	.debug_str,"MS",%progbits,1
+ 1981      02005700 
+ 1981      00000201 
+ 1981      FB0E0D00 
+ 1981      01010101 
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 47
+
+
+ 1982              	.LASF18:
+ 1983 0000 72656731 		.ascii	"reg16\000"
+ 1983      3600
+ 1984              	.LASF21:
+ 1985 0006 46696C74 		.ascii	"Filter_1_Start\000"
+ 1985      65725F31 
+ 1985      5F537461 
+ 1985      727400
+ 1986              	.LASF47:
+ 1987 0015 46696C74 		.ascii	"Filter_1_SetDMAMode\000"
+ 1987      65725F31 
+ 1987      5F536574 
+ 1987      444D414D 
+ 1987      6F646500 
+ 1988              	.LASF19:
+ 1989 0029 72656733 		.ascii	"reg32\000"
+ 1989      3200
+ 1990              	.LASF26:
+ 1991 002f 6368616E 		.ascii	"channel\000"
+ 1991      6E656C00 
+ 1992              	.LASF39:
+ 1993 0037 73746174 		.ascii	"state\000"
+ 1993      6500
+ 1994              	.LASF23:
+ 1995 003d 46696C74 		.ascii	"Filter_1_Stop\000"
+ 1995      65725F31 
+ 1995      5F53746F 
+ 1995      7000
+ 1996              	.LASF27:
+ 1997 004b 76616C75 		.ascii	"value\000"
+ 1997      6500
+ 1998              	.LASF7:
+ 1999 0051 6C6F6E67 		.ascii	"long int\000"
+ 1999      20696E74 
+ 1999      00
+ 2000              	.LASF6:
+ 2001 005a 73686F72 		.ascii	"short unsigned int\000"
+ 2001      7420756E 
+ 2001      7369676E 
+ 2001      65642069 
+ 2001      6E7400
+ 2002              	.LASF42:
+ 2003 006d 46696C74 		.ascii	"Filter_1_data_a\000"
+ 2003      65725F31 
+ 2003      5F646174 
+ 2003      615F6100 
+ 2004              	.LASF43:
+ 2005 007d 46696C74 		.ascii	"Filter_1_data_b\000"
+ 2005      65725F31 
+ 2005      5F646174 
+ 2005      615F6200 
+ 2006              	.LASF33:
+ 2007 008d 46696C74 		.ascii	"Filter_1_SetCoherency\000"
+ 2007      65725F31 
+ 2007      5F536574 
+ 2007      436F6865 
+ 2007      72656E63 
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 48
+
+
+ 2008              	.LASF31:
+ 2009 00a3 46696C74 		.ascii	"Filter_1_Write16\000"
+ 2009      65725F31 
+ 2009      5F577269 
+ 2009      74653136 
+ 2009      00
+ 2010              	.LASF40:
+ 2011 00b4 46696C74 		.ascii	"Filter_1_initVar\000"
+ 2011      65725F31 
+ 2011      5F696E69 
+ 2011      74566172 
+ 2011      00
+ 2012              	.LASF41:
+ 2013 00c5 46696C74 		.ascii	"Filter_1_control\000"
+ 2013      65725F31 
+ 2013      5F636F6E 
+ 2013      74726F6C 
+ 2013      00
+ 2014              	.LASF15:
+ 2015 00d6 666C6F61 		.ascii	"float\000"
+ 2015      7400
+ 2016              	.LASF49:
+ 2017 00dc 47656E65 		.ascii	"Generated_Source\\PSoC5\\Filter_1.c\000"
+ 2017      72617465 
+ 2017      645F536F 
+ 2017      75726365 
+ 2017      5C50536F 
+ 2018              	.LASF28:
+ 2019 00fe 46696C74 		.ascii	"Filter_1_Read24\000"
+ 2019      65725F31 
+ 2019      5F526561 
+ 2019      64323400 
+ 2020              	.LASF4:
+ 2021 010e 756E7369 		.ascii	"unsigned char\000"
+ 2021      676E6564 
+ 2021      20636861 
+ 2021      7200
+ 2022              	.LASF48:
+ 2023 011c 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2023      43313120 
+ 2023      352E342E 
+ 2023      31203230 
+ 2023      31363036 
+ 2024 014f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 2024      20726576 
+ 2024      6973696F 
+ 2024      6E203233 
+ 2024      37373135 
+ 2025 0182 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2025      66756E63 
+ 2025      74696F6E 
+ 2025      2D736563 
+ 2025      74696F6E 
+ 2026              	.LASF17:
+ 2027 01aa 72656738 		.ascii	"reg8\000"
+ 2027      00
+ 2028              	.LASF8:
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 49
+
+
+ 2029 01af 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2029      20756E73 
+ 2029      69676E65 
+ 2029      6420696E 
+ 2029      7400
+ 2030              	.LASF12:
+ 2031 01c1 75696E74 		.ascii	"uint8\000"
+ 2031      3800
+ 2032              	.LASF16:
+ 2033 01c7 646F7562 		.ascii	"double\000"
+ 2033      6C6500
+ 2034              	.LASF35:
+ 2035 01ce 46696C74 		.ascii	"Filter_1_SetCoherencyEx\000"
+ 2035      65725F31 
+ 2035      5F536574 
+ 2035      436F6865 
+ 2035      72656E63 
+ 2036              	.LASF13:
+ 2037 01e6 75696E74 		.ascii	"uint16\000"
+ 2037      313600
+ 2038              	.LASF22:
+ 2039 01ed 46696C74 		.ascii	"Filter_1_Enable\000"
+ 2039      65725F31 
+ 2039      5F456E61 
+ 2039      626C6500 
+ 2040              	.LASF14:
+ 2041 01fd 75696E74 		.ascii	"uint32\000"
+ 2041      333200
+ 2042              	.LASF0:
+ 2043 0204 756E7369 		.ascii	"unsigned int\000"
+ 2043      676E6564 
+ 2043      20696E74 
+ 2043      00
+ 2044              	.LASF29:
+ 2045 0211 46696C74 		.ascii	"Filter_1_Write8\000"
+ 2045      65725F31 
+ 2045      5F577269 
+ 2045      74653800 
+ 2046              	.LASF9:
+ 2047 0221 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2047      206C6F6E 
+ 2047      6720756E 
+ 2047      7369676E 
+ 2047      65642069 
+ 2048              	.LASF50:
+ 2049 0238 433A5C55 		.ascii	"C:\\UGR\\TFG\\Proyecto\\PSoC Creator\\PPG_SerialPor"
+ 2049      47525C54 
+ 2049      46475C50 
+ 2049      726F7965 
+ 2049      63746F5C 
+ 2050 0266 74436F6D 		.ascii	"tComunication\\PulseOximetry.cydsn\000"
+ 2050      756E6963 
+ 2050      6174696F 
+ 2050      6E5C5075 
+ 2050      6C73654F 
+ 2051              	.LASF34:
+ 2052 0288 62797465 		.ascii	"byteSelect\000"
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 50
+
+
+ 2052      53656C65 
+ 2052      637400
+ 2053              	.LASF45:
+ 2054 0293 46696C74 		.ascii	"Filter_1_acu\000"
+ 2054      65725F31 
+ 2054      5F616375 
+ 2054      00
+ 2055              	.LASF24:
+ 2056 02a0 46696C74 		.ascii	"Filter_1_Read8\000"
+ 2056      65725F31 
+ 2056      5F526561 
+ 2056      643800
+ 2057              	.LASF10:
+ 2058 02af 73697A65 		.ascii	"sizetype\000"
+ 2058      74797065 
+ 2058      00
+ 2059              	.LASF1:
+ 2060 02b8 6C6F6E67 		.ascii	"long long int\000"
+ 2060      206C6F6E 
+ 2060      6720696E 
+ 2060      7400
+ 2061              	.LASF44:
+ 2062 02c6 46696C74 		.ascii	"Filter_1_cfsm\000"
+ 2062      65725F31 
+ 2062      5F636673 
+ 2062      6D00
+ 2063              	.LASF11:
+ 2064 02d4 63686172 		.ascii	"char\000"
+ 2064      00
+ 2065              	.LASF37:
+ 2066 02d9 6B657952 		.ascii	"keyReg\000"
+ 2066      656700
+ 2067              	.LASF25:
+ 2068 02e0 46696C74 		.ascii	"Filter_1_Read16\000"
+ 2068      65725F31 
+ 2068      5F526561 
+ 2068      64313600 
+ 2069              	.LASF5:
+ 2070 02f0 73686F72 		.ascii	"short int\000"
+ 2070      7420696E 
+ 2070      7400
+ 2071              	.LASF20:
+ 2072 02fa 46696C74 		.ascii	"Filter_1_Init\000"
+ 2072      65725F31 
+ 2072      5F496E69 
+ 2072      7400
+ 2073              	.LASF30:
+ 2074 0308 73616D70 		.ascii	"sample\000"
+ 2074      6C6500
+ 2075              	.LASF51:
+ 2076 030f 6D656D63 		.ascii	"memcpy\000"
+ 2076      707900
+ 2077              	.LASF36:
+ 2078 0316 72656753 		.ascii	"regSelect\000"
+ 2078      656C6563 
+ 2078      7400
+ 2079              	.LASF2:
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccsbyCdW.s 			page 51
+
+
+ 2080 0320 6C6F6E67 		.ascii	"long double\000"
+ 2080      20646F75 
+ 2080      626C6500 
+ 2081              	.LASF3:
+ 2082 032c 7369676E 		.ascii	"signed char\000"
+ 2082      65642063 
+ 2082      68617200 
+ 2083              	.LASF38:
+ 2084 0338 46696C74 		.ascii	"Filter_1_SetDalign\000"
+ 2084      65725F31 
+ 2084      5F536574 
+ 2084      44616C69 
+ 2084      676E00
+ 2085              	.LASF46:
+ 2086 034b 46696C74 		.ascii	"Filter_1_SetInterruptMode\000"
+ 2086      65725F31 
+ 2086      5F536574 
+ 2086      496E7465 
+ 2086      72727570 
+ 2087              	.LASF32:
+ 2088 0365 46696C74 		.ascii	"Filter_1_Write24\000"
+ 2088      65725F31 
+ 2088      5F577269 
+ 2088      74653234 
+ 2088      00
+ 2089              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

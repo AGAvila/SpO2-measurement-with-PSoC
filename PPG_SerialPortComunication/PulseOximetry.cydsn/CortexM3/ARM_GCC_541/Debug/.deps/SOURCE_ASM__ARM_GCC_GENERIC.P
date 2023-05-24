@@ -1,0 +1,10 @@
+C:/UGR/TFG/Proyecto/PSoC\ Creator/PPG_SerialPortComunication/PulseOximetry.cydsn/CortexM3/ARM_GCC_541/Debug/CyBootAsmGnu.o : C:/UGR/TFG/Proyecto/PSoC\ Creator/PPG_SerialPortComunication/PulseOximetry.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s C:/UGR/TFG/Proyecto/PSoC\ Creator/PPG_SerialPortComunication/PulseOximetry.cydsn/Generated_Source/PSoC5/cydevicegnu.inc C:/UGR/TFG/Proyecto/PSoC\ Creator/PPG_SerialPortComunication/PulseOximetry.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc C:/UGR/TFG/Proyecto/PSoC\ Creator/PPG_SerialPortComunication/PulseOximetry.cydsn/Generated_Source/PSoC5/cyfittergnu.inc 
+
+C:/UGR/TFG/Proyecto/PSoC\ Creator/PPG_SerialPortComunication/PulseOximetry.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s : 
+
+C:/UGR/TFG/Proyecto/PSoC\ Creator/PPG_SerialPortComunication/PulseOximetry.cydsn/Generated_Source/PSoC5/cydevicegnu.inc : 
+
+C:/UGR/TFG/Proyecto/PSoC\ Creator/PPG_SerialPortComunication/PulseOximetry.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc : 
+
+C:/UGR/TFG/Proyecto/PSoC\ Creator/PPG_SerialPortComunication/PulseOximetry.cydsn/Generated_Source/PSoC5/cyfittergnu.inc : 
+

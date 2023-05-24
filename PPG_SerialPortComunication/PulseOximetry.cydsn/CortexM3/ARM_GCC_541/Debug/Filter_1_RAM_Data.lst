@@ -1,0 +1,2149 @@
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"Filter_1_RAM_Data.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	Filter_1_cfsm
+  20              		.global	Filter_1_acu
+  21              		.global	Filter_1_data_b
+  22              		.global	Filter_1_data_a
+  23              		.global	Filter_1_control
+  24              		.section	.rodata
+  25              		.align	2
+  26              		.type	Filter_1_cfsm, %object
+  27              		.size	Filter_1_cfsm, 256
+  28              	Filter_1_cfsm:
+  29 0000 21       		.byte	33
+  30 0001 F8       		.byte	-8
+  31 0002 05       		.byte	5
+  32 0003 01       		.byte	1
+  33 0004 42       		.byte	66
+  34 0005 10       		.byte	16
+  35 0006 86       		.byte	-122
+  36 0007 40       		.byte	64
+  37 0008 63       		.byte	99
+  38 0009 F8       		.byte	-8
+  39 000a 11       		.byte	17
+  40 000b 01       		.byte	1
+  41 000c 04       		.byte	4
+  42 000d 89       		.byte	-119
+  43 000e A4       		.byte	-92
+  44 000f 20       		.byte	32
+  45 0010 01       		.byte	1
+  46 0011 F8       		.byte	-8
+  47 0012 05       		.byte	5
+  48 0013 01       		.byte	1
+  49 0014 00       		.byte	0
+  50 0015 00       		.byte	0
+  51 0016 00       		.byte	0
+  52 0017 00       		.byte	0
+  53 0018 00       		.byte	0
+  54 0019 00       		.byte	0
+  55 001a 00       		.byte	0
+  56 001b 00       		.byte	0
+  57 001c 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 2
+
+
+  58 001d 00       		.byte	0
+  59 001e 00       		.byte	0
+  60 001f 00       		.byte	0
+  61 0020 00       		.byte	0
+  62 0021 00       		.byte	0
+  63 0022 00       		.byte	0
+  64 0023 00       		.byte	0
+  65 0024 00       		.byte	0
+  66 0025 00       		.byte	0
+  67 0026 00       		.byte	0
+  68 0027 00       		.byte	0
+  69 0028 00       		.byte	0
+  70 0029 00       		.byte	0
+  71 002a 00       		.byte	0
+  72 002b 00       		.byte	0
+  73 002c 00       		.byte	0
+  74 002d 00       		.byte	0
+  75 002e 00       		.byte	0
+  76 002f 00       		.byte	0
+  77 0030 00       		.byte	0
+  78 0031 00       		.byte	0
+  79 0032 00       		.byte	0
+  80 0033 00       		.byte	0
+  81 0034 00       		.byte	0
+  82 0035 00       		.byte	0
+  83 0036 00       		.byte	0
+  84 0037 00       		.byte	0
+  85 0038 00       		.byte	0
+  86 0039 00       		.byte	0
+  87 003a 00       		.byte	0
+  88 003b 00       		.byte	0
+  89 003c 00       		.byte	0
+  90 003d 00       		.byte	0
+  91 003e 00       		.byte	0
+  92 003f 00       		.byte	0
+  93 0040 00       		.byte	0
+  94 0041 00       		.byte	0
+  95 0042 00       		.byte	0
+  96 0043 00       		.byte	0
+  97 0044 00       		.byte	0
+  98 0045 00       		.byte	0
+  99 0046 00       		.byte	0
+ 100 0047 00       		.byte	0
+ 101 0048 00       		.byte	0
+ 102 0049 00       		.byte	0
+ 103 004a 00       		.byte	0
+ 104 004b 00       		.byte	0
+ 105 004c 00       		.byte	0
+ 106 004d 00       		.byte	0
+ 107 004e 00       		.byte	0
+ 108 004f 00       		.byte	0
+ 109 0050 00       		.byte	0
+ 110 0051 00       		.byte	0
+ 111 0052 00       		.byte	0
+ 112 0053 00       		.byte	0
+ 113 0054 00       		.byte	0
+ 114 0055 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 3
+
+
+ 115 0056 00       		.byte	0
+ 116 0057 00       		.byte	0
+ 117 0058 00       		.byte	0
+ 118 0059 00       		.byte	0
+ 119 005a 00       		.byte	0
+ 120 005b 00       		.byte	0
+ 121 005c 00       		.byte	0
+ 122 005d 00       		.byte	0
+ 123 005e 00       		.byte	0
+ 124 005f 00       		.byte	0
+ 125 0060 00       		.byte	0
+ 126 0061 00       		.byte	0
+ 127 0062 00       		.byte	0
+ 128 0063 00       		.byte	0
+ 129 0064 00       		.byte	0
+ 130 0065 00       		.byte	0
+ 131 0066 00       		.byte	0
+ 132 0067 00       		.byte	0
+ 133 0068 00       		.byte	0
+ 134 0069 00       		.byte	0
+ 135 006a 00       		.byte	0
+ 136 006b 00       		.byte	0
+ 137 006c 00       		.byte	0
+ 138 006d 00       		.byte	0
+ 139 006e 00       		.byte	0
+ 140 006f 00       		.byte	0
+ 141 0070 00       		.byte	0
+ 142 0071 00       		.byte	0
+ 143 0072 00       		.byte	0
+ 144 0073 00       		.byte	0
+ 145 0074 00       		.byte	0
+ 146 0075 00       		.byte	0
+ 147 0076 00       		.byte	0
+ 148 0077 00       		.byte	0
+ 149 0078 00       		.byte	0
+ 150 0079 00       		.byte	0
+ 151 007a 00       		.byte	0
+ 152 007b 00       		.byte	0
+ 153 007c 00       		.byte	0
+ 154 007d 00       		.byte	0
+ 155 007e 00       		.byte	0
+ 156 007f 00       		.byte	0
+ 157 0080 00       		.byte	0
+ 158 0081 00       		.byte	0
+ 159 0082 00       		.byte	0
+ 160 0083 00       		.byte	0
+ 161 0084 00       		.byte	0
+ 162 0085 00       		.byte	0
+ 163 0086 00       		.byte	0
+ 164 0087 00       		.byte	0
+ 165 0088 00       		.byte	0
+ 166 0089 00       		.byte	0
+ 167 008a 00       		.byte	0
+ 168 008b 00       		.byte	0
+ 169 008c 00       		.byte	0
+ 170 008d 00       		.byte	0
+ 171 008e 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 4
+
+
+ 172 008f 00       		.byte	0
+ 173 0090 00       		.byte	0
+ 174 0091 00       		.byte	0
+ 175 0092 00       		.byte	0
+ 176 0093 00       		.byte	0
+ 177 0094 00       		.byte	0
+ 178 0095 00       		.byte	0
+ 179 0096 00       		.byte	0
+ 180 0097 00       		.byte	0
+ 181 0098 00       		.byte	0
+ 182 0099 00       		.byte	0
+ 183 009a 00       		.byte	0
+ 184 009b 00       		.byte	0
+ 185 009c 00       		.byte	0
+ 186 009d 00       		.byte	0
+ 187 009e 00       		.byte	0
+ 188 009f 00       		.byte	0
+ 189 00a0 00       		.byte	0
+ 190 00a1 00       		.byte	0
+ 191 00a2 00       		.byte	0
+ 192 00a3 00       		.byte	0
+ 193 00a4 00       		.byte	0
+ 194 00a5 00       		.byte	0
+ 195 00a6 00       		.byte	0
+ 196 00a7 00       		.byte	0
+ 197 00a8 00       		.byte	0
+ 198 00a9 00       		.byte	0
+ 199 00aa 00       		.byte	0
+ 200 00ab 00       		.byte	0
+ 201 00ac 00       		.byte	0
+ 202 00ad 00       		.byte	0
+ 203 00ae 00       		.byte	0
+ 204 00af 00       		.byte	0
+ 205 00b0 00       		.byte	0
+ 206 00b1 00       		.byte	0
+ 207 00b2 00       		.byte	0
+ 208 00b3 00       		.byte	0
+ 209 00b4 00       		.byte	0
+ 210 00b5 00       		.byte	0
+ 211 00b6 00       		.byte	0
+ 212 00b7 00       		.byte	0
+ 213 00b8 00       		.byte	0
+ 214 00b9 00       		.byte	0
+ 215 00ba 00       		.byte	0
+ 216 00bb 00       		.byte	0
+ 217 00bc 00       		.byte	0
+ 218 00bd 00       		.byte	0
+ 219 00be 00       		.byte	0
+ 220 00bf 00       		.byte	0
+ 221 00c0 00       		.byte	0
+ 222 00c1 00       		.byte	0
+ 223 00c2 00       		.byte	0
+ 224 00c3 00       		.byte	0
+ 225 00c4 00       		.byte	0
+ 226 00c5 00       		.byte	0
+ 227 00c6 00       		.byte	0
+ 228 00c7 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 5
+
+
+ 229 00c8 00       		.byte	0
+ 230 00c9 00       		.byte	0
+ 231 00ca 00       		.byte	0
+ 232 00cb 00       		.byte	0
+ 233 00cc 00       		.byte	0
+ 234 00cd 00       		.byte	0
+ 235 00ce 00       		.byte	0
+ 236 00cf 00       		.byte	0
+ 237 00d0 00       		.byte	0
+ 238 00d1 00       		.byte	0
+ 239 00d2 00       		.byte	0
+ 240 00d3 00       		.byte	0
+ 241 00d4 00       		.byte	0
+ 242 00d5 00       		.byte	0
+ 243 00d6 00       		.byte	0
+ 244 00d7 00       		.byte	0
+ 245 00d8 00       		.byte	0
+ 246 00d9 00       		.byte	0
+ 247 00da 00       		.byte	0
+ 248 00db 00       		.byte	0
+ 249 00dc 00       		.byte	0
+ 250 00dd 00       		.byte	0
+ 251 00de 00       		.byte	0
+ 252 00df 00       		.byte	0
+ 253 00e0 00       		.byte	0
+ 254 00e1 00       		.byte	0
+ 255 00e2 00       		.byte	0
+ 256 00e3 00       		.byte	0
+ 257 00e4 00       		.byte	0
+ 258 00e5 00       		.byte	0
+ 259 00e6 00       		.byte	0
+ 260 00e7 00       		.byte	0
+ 261 00e8 00       		.byte	0
+ 262 00e9 00       		.byte	0
+ 263 00ea 00       		.byte	0
+ 264 00eb 00       		.byte	0
+ 265 00ec 00       		.byte	0
+ 266 00ed 00       		.byte	0
+ 267 00ee 00       		.byte	0
+ 268 00ef 00       		.byte	0
+ 269 00f0 00       		.byte	0
+ 270 00f1 00       		.byte	0
+ 271 00f2 00       		.byte	0
+ 272 00f3 00       		.byte	0
+ 273 00f4 00       		.byte	0
+ 274 00f5 00       		.byte	0
+ 275 00f6 00       		.byte	0
+ 276 00f7 00       		.byte	0
+ 277 00f8 00       		.byte	0
+ 278 00f9 00       		.byte	0
+ 279 00fa 00       		.byte	0
+ 280 00fb 00       		.byte	0
+ 281 00fc 00       		.byte	0
+ 282 00fd 00       		.byte	0
+ 283 00fe 00       		.byte	0
+ 284 00ff 00       		.byte	0
+ 285              		.type	Filter_1_acu, %object
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 6
+
+
+ 286              		.size	Filter_1_acu, 64
+ 287              	Filter_1_acu:
+ 288 0100 0E       		.byte	14
+ 289 0101 07       		.byte	7
+ 290 0102 00       		.byte	0
+ 291 0103 00       		.byte	0
+ 292 0104 00       		.byte	0
+ 293 0105 00       		.byte	0
+ 294 0106 00       		.byte	0
+ 295 0107 00       		.byte	0
+ 296 0108 02       		.byte	2
+ 297 0109 01       		.byte	1
+ 298 010a 00       		.byte	0
+ 299 010b 00       		.byte	0
+ 300 010c 7E       		.byte	126
+ 301 010d 3F       		.byte	63
+ 302 010e 00       		.byte	0
+ 303 010f 00       		.byte	0
+ 304 0110 FF       		.byte	-1
+ 305 0111 3F       		.byte	63
+ 306 0112 00       		.byte	0
+ 307 0113 00       		.byte	0
+ 308 0114 00       		.byte	0
+ 309 0115 00       		.byte	0
+ 310 0116 00       		.byte	0
+ 311 0117 00       		.byte	0
+ 312 0118 00       		.byte	0
+ 313 0119 00       		.byte	0
+ 314 011a 00       		.byte	0
+ 315 011b 00       		.byte	0
+ 316 011c 00       		.byte	0
+ 317 011d 00       		.byte	0
+ 318 011e 00       		.byte	0
+ 319 011f 00       		.byte	0
+ 320 0120 00       		.byte	0
+ 321 0121 00       		.byte	0
+ 322 0122 00       		.byte	0
+ 323 0123 00       		.byte	0
+ 324 0124 00       		.byte	0
+ 325 0125 00       		.byte	0
+ 326 0126 00       		.byte	0
+ 327 0127 00       		.byte	0
+ 328 0128 00       		.byte	0
+ 329 0129 00       		.byte	0
+ 330 012a 00       		.byte	0
+ 331 012b 00       		.byte	0
+ 332 012c 00       		.byte	0
+ 333 012d 00       		.byte	0
+ 334 012e 00       		.byte	0
+ 335 012f 00       		.byte	0
+ 336 0130 00       		.byte	0
+ 337 0131 00       		.byte	0
+ 338 0132 00       		.byte	0
+ 339 0133 00       		.byte	0
+ 340 0134 00       		.byte	0
+ 341 0135 00       		.byte	0
+ 342 0136 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 7
+
+
+ 343 0137 00       		.byte	0
+ 344 0138 00       		.byte	0
+ 345 0139 00       		.byte	0
+ 346 013a 00       		.byte	0
+ 347 013b 00       		.byte	0
+ 348 013c 00       		.byte	0
+ 349 013d 00       		.byte	0
+ 350 013e 00       		.byte	0
+ 351 013f 00       		.byte	0
+ 352              		.type	Filter_1_data_b, %object
+ 353              		.size	Filter_1_data_b, 512
+ 354              	Filter_1_data_b:
+ 355 0140 30       		.byte	48
+ 356 0141 02       		.byte	2
+ 357 0142 00       		.byte	0
+ 358 0143 00       		.byte	0
+ 359 0144 60       		.byte	96
+ 360 0145 04       		.byte	4
+ 361 0146 00       		.byte	0
+ 362 0147 00       		.byte	0
+ 363 0148 30       		.byte	48
+ 364 0149 02       		.byte	2
+ 365 014a 00       		.byte	0
+ 366 014b 00       		.byte	0
+ 367 014c C4       		.byte	-60
+ 368 014d BF       		.byte	-65
+ 369 014e 7B       		.byte	123
+ 370 014f 00       		.byte	0
+ 371 0150 3D       		.byte	61
+ 372 0151 1D       		.byte	29
+ 373 0152 C4       		.byte	-60
+ 374 0153 00       		.byte	0
+ 375 0154 AE       		.byte	-82
+ 376 0155 08       		.byte	8
+ 377 0156 00       		.byte	0
+ 378 0157 00       		.byte	0
+ 379 0158 5D       		.byte	93
+ 380 0159 11       		.byte	17
+ 381 015a 00       		.byte	0
+ 382 015b 00       		.byte	0
+ 383 015c AE       		.byte	-82
+ 384 015d 08       		.byte	8
+ 385 015e 00       		.byte	0
+ 386 015f 00       		.byte	0
+ 387 0160 64       		.byte	100
+ 388 0161 4F       		.byte	79
+ 389 0162 7A       		.byte	122
+ 390 0163 00       		.byte	0
+ 391 0164 05       		.byte	5
+ 392 0165 8E       		.byte	-114
+ 393 0166 C5       		.byte	-59
+ 394 0167 00       		.byte	0
+ 395 0168 97       		.byte	-105
+ 396 0169 23       		.byte	35
+ 397 016a 00       		.byte	0
+ 398 016b 00       		.byte	0
+ 399 016c 2D       		.byte	45
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 8
+
+
+ 400 016d 47       		.byte	71
+ 401 016e 00       		.byte	0
+ 402 016f 00       		.byte	0
+ 403 0170 97       		.byte	-105
+ 404 0171 23       		.byte	35
+ 405 0172 00       		.byte	0
+ 406 0173 00       		.byte	0
+ 407 0174 BE       		.byte	-66
+ 408 0175 52       		.byte	82
+ 409 0176 7E       		.byte	126
+ 410 0177 00       		.byte	0
+ 411 0178 88       		.byte	-120
+ 412 0179 89       		.byte	-119
+ 413 017a C1       		.byte	-63
+ 414 017b 00       		.byte	0
+ 415 017c 00       		.byte	0
+ 416 017d 00       		.byte	0
+ 417 017e 00       		.byte	0
+ 418 017f 00       		.byte	0
+ 419 0180 00       		.byte	0
+ 420 0181 00       		.byte	0
+ 421 0182 00       		.byte	0
+ 422 0183 00       		.byte	0
+ 423 0184 00       		.byte	0
+ 424 0185 00       		.byte	0
+ 425 0186 00       		.byte	0
+ 426 0187 00       		.byte	0
+ 427 0188 00       		.byte	0
+ 428 0189 00       		.byte	0
+ 429 018a 00       		.byte	0
+ 430 018b 00       		.byte	0
+ 431 018c 00       		.byte	0
+ 432 018d 00       		.byte	0
+ 433 018e 00       		.byte	0
+ 434 018f 00       		.byte	0
+ 435 0190 00       		.byte	0
+ 436 0191 00       		.byte	0
+ 437 0192 00       		.byte	0
+ 438 0193 00       		.byte	0
+ 439 0194 00       		.byte	0
+ 440 0195 00       		.byte	0
+ 441 0196 00       		.byte	0
+ 442 0197 00       		.byte	0
+ 443 0198 00       		.byte	0
+ 444 0199 00       		.byte	0
+ 445 019a 00       		.byte	0
+ 446 019b 00       		.byte	0
+ 447 019c 00       		.byte	0
+ 448 019d 00       		.byte	0
+ 449 019e 00       		.byte	0
+ 450 019f 00       		.byte	0
+ 451 01a0 00       		.byte	0
+ 452 01a1 00       		.byte	0
+ 453 01a2 00       		.byte	0
+ 454 01a3 00       		.byte	0
+ 455 01a4 00       		.byte	0
+ 456 01a5 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 9
+
+
+ 457 01a6 00       		.byte	0
+ 458 01a7 00       		.byte	0
+ 459 01a8 00       		.byte	0
+ 460 01a9 00       		.byte	0
+ 461 01aa 00       		.byte	0
+ 462 01ab 00       		.byte	0
+ 463 01ac 00       		.byte	0
+ 464 01ad 00       		.byte	0
+ 465 01ae 00       		.byte	0
+ 466 01af 00       		.byte	0
+ 467 01b0 00       		.byte	0
+ 468 01b1 00       		.byte	0
+ 469 01b2 00       		.byte	0
+ 470 01b3 00       		.byte	0
+ 471 01b4 00       		.byte	0
+ 472 01b5 00       		.byte	0
+ 473 01b6 00       		.byte	0
+ 474 01b7 00       		.byte	0
+ 475 01b8 00       		.byte	0
+ 476 01b9 00       		.byte	0
+ 477 01ba 00       		.byte	0
+ 478 01bb 00       		.byte	0
+ 479 01bc 00       		.byte	0
+ 480 01bd 00       		.byte	0
+ 481 01be 00       		.byte	0
+ 482 01bf 00       		.byte	0
+ 483 01c0 00       		.byte	0
+ 484 01c1 00       		.byte	0
+ 485 01c2 00       		.byte	0
+ 486 01c3 00       		.byte	0
+ 487 01c4 00       		.byte	0
+ 488 01c5 00       		.byte	0
+ 489 01c6 00       		.byte	0
+ 490 01c7 00       		.byte	0
+ 491 01c8 00       		.byte	0
+ 492 01c9 00       		.byte	0
+ 493 01ca 00       		.byte	0
+ 494 01cb 00       		.byte	0
+ 495 01cc 00       		.byte	0
+ 496 01cd 00       		.byte	0
+ 497 01ce 00       		.byte	0
+ 498 01cf 00       		.byte	0
+ 499 01d0 00       		.byte	0
+ 500 01d1 00       		.byte	0
+ 501 01d2 00       		.byte	0
+ 502 01d3 00       		.byte	0
+ 503 01d4 00       		.byte	0
+ 504 01d5 00       		.byte	0
+ 505 01d6 00       		.byte	0
+ 506 01d7 00       		.byte	0
+ 507 01d8 00       		.byte	0
+ 508 01d9 00       		.byte	0
+ 509 01da 00       		.byte	0
+ 510 01db 00       		.byte	0
+ 511 01dc 00       		.byte	0
+ 512 01dd 00       		.byte	0
+ 513 01de 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 10
+
+
+ 514 01df 00       		.byte	0
+ 515 01e0 00       		.byte	0
+ 516 01e1 00       		.byte	0
+ 517 01e2 00       		.byte	0
+ 518 01e3 00       		.byte	0
+ 519 01e4 00       		.byte	0
+ 520 01e5 00       		.byte	0
+ 521 01e6 00       		.byte	0
+ 522 01e7 00       		.byte	0
+ 523 01e8 00       		.byte	0
+ 524 01e9 00       		.byte	0
+ 525 01ea 00       		.byte	0
+ 526 01eb 00       		.byte	0
+ 527 01ec 00       		.byte	0
+ 528 01ed 00       		.byte	0
+ 529 01ee 00       		.byte	0
+ 530 01ef 00       		.byte	0
+ 531 01f0 00       		.byte	0
+ 532 01f1 00       		.byte	0
+ 533 01f2 00       		.byte	0
+ 534 01f3 00       		.byte	0
+ 535 01f4 00       		.byte	0
+ 536 01f5 00       		.byte	0
+ 537 01f6 00       		.byte	0
+ 538 01f7 00       		.byte	0
+ 539 01f8 00       		.byte	0
+ 540 01f9 00       		.byte	0
+ 541 01fa 00       		.byte	0
+ 542 01fb 00       		.byte	0
+ 543 01fc 00       		.byte	0
+ 544 01fd 00       		.byte	0
+ 545 01fe 00       		.byte	0
+ 546 01ff 00       		.byte	0
+ 547 0200 00       		.byte	0
+ 548 0201 00       		.byte	0
+ 549 0202 00       		.byte	0
+ 550 0203 00       		.byte	0
+ 551 0204 00       		.byte	0
+ 552 0205 00       		.byte	0
+ 553 0206 00       		.byte	0
+ 554 0207 00       		.byte	0
+ 555 0208 00       		.byte	0
+ 556 0209 00       		.byte	0
+ 557 020a 00       		.byte	0
+ 558 020b 00       		.byte	0
+ 559 020c 00       		.byte	0
+ 560 020d 00       		.byte	0
+ 561 020e 00       		.byte	0
+ 562 020f 00       		.byte	0
+ 563 0210 00       		.byte	0
+ 564 0211 00       		.byte	0
+ 565 0212 00       		.byte	0
+ 566 0213 00       		.byte	0
+ 567 0214 00       		.byte	0
+ 568 0215 00       		.byte	0
+ 569 0216 00       		.byte	0
+ 570 0217 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 11
+
+
+ 571 0218 00       		.byte	0
+ 572 0219 00       		.byte	0
+ 573 021a 00       		.byte	0
+ 574 021b 00       		.byte	0
+ 575 021c 00       		.byte	0
+ 576 021d 00       		.byte	0
+ 577 021e 00       		.byte	0
+ 578 021f 00       		.byte	0
+ 579 0220 00       		.byte	0
+ 580 0221 00       		.byte	0
+ 581 0222 00       		.byte	0
+ 582 0223 00       		.byte	0
+ 583 0224 00       		.byte	0
+ 584 0225 00       		.byte	0
+ 585 0226 00       		.byte	0
+ 586 0227 00       		.byte	0
+ 587 0228 00       		.byte	0
+ 588 0229 00       		.byte	0
+ 589 022a 00       		.byte	0
+ 590 022b 00       		.byte	0
+ 591 022c 00       		.byte	0
+ 592 022d 00       		.byte	0
+ 593 022e 00       		.byte	0
+ 594 022f 00       		.byte	0
+ 595 0230 00       		.byte	0
+ 596 0231 00       		.byte	0
+ 597 0232 00       		.byte	0
+ 598 0233 00       		.byte	0
+ 599 0234 00       		.byte	0
+ 600 0235 00       		.byte	0
+ 601 0236 00       		.byte	0
+ 602 0237 00       		.byte	0
+ 603 0238 00       		.byte	0
+ 604 0239 00       		.byte	0
+ 605 023a 00       		.byte	0
+ 606 023b 00       		.byte	0
+ 607 023c 00       		.byte	0
+ 608 023d 00       		.byte	0
+ 609 023e 00       		.byte	0
+ 610 023f 00       		.byte	0
+ 611 0240 00       		.byte	0
+ 612 0241 00       		.byte	0
+ 613 0242 00       		.byte	0
+ 614 0243 00       		.byte	0
+ 615 0244 00       		.byte	0
+ 616 0245 00       		.byte	0
+ 617 0246 00       		.byte	0
+ 618 0247 00       		.byte	0
+ 619 0248 00       		.byte	0
+ 620 0249 00       		.byte	0
+ 621 024a 00       		.byte	0
+ 622 024b 00       		.byte	0
+ 623 024c 00       		.byte	0
+ 624 024d 00       		.byte	0
+ 625 024e 00       		.byte	0
+ 626 024f 00       		.byte	0
+ 627 0250 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 12
+
+
+ 628 0251 00       		.byte	0
+ 629 0252 00       		.byte	0
+ 630 0253 00       		.byte	0
+ 631 0254 00       		.byte	0
+ 632 0255 00       		.byte	0
+ 633 0256 00       		.byte	0
+ 634 0257 00       		.byte	0
+ 635 0258 00       		.byte	0
+ 636 0259 00       		.byte	0
+ 637 025a 00       		.byte	0
+ 638 025b 00       		.byte	0
+ 639 025c 00       		.byte	0
+ 640 025d 00       		.byte	0
+ 641 025e 00       		.byte	0
+ 642 025f 00       		.byte	0
+ 643 0260 00       		.byte	0
+ 644 0261 00       		.byte	0
+ 645 0262 00       		.byte	0
+ 646 0263 00       		.byte	0
+ 647 0264 00       		.byte	0
+ 648 0265 00       		.byte	0
+ 649 0266 00       		.byte	0
+ 650 0267 00       		.byte	0
+ 651 0268 00       		.byte	0
+ 652 0269 00       		.byte	0
+ 653 026a 00       		.byte	0
+ 654 026b 00       		.byte	0
+ 655 026c 00       		.byte	0
+ 656 026d 00       		.byte	0
+ 657 026e 00       		.byte	0
+ 658 026f 00       		.byte	0
+ 659 0270 00       		.byte	0
+ 660 0271 00       		.byte	0
+ 661 0272 00       		.byte	0
+ 662 0273 00       		.byte	0
+ 663 0274 00       		.byte	0
+ 664 0275 00       		.byte	0
+ 665 0276 00       		.byte	0
+ 666 0277 00       		.byte	0
+ 667 0278 00       		.byte	0
+ 668 0279 00       		.byte	0
+ 669 027a 00       		.byte	0
+ 670 027b 00       		.byte	0
+ 671 027c 00       		.byte	0
+ 672 027d 00       		.byte	0
+ 673 027e 00       		.byte	0
+ 674 027f 00       		.byte	0
+ 675 0280 00       		.byte	0
+ 676 0281 00       		.byte	0
+ 677 0282 00       		.byte	0
+ 678 0283 00       		.byte	0
+ 679 0284 00       		.byte	0
+ 680 0285 00       		.byte	0
+ 681 0286 00       		.byte	0
+ 682 0287 00       		.byte	0
+ 683 0288 00       		.byte	0
+ 684 0289 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 13
+
+
+ 685 028a 00       		.byte	0
+ 686 028b 00       		.byte	0
+ 687 028c 00       		.byte	0
+ 688 028d 00       		.byte	0
+ 689 028e 00       		.byte	0
+ 690 028f 00       		.byte	0
+ 691 0290 00       		.byte	0
+ 692 0291 00       		.byte	0
+ 693 0292 00       		.byte	0
+ 694 0293 00       		.byte	0
+ 695 0294 00       		.byte	0
+ 696 0295 00       		.byte	0
+ 697 0296 00       		.byte	0
+ 698 0297 00       		.byte	0
+ 699 0298 00       		.byte	0
+ 700 0299 00       		.byte	0
+ 701 029a 00       		.byte	0
+ 702 029b 00       		.byte	0
+ 703 029c 00       		.byte	0
+ 704 029d 00       		.byte	0
+ 705 029e 00       		.byte	0
+ 706 029f 00       		.byte	0
+ 707 02a0 00       		.byte	0
+ 708 02a1 00       		.byte	0
+ 709 02a2 00       		.byte	0
+ 710 02a3 00       		.byte	0
+ 711 02a4 00       		.byte	0
+ 712 02a5 00       		.byte	0
+ 713 02a6 00       		.byte	0
+ 714 02a7 00       		.byte	0
+ 715 02a8 00       		.byte	0
+ 716 02a9 00       		.byte	0
+ 717 02aa 00       		.byte	0
+ 718 02ab 00       		.byte	0
+ 719 02ac 00       		.byte	0
+ 720 02ad 00       		.byte	0
+ 721 02ae 00       		.byte	0
+ 722 02af 00       		.byte	0
+ 723 02b0 00       		.byte	0
+ 724 02b1 00       		.byte	0
+ 725 02b2 00       		.byte	0
+ 726 02b3 00       		.byte	0
+ 727 02b4 00       		.byte	0
+ 728 02b5 00       		.byte	0
+ 729 02b6 00       		.byte	0
+ 730 02b7 00       		.byte	0
+ 731 02b8 00       		.byte	0
+ 732 02b9 00       		.byte	0
+ 733 02ba 00       		.byte	0
+ 734 02bb 00       		.byte	0
+ 735 02bc 00       		.byte	0
+ 736 02bd 00       		.byte	0
+ 737 02be 00       		.byte	0
+ 738 02bf 00       		.byte	0
+ 739 02c0 00       		.byte	0
+ 740 02c1 00       		.byte	0
+ 741 02c2 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 14
+
+
+ 742 02c3 00       		.byte	0
+ 743 02c4 00       		.byte	0
+ 744 02c5 00       		.byte	0
+ 745 02c6 00       		.byte	0
+ 746 02c7 00       		.byte	0
+ 747 02c8 00       		.byte	0
+ 748 02c9 00       		.byte	0
+ 749 02ca 00       		.byte	0
+ 750 02cb 00       		.byte	0
+ 751 02cc 00       		.byte	0
+ 752 02cd 00       		.byte	0
+ 753 02ce 00       		.byte	0
+ 754 02cf 00       		.byte	0
+ 755 02d0 00       		.byte	0
+ 756 02d1 00       		.byte	0
+ 757 02d2 00       		.byte	0
+ 758 02d3 00       		.byte	0
+ 759 02d4 00       		.byte	0
+ 760 02d5 00       		.byte	0
+ 761 02d6 00       		.byte	0
+ 762 02d7 00       		.byte	0
+ 763 02d8 00       		.byte	0
+ 764 02d9 00       		.byte	0
+ 765 02da 00       		.byte	0
+ 766 02db 00       		.byte	0
+ 767 02dc 00       		.byte	0
+ 768 02dd 00       		.byte	0
+ 769 02de 00       		.byte	0
+ 770 02df 00       		.byte	0
+ 771 02e0 00       		.byte	0
+ 772 02e1 00       		.byte	0
+ 773 02e2 00       		.byte	0
+ 774 02e3 00       		.byte	0
+ 775 02e4 00       		.byte	0
+ 776 02e5 00       		.byte	0
+ 777 02e6 00       		.byte	0
+ 778 02e7 00       		.byte	0
+ 779 02e8 00       		.byte	0
+ 780 02e9 00       		.byte	0
+ 781 02ea 00       		.byte	0
+ 782 02eb 00       		.byte	0
+ 783 02ec 00       		.byte	0
+ 784 02ed 00       		.byte	0
+ 785 02ee 00       		.byte	0
+ 786 02ef 00       		.byte	0
+ 787 02f0 00       		.byte	0
+ 788 02f1 00       		.byte	0
+ 789 02f2 00       		.byte	0
+ 790 02f3 00       		.byte	0
+ 791 02f4 00       		.byte	0
+ 792 02f5 00       		.byte	0
+ 793 02f6 00       		.byte	0
+ 794 02f7 00       		.byte	0
+ 795 02f8 00       		.byte	0
+ 796 02f9 00       		.byte	0
+ 797 02fa 00       		.byte	0
+ 798 02fb 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 15
+
+
+ 799 02fc 00       		.byte	0
+ 800 02fd 00       		.byte	0
+ 801 02fe 00       		.byte	0
+ 802 02ff 00       		.byte	0
+ 803 0300 00       		.byte	0
+ 804 0301 00       		.byte	0
+ 805 0302 00       		.byte	0
+ 806 0303 00       		.byte	0
+ 807 0304 00       		.byte	0
+ 808 0305 00       		.byte	0
+ 809 0306 00       		.byte	0
+ 810 0307 00       		.byte	0
+ 811 0308 00       		.byte	0
+ 812 0309 00       		.byte	0
+ 813 030a 00       		.byte	0
+ 814 030b 00       		.byte	0
+ 815 030c 00       		.byte	0
+ 816 030d 00       		.byte	0
+ 817 030e 00       		.byte	0
+ 818 030f 00       		.byte	0
+ 819 0310 00       		.byte	0
+ 820 0311 00       		.byte	0
+ 821 0312 00       		.byte	0
+ 822 0313 00       		.byte	0
+ 823 0314 00       		.byte	0
+ 824 0315 00       		.byte	0
+ 825 0316 00       		.byte	0
+ 826 0317 00       		.byte	0
+ 827 0318 00       		.byte	0
+ 828 0319 00       		.byte	0
+ 829 031a 00       		.byte	0
+ 830 031b 00       		.byte	0
+ 831 031c 00       		.byte	0
+ 832 031d 00       		.byte	0
+ 833 031e 00       		.byte	0
+ 834 031f 00       		.byte	0
+ 835 0320 00       		.byte	0
+ 836 0321 00       		.byte	0
+ 837 0322 00       		.byte	0
+ 838 0323 00       		.byte	0
+ 839 0324 00       		.byte	0
+ 840 0325 00       		.byte	0
+ 841 0326 00       		.byte	0
+ 842 0327 00       		.byte	0
+ 843 0328 00       		.byte	0
+ 844 0329 00       		.byte	0
+ 845 032a 00       		.byte	0
+ 846 032b 00       		.byte	0
+ 847 032c 00       		.byte	0
+ 848 032d 00       		.byte	0
+ 849 032e 00       		.byte	0
+ 850 032f 00       		.byte	0
+ 851 0330 00       		.byte	0
+ 852 0331 00       		.byte	0
+ 853 0332 00       		.byte	0
+ 854 0333 00       		.byte	0
+ 855 0334 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 16
+
+
+ 856 0335 00       		.byte	0
+ 857 0336 00       		.byte	0
+ 858 0337 00       		.byte	0
+ 859 0338 00       		.byte	0
+ 860 0339 00       		.byte	0
+ 861 033a 00       		.byte	0
+ 862 033b 00       		.byte	0
+ 863 033c 00       		.byte	0
+ 864 033d 08       		.byte	8
+ 865 033e 00       		.byte	0
+ 866 033f 00       		.byte	0
+ 867              		.type	Filter_1_data_a, %object
+ 868              		.size	Filter_1_data_a, 512
+ 869              	Filter_1_data_a:
+ 870 0340 00       		.byte	0
+ 871 0341 00       		.byte	0
+ 872 0342 00       		.byte	0
+ 873 0343 00       		.byte	0
+ 874 0344 00       		.byte	0
+ 875 0345 00       		.byte	0
+ 876 0346 00       		.byte	0
+ 877 0347 00       		.byte	0
+ 878 0348 00       		.byte	0
+ 879 0349 00       		.byte	0
+ 880 034a 00       		.byte	0
+ 881 034b 00       		.byte	0
+ 882 034c 00       		.byte	0
+ 883 034d 00       		.byte	0
+ 884 034e 00       		.byte	0
+ 885 034f 00       		.byte	0
+ 886 0350 00       		.byte	0
+ 887 0351 00       		.byte	0
+ 888 0352 00       		.byte	0
+ 889 0353 00       		.byte	0
+ 890 0354 00       		.byte	0
+ 891 0355 00       		.byte	0
+ 892 0356 00       		.byte	0
+ 893 0357 00       		.byte	0
+ 894 0358 00       		.byte	0
+ 895 0359 00       		.byte	0
+ 896 035a 00       		.byte	0
+ 897 035b 00       		.byte	0
+ 898 035c 00       		.byte	0
+ 899 035d 00       		.byte	0
+ 900 035e 00       		.byte	0
+ 901 035f 00       		.byte	0
+ 902 0360 00       		.byte	0
+ 903 0361 00       		.byte	0
+ 904 0362 00       		.byte	0
+ 905 0363 00       		.byte	0
+ 906 0364 00       		.byte	0
+ 907 0365 00       		.byte	0
+ 908 0366 00       		.byte	0
+ 909 0367 00       		.byte	0
+ 910 0368 00       		.byte	0
+ 911 0369 00       		.byte	0
+ 912 036a 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 17
+
+
+ 913 036b 00       		.byte	0
+ 914 036c 00       		.byte	0
+ 915 036d 00       		.byte	0
+ 916 036e 00       		.byte	0
+ 917 036f 00       		.byte	0
+ 918 0370 00       		.byte	0
+ 919 0371 00       		.byte	0
+ 920 0372 00       		.byte	0
+ 921 0373 00       		.byte	0
+ 922 0374 00       		.byte	0
+ 923 0375 00       		.byte	0
+ 924 0376 00       		.byte	0
+ 925 0377 00       		.byte	0
+ 926 0378 00       		.byte	0
+ 927 0379 00       		.byte	0
+ 928 037a 00       		.byte	0
+ 929 037b 00       		.byte	0
+ 930 037c 00       		.byte	0
+ 931 037d 00       		.byte	0
+ 932 037e 00       		.byte	0
+ 933 037f 00       		.byte	0
+ 934 0380 00       		.byte	0
+ 935 0381 00       		.byte	0
+ 936 0382 00       		.byte	0
+ 937 0383 00       		.byte	0
+ 938 0384 00       		.byte	0
+ 939 0385 00       		.byte	0
+ 940 0386 00       		.byte	0
+ 941 0387 00       		.byte	0
+ 942 0388 00       		.byte	0
+ 943 0389 00       		.byte	0
+ 944 038a 00       		.byte	0
+ 945 038b 00       		.byte	0
+ 946 038c 00       		.byte	0
+ 947 038d 00       		.byte	0
+ 948 038e 00       		.byte	0
+ 949 038f 00       		.byte	0
+ 950 0390 00       		.byte	0
+ 951 0391 00       		.byte	0
+ 952 0392 00       		.byte	0
+ 953 0393 00       		.byte	0
+ 954 0394 00       		.byte	0
+ 955 0395 00       		.byte	0
+ 956 0396 00       		.byte	0
+ 957 0397 00       		.byte	0
+ 958 0398 00       		.byte	0
+ 959 0399 00       		.byte	0
+ 960 039a 00       		.byte	0
+ 961 039b 00       		.byte	0
+ 962 039c 00       		.byte	0
+ 963 039d 00       		.byte	0
+ 964 039e 00       		.byte	0
+ 965 039f 00       		.byte	0
+ 966 03a0 00       		.byte	0
+ 967 03a1 00       		.byte	0
+ 968 03a2 00       		.byte	0
+ 969 03a3 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 18
+
+
+ 970 03a4 00       		.byte	0
+ 971 03a5 00       		.byte	0
+ 972 03a6 00       		.byte	0
+ 973 03a7 00       		.byte	0
+ 974 03a8 00       		.byte	0
+ 975 03a9 00       		.byte	0
+ 976 03aa 00       		.byte	0
+ 977 03ab 00       		.byte	0
+ 978 03ac 00       		.byte	0
+ 979 03ad 00       		.byte	0
+ 980 03ae 00       		.byte	0
+ 981 03af 00       		.byte	0
+ 982 03b0 00       		.byte	0
+ 983 03b1 00       		.byte	0
+ 984 03b2 00       		.byte	0
+ 985 03b3 00       		.byte	0
+ 986 03b4 00       		.byte	0
+ 987 03b5 00       		.byte	0
+ 988 03b6 00       		.byte	0
+ 989 03b7 00       		.byte	0
+ 990 03b8 00       		.byte	0
+ 991 03b9 00       		.byte	0
+ 992 03ba 00       		.byte	0
+ 993 03bb 00       		.byte	0
+ 994 03bc 00       		.byte	0
+ 995 03bd 00       		.byte	0
+ 996 03be 00       		.byte	0
+ 997 03bf 00       		.byte	0
+ 998 03c0 00       		.byte	0
+ 999 03c1 00       		.byte	0
+ 1000 03c2 00       		.byte	0
+ 1001 03c3 00       		.byte	0
+ 1002 03c4 00       		.byte	0
+ 1003 03c5 00       		.byte	0
+ 1004 03c6 00       		.byte	0
+ 1005 03c7 00       		.byte	0
+ 1006 03c8 00       		.byte	0
+ 1007 03c9 00       		.byte	0
+ 1008 03ca 00       		.byte	0
+ 1009 03cb 00       		.byte	0
+ 1010 03cc 00       		.byte	0
+ 1011 03cd 00       		.byte	0
+ 1012 03ce 00       		.byte	0
+ 1013 03cf 00       		.byte	0
+ 1014 03d0 00       		.byte	0
+ 1015 03d1 00       		.byte	0
+ 1016 03d2 00       		.byte	0
+ 1017 03d3 00       		.byte	0
+ 1018 03d4 00       		.byte	0
+ 1019 03d5 00       		.byte	0
+ 1020 03d6 00       		.byte	0
+ 1021 03d7 00       		.byte	0
+ 1022 03d8 00       		.byte	0
+ 1023 03d9 00       		.byte	0
+ 1024 03da 00       		.byte	0
+ 1025 03db 00       		.byte	0
+ 1026 03dc 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 19
+
+
+ 1027 03dd 00       		.byte	0
+ 1028 03de 00       		.byte	0
+ 1029 03df 00       		.byte	0
+ 1030 03e0 00       		.byte	0
+ 1031 03e1 00       		.byte	0
+ 1032 03e2 00       		.byte	0
+ 1033 03e3 00       		.byte	0
+ 1034 03e4 00       		.byte	0
+ 1035 03e5 00       		.byte	0
+ 1036 03e6 00       		.byte	0
+ 1037 03e7 00       		.byte	0
+ 1038 03e8 00       		.byte	0
+ 1039 03e9 00       		.byte	0
+ 1040 03ea 00       		.byte	0
+ 1041 03eb 00       		.byte	0
+ 1042 03ec 00       		.byte	0
+ 1043 03ed 00       		.byte	0
+ 1044 03ee 00       		.byte	0
+ 1045 03ef 00       		.byte	0
+ 1046 03f0 00       		.byte	0
+ 1047 03f1 00       		.byte	0
+ 1048 03f2 00       		.byte	0
+ 1049 03f3 00       		.byte	0
+ 1050 03f4 00       		.byte	0
+ 1051 03f5 00       		.byte	0
+ 1052 03f6 00       		.byte	0
+ 1053 03f7 00       		.byte	0
+ 1054 03f8 00       		.byte	0
+ 1055 03f9 00       		.byte	0
+ 1056 03fa 00       		.byte	0
+ 1057 03fb 00       		.byte	0
+ 1058 03fc 00       		.byte	0
+ 1059 03fd 00       		.byte	0
+ 1060 03fe 00       		.byte	0
+ 1061 03ff 00       		.byte	0
+ 1062 0400 00       		.byte	0
+ 1063 0401 00       		.byte	0
+ 1064 0402 00       		.byte	0
+ 1065 0403 00       		.byte	0
+ 1066 0404 00       		.byte	0
+ 1067 0405 00       		.byte	0
+ 1068 0406 00       		.byte	0
+ 1069 0407 00       		.byte	0
+ 1070 0408 00       		.byte	0
+ 1071 0409 00       		.byte	0
+ 1072 040a 00       		.byte	0
+ 1073 040b 00       		.byte	0
+ 1074 040c 00       		.byte	0
+ 1075 040d 00       		.byte	0
+ 1076 040e 00       		.byte	0
+ 1077 040f 00       		.byte	0
+ 1078 0410 00       		.byte	0
+ 1079 0411 00       		.byte	0
+ 1080 0412 00       		.byte	0
+ 1081 0413 00       		.byte	0
+ 1082 0414 00       		.byte	0
+ 1083 0415 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 20
+
+
+ 1084 0416 00       		.byte	0
+ 1085 0417 00       		.byte	0
+ 1086 0418 00       		.byte	0
+ 1087 0419 00       		.byte	0
+ 1088 041a 00       		.byte	0
+ 1089 041b 00       		.byte	0
+ 1090 041c 00       		.byte	0
+ 1091 041d 00       		.byte	0
+ 1092 041e 00       		.byte	0
+ 1093 041f 00       		.byte	0
+ 1094 0420 00       		.byte	0
+ 1095 0421 00       		.byte	0
+ 1096 0422 00       		.byte	0
+ 1097 0423 00       		.byte	0
+ 1098 0424 00       		.byte	0
+ 1099 0425 00       		.byte	0
+ 1100 0426 00       		.byte	0
+ 1101 0427 00       		.byte	0
+ 1102 0428 00       		.byte	0
+ 1103 0429 00       		.byte	0
+ 1104 042a 00       		.byte	0
+ 1105 042b 00       		.byte	0
+ 1106 042c 00       		.byte	0
+ 1107 042d 00       		.byte	0
+ 1108 042e 00       		.byte	0
+ 1109 042f 00       		.byte	0
+ 1110 0430 00       		.byte	0
+ 1111 0431 00       		.byte	0
+ 1112 0432 00       		.byte	0
+ 1113 0433 00       		.byte	0
+ 1114 0434 00       		.byte	0
+ 1115 0435 00       		.byte	0
+ 1116 0436 00       		.byte	0
+ 1117 0437 00       		.byte	0
+ 1118 0438 00       		.byte	0
+ 1119 0439 00       		.byte	0
+ 1120 043a 00       		.byte	0
+ 1121 043b 00       		.byte	0
+ 1122 043c 00       		.byte	0
+ 1123 043d 00       		.byte	0
+ 1124 043e 00       		.byte	0
+ 1125 043f 00       		.byte	0
+ 1126 0440 00       		.byte	0
+ 1127 0441 00       		.byte	0
+ 1128 0442 00       		.byte	0
+ 1129 0443 00       		.byte	0
+ 1130 0444 00       		.byte	0
+ 1131 0445 00       		.byte	0
+ 1132 0446 00       		.byte	0
+ 1133 0447 00       		.byte	0
+ 1134 0448 00       		.byte	0
+ 1135 0449 00       		.byte	0
+ 1136 044a 00       		.byte	0
+ 1137 044b 00       		.byte	0
+ 1138 044c 00       		.byte	0
+ 1139 044d 00       		.byte	0
+ 1140 044e 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 21
+
+
+ 1141 044f 00       		.byte	0
+ 1142 0450 00       		.byte	0
+ 1143 0451 00       		.byte	0
+ 1144 0452 00       		.byte	0
+ 1145 0453 00       		.byte	0
+ 1146 0454 00       		.byte	0
+ 1147 0455 00       		.byte	0
+ 1148 0456 00       		.byte	0
+ 1149 0457 00       		.byte	0
+ 1150 0458 00       		.byte	0
+ 1151 0459 00       		.byte	0
+ 1152 045a 00       		.byte	0
+ 1153 045b 00       		.byte	0
+ 1154 045c 00       		.byte	0
+ 1155 045d 00       		.byte	0
+ 1156 045e 00       		.byte	0
+ 1157 045f 00       		.byte	0
+ 1158 0460 00       		.byte	0
+ 1159 0461 00       		.byte	0
+ 1160 0462 00       		.byte	0
+ 1161 0463 00       		.byte	0
+ 1162 0464 00       		.byte	0
+ 1163 0465 00       		.byte	0
+ 1164 0466 00       		.byte	0
+ 1165 0467 00       		.byte	0
+ 1166 0468 00       		.byte	0
+ 1167 0469 00       		.byte	0
+ 1168 046a 00       		.byte	0
+ 1169 046b 00       		.byte	0
+ 1170 046c 00       		.byte	0
+ 1171 046d 00       		.byte	0
+ 1172 046e 00       		.byte	0
+ 1173 046f 00       		.byte	0
+ 1174 0470 00       		.byte	0
+ 1175 0471 00       		.byte	0
+ 1176 0472 00       		.byte	0
+ 1177 0473 00       		.byte	0
+ 1178 0474 00       		.byte	0
+ 1179 0475 00       		.byte	0
+ 1180 0476 00       		.byte	0
+ 1181 0477 00       		.byte	0
+ 1182 0478 00       		.byte	0
+ 1183 0479 00       		.byte	0
+ 1184 047a 00       		.byte	0
+ 1185 047b 00       		.byte	0
+ 1186 047c 00       		.byte	0
+ 1187 047d 00       		.byte	0
+ 1188 047e 00       		.byte	0
+ 1189 047f 00       		.byte	0
+ 1190 0480 00       		.byte	0
+ 1191 0481 00       		.byte	0
+ 1192 0482 00       		.byte	0
+ 1193 0483 00       		.byte	0
+ 1194 0484 00       		.byte	0
+ 1195 0485 00       		.byte	0
+ 1196 0486 00       		.byte	0
+ 1197 0487 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 22
+
+
+ 1198 0488 00       		.byte	0
+ 1199 0489 00       		.byte	0
+ 1200 048a 00       		.byte	0
+ 1201 048b 00       		.byte	0
+ 1202 048c 00       		.byte	0
+ 1203 048d 00       		.byte	0
+ 1204 048e 00       		.byte	0
+ 1205 048f 00       		.byte	0
+ 1206 0490 00       		.byte	0
+ 1207 0491 00       		.byte	0
+ 1208 0492 00       		.byte	0
+ 1209 0493 00       		.byte	0
+ 1210 0494 00       		.byte	0
+ 1211 0495 00       		.byte	0
+ 1212 0496 00       		.byte	0
+ 1213 0497 00       		.byte	0
+ 1214 0498 00       		.byte	0
+ 1215 0499 00       		.byte	0
+ 1216 049a 00       		.byte	0
+ 1217 049b 00       		.byte	0
+ 1218 049c 00       		.byte	0
+ 1219 049d 00       		.byte	0
+ 1220 049e 00       		.byte	0
+ 1221 049f 00       		.byte	0
+ 1222 04a0 00       		.byte	0
+ 1223 04a1 00       		.byte	0
+ 1224 04a2 00       		.byte	0
+ 1225 04a3 00       		.byte	0
+ 1226 04a4 00       		.byte	0
+ 1227 04a5 00       		.byte	0
+ 1228 04a6 00       		.byte	0
+ 1229 04a7 00       		.byte	0
+ 1230 04a8 00       		.byte	0
+ 1231 04a9 00       		.byte	0
+ 1232 04aa 00       		.byte	0
+ 1233 04ab 00       		.byte	0
+ 1234 04ac 00       		.byte	0
+ 1235 04ad 00       		.byte	0
+ 1236 04ae 00       		.byte	0
+ 1237 04af 00       		.byte	0
+ 1238 04b0 00       		.byte	0
+ 1239 04b1 00       		.byte	0
+ 1240 04b2 00       		.byte	0
+ 1241 04b3 00       		.byte	0
+ 1242 04b4 00       		.byte	0
+ 1243 04b5 00       		.byte	0
+ 1244 04b6 00       		.byte	0
+ 1245 04b7 00       		.byte	0
+ 1246 04b8 00       		.byte	0
+ 1247 04b9 00       		.byte	0
+ 1248 04ba 00       		.byte	0
+ 1249 04bb 00       		.byte	0
+ 1250 04bc 00       		.byte	0
+ 1251 04bd 00       		.byte	0
+ 1252 04be 00       		.byte	0
+ 1253 04bf 00       		.byte	0
+ 1254 04c0 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 23
+
+
+ 1255 04c1 00       		.byte	0
+ 1256 04c2 00       		.byte	0
+ 1257 04c3 00       		.byte	0
+ 1258 04c4 00       		.byte	0
+ 1259 04c5 00       		.byte	0
+ 1260 04c6 00       		.byte	0
+ 1261 04c7 00       		.byte	0
+ 1262 04c8 00       		.byte	0
+ 1263 04c9 00       		.byte	0
+ 1264 04ca 00       		.byte	0
+ 1265 04cb 00       		.byte	0
+ 1266 04cc 00       		.byte	0
+ 1267 04cd 00       		.byte	0
+ 1268 04ce 00       		.byte	0
+ 1269 04cf 00       		.byte	0
+ 1270 04d0 00       		.byte	0
+ 1271 04d1 00       		.byte	0
+ 1272 04d2 00       		.byte	0
+ 1273 04d3 00       		.byte	0
+ 1274 04d4 00       		.byte	0
+ 1275 04d5 00       		.byte	0
+ 1276 04d6 00       		.byte	0
+ 1277 04d7 00       		.byte	0
+ 1278 04d8 00       		.byte	0
+ 1279 04d9 00       		.byte	0
+ 1280 04da 00       		.byte	0
+ 1281 04db 00       		.byte	0
+ 1282 04dc 00       		.byte	0
+ 1283 04dd 00       		.byte	0
+ 1284 04de 00       		.byte	0
+ 1285 04df 00       		.byte	0
+ 1286 04e0 00       		.byte	0
+ 1287 04e1 00       		.byte	0
+ 1288 04e2 00       		.byte	0
+ 1289 04e3 00       		.byte	0
+ 1290 04e4 00       		.byte	0
+ 1291 04e5 00       		.byte	0
+ 1292 04e6 00       		.byte	0
+ 1293 04e7 00       		.byte	0
+ 1294 04e8 00       		.byte	0
+ 1295 04e9 00       		.byte	0
+ 1296 04ea 00       		.byte	0
+ 1297 04eb 00       		.byte	0
+ 1298 04ec 00       		.byte	0
+ 1299 04ed 00       		.byte	0
+ 1300 04ee 00       		.byte	0
+ 1301 04ef 00       		.byte	0
+ 1302 04f0 00       		.byte	0
+ 1303 04f1 00       		.byte	0
+ 1304 04f2 00       		.byte	0
+ 1305 04f3 00       		.byte	0
+ 1306 04f4 00       		.byte	0
+ 1307 04f5 00       		.byte	0
+ 1308 04f6 00       		.byte	0
+ 1309 04f7 00       		.byte	0
+ 1310 04f8 00       		.byte	0
+ 1311 04f9 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 24
+
+
+ 1312 04fa 00       		.byte	0
+ 1313 04fb 00       		.byte	0
+ 1314 04fc 00       		.byte	0
+ 1315 04fd 00       		.byte	0
+ 1316 04fe 00       		.byte	0
+ 1317 04ff 00       		.byte	0
+ 1318 0500 00       		.byte	0
+ 1319 0501 00       		.byte	0
+ 1320 0502 00       		.byte	0
+ 1321 0503 00       		.byte	0
+ 1322 0504 00       		.byte	0
+ 1323 0505 00       		.byte	0
+ 1324 0506 00       		.byte	0
+ 1325 0507 00       		.byte	0
+ 1326 0508 00       		.byte	0
+ 1327 0509 00       		.byte	0
+ 1328 050a 00       		.byte	0
+ 1329 050b 00       		.byte	0
+ 1330 050c 00       		.byte	0
+ 1331 050d 00       		.byte	0
+ 1332 050e 00       		.byte	0
+ 1333 050f 00       		.byte	0
+ 1334 0510 00       		.byte	0
+ 1335 0511 00       		.byte	0
+ 1336 0512 00       		.byte	0
+ 1337 0513 00       		.byte	0
+ 1338 0514 00       		.byte	0
+ 1339 0515 00       		.byte	0
+ 1340 0516 00       		.byte	0
+ 1341 0517 00       		.byte	0
+ 1342 0518 00       		.byte	0
+ 1343 0519 00       		.byte	0
+ 1344 051a 00       		.byte	0
+ 1345 051b 00       		.byte	0
+ 1346 051c 00       		.byte	0
+ 1347 051d 00       		.byte	0
+ 1348 051e 00       		.byte	0
+ 1349 051f 00       		.byte	0
+ 1350 0520 00       		.byte	0
+ 1351 0521 00       		.byte	0
+ 1352 0522 00       		.byte	0
+ 1353 0523 00       		.byte	0
+ 1354 0524 00       		.byte	0
+ 1355 0525 00       		.byte	0
+ 1356 0526 00       		.byte	0
+ 1357 0527 00       		.byte	0
+ 1358 0528 00       		.byte	0
+ 1359 0529 00       		.byte	0
+ 1360 052a 00       		.byte	0
+ 1361 052b 00       		.byte	0
+ 1362 052c 00       		.byte	0
+ 1363 052d 00       		.byte	0
+ 1364 052e 00       		.byte	0
+ 1365 052f 00       		.byte	0
+ 1366 0530 00       		.byte	0
+ 1367 0531 00       		.byte	0
+ 1368 0532 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 25
+
+
+ 1369 0533 00       		.byte	0
+ 1370 0534 00       		.byte	0
+ 1371 0535 00       		.byte	0
+ 1372 0536 00       		.byte	0
+ 1373 0537 00       		.byte	0
+ 1374 0538 00       		.byte	0
+ 1375 0539 00       		.byte	0
+ 1376 053a 00       		.byte	0
+ 1377 053b 00       		.byte	0
+ 1378 053c 00       		.byte	0
+ 1379 053d 08       		.byte	8
+ 1380 053e 00       		.byte	0
+ 1381 053f 00       		.byte	0
+ 1382              		.type	Filter_1_control, %object
+ 1383              		.size	Filter_1_control, 256
+ 1384              	Filter_1_control:
+ 1385 0540 20       		.byte	32
+ 1386 0541 13       		.byte	19
+ 1387 0542 00       		.byte	0
+ 1388 0543 25       		.byte	37
+ 1389 0544 61       		.byte	97
+ 1390 0545 17       		.byte	23
+ 1391 0546 80       		.byte	-128
+ 1392 0547 26       		.byte	38
+ 1393 0548 01       		.byte	1
+ 1394 0549 00       		.byte	0
+ 1395 054a 80       		.byte	-128
+ 1396 054b 26       		.byte	38
+ 1397 054c 20       		.byte	32
+ 1398 054d 13       		.byte	19
+ 1399 054e 80       		.byte	-128
+ 1400 054f 26       		.byte	38
+ 1401 0550 C2       		.byte	-62
+ 1402 0551 0C       		.byte	12
+ 1403 0552 80       		.byte	-128
+ 1404 0553 26       		.byte	38
+ 1405 0554 E0       		.byte	-32
+ 1406 0555 0E       		.byte	14
+ 1407 0556 80       		.byte	-128
+ 1408 0557 26       		.byte	38
+ 1409 0558 A4       		.byte	-92
+ 1410 0559 0A       		.byte	10
+ 1411 055a 80       		.byte	-128
+ 1412 055b 26       		.byte	38
+ 1413 055c 63       		.byte	99
+ 1414 055d 17       		.byte	23
+ 1415 055e 10       		.byte	16
+ 1416 055f 06       		.byte	6
+ 1417 0560 86       		.byte	-122
+ 1418 0561 08       		.byte	8
+ 1419 0562 80       		.byte	-128
+ 1420 0563 26       		.byte	38
+ 1421 0564 68       		.byte	104
+ 1422 0565 06       		.byte	6
+ 1423 0566 80       		.byte	-128
+ 1424 0567 6D       		.byte	109
+ 1425 0568 66       		.byte	102
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 26
+
+
+ 1426 0569 06       		.byte	6
+ 1427 056a 80       		.byte	-128
+ 1428 056b 2F       		.byte	47
+ 1429 056c 20       		.byte	32
+ 1430 056d 02       		.byte	2
+ 1431 056e 10       		.byte	16
+ 1432 056f 6F       		.byte	111
+ 1433 0570 00       		.byte	0
+ 1434 0571 80       		.byte	-128
+ 1435 0572 80       		.byte	-128
+ 1436 0573 26       		.byte	38
+ 1437 0574 20       		.byte	32
+ 1438 0575 02       		.byte	2
+ 1439 0576 80       		.byte	-128
+ 1440 0577 6F       		.byte	111
+ 1441 0578 00       		.byte	0
+ 1442 0579 80       		.byte	-128
+ 1443 057a 80       		.byte	-128
+ 1444 057b 26       		.byte	38
+ 1445 057c 20       		.byte	32
+ 1446 057d 02       		.byte	2
+ 1447 057e 80       		.byte	-128
+ 1448 057f 6F       		.byte	111
+ 1449 0580 20       		.byte	32
+ 1450 0581 02       		.byte	2
+ 1451 0582 80       		.byte	-128
+ 1452 0583 6F       		.byte	111
+ 1453 0584 21       		.byte	33
+ 1454 0585 1A       		.byte	26
+ 1455 0586 40       		.byte	64
+ 1456 0587 FE       		.byte	-2
+ 1457 0588 00       		.byte	0
+ 1458 0589 00       		.byte	0
+ 1459 058a 80       		.byte	-128
+ 1460 058b 26       		.byte	38
+ 1461 058c 02       		.byte	2
+ 1462 058d 22       		.byte	34
+ 1463 058e 10       		.byte	16
+ 1464 058f 66       		.byte	102
+ 1465 0590 00       		.byte	0
+ 1466 0591 80       		.byte	-128
+ 1467 0592 10       		.byte	16
+ 1468 0593 6E       		.byte	110
+ 1469 0594 01       		.byte	1
+ 1470 0595 82       		.byte	-126
+ 1471 0596 80       		.byte	-128
+ 1472 0597 26       		.byte	38
+ 1473 0598 00       		.byte	0
+ 1474 0599 00       		.byte	0
+ 1475 059a 00       		.byte	0
+ 1476 059b 00       		.byte	0
+ 1477 059c 00       		.byte	0
+ 1478 059d 00       		.byte	0
+ 1479 059e 00       		.byte	0
+ 1480 059f 00       		.byte	0
+ 1481 05a0 00       		.byte	0
+ 1482 05a1 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 27
+
+
+ 1483 05a2 00       		.byte	0
+ 1484 05a3 00       		.byte	0
+ 1485 05a4 00       		.byte	0
+ 1486 05a5 00       		.byte	0
+ 1487 05a6 00       		.byte	0
+ 1488 05a7 00       		.byte	0
+ 1489 05a8 00       		.byte	0
+ 1490 05a9 00       		.byte	0
+ 1491 05aa 00       		.byte	0
+ 1492 05ab 00       		.byte	0
+ 1493 05ac 00       		.byte	0
+ 1494 05ad 00       		.byte	0
+ 1495 05ae 00       		.byte	0
+ 1496 05af 00       		.byte	0
+ 1497 05b0 00       		.byte	0
+ 1498 05b1 00       		.byte	0
+ 1499 05b2 00       		.byte	0
+ 1500 05b3 00       		.byte	0
+ 1501 05b4 00       		.byte	0
+ 1502 05b5 00       		.byte	0
+ 1503 05b6 00       		.byte	0
+ 1504 05b7 00       		.byte	0
+ 1505 05b8 00       		.byte	0
+ 1506 05b9 00       		.byte	0
+ 1507 05ba 00       		.byte	0
+ 1508 05bb 00       		.byte	0
+ 1509 05bc 00       		.byte	0
+ 1510 05bd 00       		.byte	0
+ 1511 05be 00       		.byte	0
+ 1512 05bf 00       		.byte	0
+ 1513 05c0 00       		.byte	0
+ 1514 05c1 00       		.byte	0
+ 1515 05c2 00       		.byte	0
+ 1516 05c3 00       		.byte	0
+ 1517 05c4 00       		.byte	0
+ 1518 05c5 00       		.byte	0
+ 1519 05c6 00       		.byte	0
+ 1520 05c7 00       		.byte	0
+ 1521 05c8 00       		.byte	0
+ 1522 05c9 00       		.byte	0
+ 1523 05ca 00       		.byte	0
+ 1524 05cb 00       		.byte	0
+ 1525 05cc 00       		.byte	0
+ 1526 05cd 00       		.byte	0
+ 1527 05ce 00       		.byte	0
+ 1528 05cf 00       		.byte	0
+ 1529 05d0 00       		.byte	0
+ 1530 05d1 00       		.byte	0
+ 1531 05d2 00       		.byte	0
+ 1532 05d3 00       		.byte	0
+ 1533 05d4 00       		.byte	0
+ 1534 05d5 00       		.byte	0
+ 1535 05d6 00       		.byte	0
+ 1536 05d7 00       		.byte	0
+ 1537 05d8 00       		.byte	0
+ 1538 05d9 00       		.byte	0
+ 1539 05da 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 28
+
+
+ 1540 05db 00       		.byte	0
+ 1541 05dc 00       		.byte	0
+ 1542 05dd 00       		.byte	0
+ 1543 05de 00       		.byte	0
+ 1544 05df 00       		.byte	0
+ 1545 05e0 00       		.byte	0
+ 1546 05e1 00       		.byte	0
+ 1547 05e2 00       		.byte	0
+ 1548 05e3 00       		.byte	0
+ 1549 05e4 00       		.byte	0
+ 1550 05e5 00       		.byte	0
+ 1551 05e6 00       		.byte	0
+ 1552 05e7 00       		.byte	0
+ 1553 05e8 00       		.byte	0
+ 1554 05e9 00       		.byte	0
+ 1555 05ea 00       		.byte	0
+ 1556 05eb 00       		.byte	0
+ 1557 05ec 00       		.byte	0
+ 1558 05ed 00       		.byte	0
+ 1559 05ee 00       		.byte	0
+ 1560 05ef 00       		.byte	0
+ 1561 05f0 00       		.byte	0
+ 1562 05f1 00       		.byte	0
+ 1563 05f2 00       		.byte	0
+ 1564 05f3 00       		.byte	0
+ 1565 05f4 00       		.byte	0
+ 1566 05f5 00       		.byte	0
+ 1567 05f6 00       		.byte	0
+ 1568 05f7 00       		.byte	0
+ 1569 05f8 00       		.byte	0
+ 1570 05f9 00       		.byte	0
+ 1571 05fa 00       		.byte	0
+ 1572 05fb 00       		.byte	0
+ 1573 05fc 00       		.byte	0
+ 1574 05fd 00       		.byte	0
+ 1575 05fe 00       		.byte	0
+ 1576 05ff 00       		.byte	0
+ 1577 0600 00       		.byte	0
+ 1578 0601 00       		.byte	0
+ 1579 0602 00       		.byte	0
+ 1580 0603 00       		.byte	0
+ 1581 0604 00       		.byte	0
+ 1582 0605 00       		.byte	0
+ 1583 0606 00       		.byte	0
+ 1584 0607 00       		.byte	0
+ 1585 0608 00       		.byte	0
+ 1586 0609 00       		.byte	0
+ 1587 060a 00       		.byte	0
+ 1588 060b 00       		.byte	0
+ 1589 060c 00       		.byte	0
+ 1590 060d 00       		.byte	0
+ 1591 060e 00       		.byte	0
+ 1592 060f 00       		.byte	0
+ 1593 0610 00       		.byte	0
+ 1594 0611 00       		.byte	0
+ 1595 0612 00       		.byte	0
+ 1596 0613 00       		.byte	0
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 29
+
+
+ 1597 0614 00       		.byte	0
+ 1598 0615 00       		.byte	0
+ 1599 0616 00       		.byte	0
+ 1600 0617 00       		.byte	0
+ 1601 0618 00       		.byte	0
+ 1602 0619 00       		.byte	0
+ 1603 061a 00       		.byte	0
+ 1604 061b 00       		.byte	0
+ 1605 061c 00       		.byte	0
+ 1606 061d 00       		.byte	0
+ 1607 061e 00       		.byte	0
+ 1608 061f 00       		.byte	0
+ 1609 0620 00       		.byte	0
+ 1610 0621 00       		.byte	0
+ 1611 0622 00       		.byte	0
+ 1612 0623 00       		.byte	0
+ 1613 0624 00       		.byte	0
+ 1614 0625 00       		.byte	0
+ 1615 0626 00       		.byte	0
+ 1616 0627 00       		.byte	0
+ 1617 0628 00       		.byte	0
+ 1618 0629 00       		.byte	0
+ 1619 062a 00       		.byte	0
+ 1620 062b 00       		.byte	0
+ 1621 062c 00       		.byte	0
+ 1622 062d 00       		.byte	0
+ 1623 062e 00       		.byte	0
+ 1624 062f 00       		.byte	0
+ 1625 0630 00       		.byte	0
+ 1626 0631 00       		.byte	0
+ 1627 0632 00       		.byte	0
+ 1628 0633 00       		.byte	0
+ 1629 0634 00       		.byte	0
+ 1630 0635 00       		.byte	0
+ 1631 0636 00       		.byte	0
+ 1632 0637 00       		.byte	0
+ 1633 0638 00       		.byte	0
+ 1634 0639 00       		.byte	0
+ 1635 063a 00       		.byte	0
+ 1636 063b 00       		.byte	0
+ 1637 063c 00       		.byte	0
+ 1638 063d 00       		.byte	0
+ 1639 063e 00       		.byte	0
+ 1640 063f 00       		.byte	0
+ 1641              		.text
+ 1642              	.Letext0:
+ 1643              		.file 1 "Generated_Source\\PSoC5\\Filter_1_RAM_Data.c"
+ 1644              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 1645              		.section	.debug_info,"",%progbits
+ 1646              	.Ldebug_info0:
+ 1647 0000 33010000 		.4byte	0x133
+ 1648 0004 0400     		.2byte	0x4
+ 1649 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1650 000a 04       		.byte	0x4
+ 1651 000b 01       		.uleb128 0x1
+ 1652 000c 46000000 		.4byte	.LASF19
+ 1653 0010 0C       		.byte	0xc
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 30
+
+
+ 1654 0011 1B000000 		.4byte	.LASF20
+ 1655 0015 96010000 		.4byte	.LASF21
+ 1656 0019 00000000 		.4byte	.Ldebug_line0
+ 1657 001d 02       		.uleb128 0x2
+ 1658 001e 04       		.byte	0x4
+ 1659 001f 05       		.byte	0x5
+ 1660 0020 696E7400 		.ascii	"int\000"
+ 1661 0024 03       		.uleb128 0x3
+ 1662 0025 04       		.byte	0x4
+ 1663 0026 07       		.byte	0x7
+ 1664 0027 0E000000 		.4byte	.LASF0
+ 1665 002b 03       		.uleb128 0x3
+ 1666 002c 08       		.byte	0x8
+ 1667 002d 05       		.byte	0x5
+ 1668 002e 00000000 		.4byte	.LASF1
+ 1669 0032 03       		.uleb128 0x3
+ 1670 0033 08       		.byte	0x8
+ 1671 0034 04       		.byte	0x4
+ 1672 0035 4B010000 		.4byte	.LASF2
+ 1673 0039 03       		.uleb128 0x3
+ 1674 003a 01       		.byte	0x1
+ 1675 003b 06       		.byte	0x6
+ 1676 003c 3F010000 		.4byte	.LASF3
+ 1677 0040 03       		.uleb128 0x3
+ 1678 0041 01       		.byte	0x1
+ 1679 0042 08       		.byte	0x8
+ 1680 0043 09010000 		.4byte	.LASF4
+ 1681 0047 03       		.uleb128 0x3
+ 1682 0048 02       		.byte	0x2
+ 1683 0049 05       		.byte	0x5
+ 1684 004a 8C010000 		.4byte	.LASF5
+ 1685 004e 03       		.uleb128 0x3
+ 1686 004f 02       		.byte	0x2
+ 1687 0050 07       		.byte	0x7
+ 1688 0051 2C010000 		.4byte	.LASF6
+ 1689 0055 03       		.uleb128 0x3
+ 1690 0056 04       		.byte	0x4
+ 1691 0057 05       		.byte	0x5
+ 1692 0058 1C010000 		.4byte	.LASF7
+ 1693 005c 03       		.uleb128 0x3
+ 1694 005d 04       		.byte	0x4
+ 1695 005e 07       		.byte	0x7
+ 1696 005f DA000000 		.4byte	.LASF8
+ 1697 0063 03       		.uleb128 0x3
+ 1698 0064 08       		.byte	0x8
+ 1699 0065 07       		.byte	0x7
+ 1700 0066 EC000000 		.4byte	.LASF9
+ 1701 006a 03       		.uleb128 0x3
+ 1702 006b 04       		.byte	0x4
+ 1703 006c 07       		.byte	0x7
+ 1704 006d 83010000 		.4byte	.LASF10
+ 1705 0071 03       		.uleb128 0x3
+ 1706 0072 01       		.byte	0x1
+ 1707 0073 08       		.byte	0x8
+ 1708 0074 17010000 		.4byte	.LASF11
+ 1709 0078 04       		.uleb128 0x4
+ 1710 0079 D4000000 		.4byte	.LASF22
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 31
+
+
+ 1711 007d 02       		.byte	0x2
+ 1712 007e E901     		.2byte	0x1e9
+ 1713 0080 40000000 		.4byte	0x40
+ 1714 0084 03       		.uleb128 0x3
+ 1715 0085 04       		.byte	0x4
+ 1716 0086 04       		.byte	0x4
+ 1717 0087 03010000 		.4byte	.LASF12
+ 1718 008b 03       		.uleb128 0x3
+ 1719 008c 08       		.byte	0x8
+ 1720 008d 04       		.byte	0x4
+ 1721 008e 25010000 		.4byte	.LASF13
+ 1722 0092 05       		.uleb128 0x5
+ 1723 0093 A2000000 		.4byte	0xa2
+ 1724 0097 A2000000 		.4byte	0xa2
+ 1725 009b 06       		.uleb128 0x6
+ 1726 009c 6A000000 		.4byte	0x6a
+ 1727 00a0 FF       		.byte	0xff
+ 1728 00a1 00       		.byte	0
+ 1729 00a2 07       		.uleb128 0x7
+ 1730 00a3 78000000 		.4byte	0x78
+ 1731 00a7 08       		.uleb128 0x8
+ 1732 00a8 72010000 		.4byte	.LASF14
+ 1733 00ac 01       		.byte	0x1
+ 1734 00ad 04       		.byte	0x4
+ 1735 00ae B8000000 		.4byte	0xb8
+ 1736 00b2 05       		.uleb128 0x5
+ 1737 00b3 03       		.byte	0x3
+ 1738 00b4 00000000 		.4byte	Filter_1_control
+ 1739 00b8 07       		.uleb128 0x7
+ 1740 00b9 92000000 		.4byte	0x92
+ 1741 00bd 05       		.uleb128 0x5
+ 1742 00be A2000000 		.4byte	0xa2
+ 1743 00c2 CE000000 		.4byte	0xce
+ 1744 00c6 09       		.uleb128 0x9
+ 1745 00c7 6A000000 		.4byte	0x6a
+ 1746 00cb FF01     		.2byte	0x1ff
+ 1747 00cd 00       		.byte	0
+ 1748 00ce 08       		.uleb128 0x8
+ 1749 00cf E6010000 		.4byte	.LASF15
+ 1750 00d3 01       		.byte	0x1
+ 1751 00d4 28       		.byte	0x28
+ 1752 00d5 DF000000 		.4byte	0xdf
+ 1753 00d9 05       		.uleb128 0x5
+ 1754 00da 03       		.byte	0x3
+ 1755 00db 00000000 		.4byte	Filter_1_data_a
+ 1756 00df 07       		.uleb128 0x7
+ 1757 00e0 BD000000 		.4byte	0xbd
+ 1758 00e4 08       		.uleb128 0x8
+ 1759 00e5 F6010000 		.4byte	.LASF16
+ 1760 00e9 01       		.byte	0x1
+ 1761 00ea 6C       		.byte	0x6c
+ 1762 00eb F5000000 		.4byte	0xf5
+ 1763 00ef 05       		.uleb128 0x5
+ 1764 00f0 03       		.byte	0x3
+ 1765 00f1 00000000 		.4byte	Filter_1_data_b
+ 1766 00f5 07       		.uleb128 0x7
+ 1767 00f6 BD000000 		.4byte	0xbd
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 32
+
+
+ 1768 00fa 08       		.uleb128 0x8
+ 1769 00fb 64010000 		.4byte	.LASF17
+ 1770 00ff 01       		.byte	0x1
+ 1771 0100 BC       		.byte	0xbc
+ 1772 0101 0B010000 		.4byte	0x10b
+ 1773 0105 05       		.uleb128 0x5
+ 1774 0106 03       		.byte	0x3
+ 1775 0107 00000000 		.4byte	Filter_1_cfsm
+ 1776 010b 07       		.uleb128 0x7
+ 1777 010c 92000000 		.4byte	0x92
+ 1778 0110 05       		.uleb128 0x5
+ 1779 0111 A2000000 		.4byte	0xa2
+ 1780 0115 20010000 		.4byte	0x120
+ 1781 0119 06       		.uleb128 0x6
+ 1782 011a 6A000000 		.4byte	0x6a
+ 1783 011e 3F       		.byte	0x3f
+ 1784 011f 00       		.byte	0
+ 1785 0120 08       		.uleb128 0x8
+ 1786 0121 57010000 		.4byte	.LASF18
+ 1787 0125 01       		.byte	0x1
+ 1788 0126 B0       		.byte	0xb0
+ 1789 0127 31010000 		.4byte	0x131
+ 1790 012b 05       		.uleb128 0x5
+ 1791 012c 03       		.byte	0x3
+ 1792 012d 00000000 		.4byte	Filter_1_acu
+ 1793 0131 07       		.uleb128 0x7
+ 1794 0132 10010000 		.4byte	0x110
+ 1795 0136 00       		.byte	0
+ 1796              		.section	.debug_abbrev,"",%progbits
+ 1797              	.Ldebug_abbrev0:
+ 1798 0000 01       		.uleb128 0x1
+ 1799 0001 11       		.uleb128 0x11
+ 1800 0002 01       		.byte	0x1
+ 1801 0003 25       		.uleb128 0x25
+ 1802 0004 0E       		.uleb128 0xe
+ 1803 0005 13       		.uleb128 0x13
+ 1804 0006 0B       		.uleb128 0xb
+ 1805 0007 03       		.uleb128 0x3
+ 1806 0008 0E       		.uleb128 0xe
+ 1807 0009 1B       		.uleb128 0x1b
+ 1808 000a 0E       		.uleb128 0xe
+ 1809 000b 10       		.uleb128 0x10
+ 1810 000c 17       		.uleb128 0x17
+ 1811 000d 00       		.byte	0
+ 1812 000e 00       		.byte	0
+ 1813 000f 02       		.uleb128 0x2
+ 1814 0010 24       		.uleb128 0x24
+ 1815 0011 00       		.byte	0
+ 1816 0012 0B       		.uleb128 0xb
+ 1817 0013 0B       		.uleb128 0xb
+ 1818 0014 3E       		.uleb128 0x3e
+ 1819 0015 0B       		.uleb128 0xb
+ 1820 0016 03       		.uleb128 0x3
+ 1821 0017 08       		.uleb128 0x8
+ 1822 0018 00       		.byte	0
+ 1823 0019 00       		.byte	0
+ 1824 001a 03       		.uleb128 0x3
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 33
+
+
+ 1825 001b 24       		.uleb128 0x24
+ 1826 001c 00       		.byte	0
+ 1827 001d 0B       		.uleb128 0xb
+ 1828 001e 0B       		.uleb128 0xb
+ 1829 001f 3E       		.uleb128 0x3e
+ 1830 0020 0B       		.uleb128 0xb
+ 1831 0021 03       		.uleb128 0x3
+ 1832 0022 0E       		.uleb128 0xe
+ 1833 0023 00       		.byte	0
+ 1834 0024 00       		.byte	0
+ 1835 0025 04       		.uleb128 0x4
+ 1836 0026 16       		.uleb128 0x16
+ 1837 0027 00       		.byte	0
+ 1838 0028 03       		.uleb128 0x3
+ 1839 0029 0E       		.uleb128 0xe
+ 1840 002a 3A       		.uleb128 0x3a
+ 1841 002b 0B       		.uleb128 0xb
+ 1842 002c 3B       		.uleb128 0x3b
+ 1843 002d 05       		.uleb128 0x5
+ 1844 002e 49       		.uleb128 0x49
+ 1845 002f 13       		.uleb128 0x13
+ 1846 0030 00       		.byte	0
+ 1847 0031 00       		.byte	0
+ 1848 0032 05       		.uleb128 0x5
+ 1849 0033 01       		.uleb128 0x1
+ 1850 0034 01       		.byte	0x1
+ 1851 0035 49       		.uleb128 0x49
+ 1852 0036 13       		.uleb128 0x13
+ 1853 0037 01       		.uleb128 0x1
+ 1854 0038 13       		.uleb128 0x13
+ 1855 0039 00       		.byte	0
+ 1856 003a 00       		.byte	0
+ 1857 003b 06       		.uleb128 0x6
+ 1858 003c 21       		.uleb128 0x21
+ 1859 003d 00       		.byte	0
+ 1860 003e 49       		.uleb128 0x49
+ 1861 003f 13       		.uleb128 0x13
+ 1862 0040 2F       		.uleb128 0x2f
+ 1863 0041 0B       		.uleb128 0xb
+ 1864 0042 00       		.byte	0
+ 1865 0043 00       		.byte	0
+ 1866 0044 07       		.uleb128 0x7
+ 1867 0045 26       		.uleb128 0x26
+ 1868 0046 00       		.byte	0
+ 1869 0047 49       		.uleb128 0x49
+ 1870 0048 13       		.uleb128 0x13
+ 1871 0049 00       		.byte	0
+ 1872 004a 00       		.byte	0
+ 1873 004b 08       		.uleb128 0x8
+ 1874 004c 34       		.uleb128 0x34
+ 1875 004d 00       		.byte	0
+ 1876 004e 03       		.uleb128 0x3
+ 1877 004f 0E       		.uleb128 0xe
+ 1878 0050 3A       		.uleb128 0x3a
+ 1879 0051 0B       		.uleb128 0xb
+ 1880 0052 3B       		.uleb128 0x3b
+ 1881 0053 0B       		.uleb128 0xb
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 34
+
+
+ 1882 0054 49       		.uleb128 0x49
+ 1883 0055 13       		.uleb128 0x13
+ 1884 0056 3F       		.uleb128 0x3f
+ 1885 0057 19       		.uleb128 0x19
+ 1886 0058 02       		.uleb128 0x2
+ 1887 0059 18       		.uleb128 0x18
+ 1888 005a 00       		.byte	0
+ 1889 005b 00       		.byte	0
+ 1890 005c 09       		.uleb128 0x9
+ 1891 005d 21       		.uleb128 0x21
+ 1892 005e 00       		.byte	0
+ 1893 005f 49       		.uleb128 0x49
+ 1894 0060 13       		.uleb128 0x13
+ 1895 0061 2F       		.uleb128 0x2f
+ 1896 0062 05       		.uleb128 0x5
+ 1897 0063 00       		.byte	0
+ 1898 0064 00       		.byte	0
+ 1899 0065 00       		.byte	0
+ 1900              		.section	.debug_aranges,"",%progbits
+ 1901 0000 14000000 		.4byte	0x14
+ 1902 0004 0200     		.2byte	0x2
+ 1903 0006 00000000 		.4byte	.Ldebug_info0
+ 1904 000a 04       		.byte	0x4
+ 1905 000b 00       		.byte	0
+ 1906 000c 0000     		.2byte	0
+ 1907 000e 0000     		.2byte	0
+ 1908 0010 00000000 		.4byte	0
+ 1909 0014 00000000 		.4byte	0
+ 1910              		.section	.debug_line,"",%progbits
+ 1911              	.Ldebug_line0:
+ 1912 0000 54000000 		.section	.debug_str,"MS",%progbits,1
+ 1912      02004E00 
+ 1912      00000201 
+ 1912      FB0E0D00 
+ 1912      01010101 
+ 1913              	.LASF1:
+ 1914 0000 6C6F6E67 		.ascii	"long long int\000"
+ 1914      206C6F6E 
+ 1914      6720696E 
+ 1914      7400
+ 1915              	.LASF0:
+ 1916 000e 756E7369 		.ascii	"unsigned int\000"
+ 1916      676E6564 
+ 1916      20696E74 
+ 1916      00
+ 1917              	.LASF20:
+ 1918 001b 47656E65 		.ascii	"Generated_Source\\PSoC5\\Filter_1_RAM_Data.c\000"
+ 1918      72617465 
+ 1918      645F536F 
+ 1918      75726365 
+ 1918      5C50536F 
+ 1919              	.LASF19:
+ 1920 0046 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1920      43313120 
+ 1920      352E342E 
+ 1920      31203230 
+ 1920      31363036 
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 35
+
+
+ 1921 0079 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1921      20726576 
+ 1921      6973696F 
+ 1921      6E203233 
+ 1921      37373135 
+ 1922 00ac 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1922      66756E63 
+ 1922      74696F6E 
+ 1922      2D736563 
+ 1922      74696F6E 
+ 1923              	.LASF22:
+ 1924 00d4 75696E74 		.ascii	"uint8\000"
+ 1924      3800
+ 1925              	.LASF8:
+ 1926 00da 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1926      20756E73 
+ 1926      69676E65 
+ 1926      6420696E 
+ 1926      7400
+ 1927              	.LASF9:
+ 1928 00ec 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1928      206C6F6E 
+ 1928      6720756E 
+ 1928      7369676E 
+ 1928      65642069 
+ 1929              	.LASF12:
+ 1930 0103 666C6F61 		.ascii	"float\000"
+ 1930      7400
+ 1931              	.LASF4:
+ 1932 0109 756E7369 		.ascii	"unsigned char\000"
+ 1932      676E6564 
+ 1932      20636861 
+ 1932      7200
+ 1933              	.LASF11:
+ 1934 0117 63686172 		.ascii	"char\000"
+ 1934      00
+ 1935              	.LASF7:
+ 1936 011c 6C6F6E67 		.ascii	"long int\000"
+ 1936      20696E74 
+ 1936      00
+ 1937              	.LASF13:
+ 1938 0125 646F7562 		.ascii	"double\000"
+ 1938      6C6500
+ 1939              	.LASF6:
+ 1940 012c 73686F72 		.ascii	"short unsigned int\000"
+ 1940      7420756E 
+ 1940      7369676E 
+ 1940      65642069 
+ 1940      6E7400
+ 1941              	.LASF3:
+ 1942 013f 7369676E 		.ascii	"signed char\000"
+ 1942      65642063 
+ 1942      68617200 
+ 1943              	.LASF2:
+ 1944 014b 6C6F6E67 		.ascii	"long double\000"
+ 1944      20646F75 
+ 1944      626C6500 
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\ccGnAiND.s 			page 36
+
+
+ 1945              	.LASF18:
+ 1946 0157 46696C74 		.ascii	"Filter_1_acu\000"
+ 1946      65725F31 
+ 1946      5F616375 
+ 1946      00
+ 1947              	.LASF17:
+ 1948 0164 46696C74 		.ascii	"Filter_1_cfsm\000"
+ 1948      65725F31 
+ 1948      5F636673 
+ 1948      6D00
+ 1949              	.LASF14:
+ 1950 0172 46696C74 		.ascii	"Filter_1_control\000"
+ 1950      65725F31 
+ 1950      5F636F6E 
+ 1950      74726F6C 
+ 1950      00
+ 1951              	.LASF10:
+ 1952 0183 73697A65 		.ascii	"sizetype\000"
+ 1952      74797065 
+ 1952      00
+ 1953              	.LASF5:
+ 1954 018c 73686F72 		.ascii	"short int\000"
+ 1954      7420696E 
+ 1954      7400
+ 1955              	.LASF21:
+ 1956 0196 433A5C55 		.ascii	"C:\\UGR\\TFG\\Proyecto\\PSoC Creator\\PPG_SerialPor"
+ 1956      47525C54 
+ 1956      46475C50 
+ 1956      726F7965 
+ 1956      63746F5C 
+ 1957 01c4 74436F6D 		.ascii	"tComunication\\PulseOximetry.cydsn\000"
+ 1957      756E6963 
+ 1957      6174696F 
+ 1957      6E5C5075 
+ 1957      6C73654F 
+ 1958              	.LASF15:
+ 1959 01e6 46696C74 		.ascii	"Filter_1_data_a\000"
+ 1959      65725F31 
+ 1959      5F646174 
+ 1959      615F6100 
+ 1960              	.LASF16:
+ 1961 01f6 46696C74 		.ascii	"Filter_1_data_b\000"
+ 1961      65725F31 
+ 1961      5F646174 
+ 1961      615F6200 
+ 1962              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

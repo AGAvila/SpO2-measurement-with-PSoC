@@ -1,0 +1,1967 @@
+Archive member included to satisfy reference by file (symbol)
+
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (ADC_DelSig_Start)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o) (ADC_DelSig_ISR1)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (UART_1_Start)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o) (UART_1_TXISR)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (DMA_1_DmaInitialize)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o) (ADC_DelSig_AMux_Select)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o) (ADC_DelSig_Ext_CP_Clk_SetModeRegister)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o) (ADC_DelSig_theACLK_SetModeRegister)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o) (UART_1_IntClock_Start)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o (CyDmacConfigure)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o (CyHalt)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o) (CyPmReadStatus)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (Out1_2_Write)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (Out1_1_Write)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (TIA_Start)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (Filter_1_Start)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o) (Filter_1_SetInterruptMode)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o) (Filter_1_cfsm)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (DMA_2_DmaInitialize)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (isr_UART_StartEx)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (isr_Filter_End_StartEx)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyBootAsmGnu.o)
+                              .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o (CyDelayCycles)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o) (CyFlash_SetWaitCycles)
+.\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o) (CySpcStart)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (pow)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (sqrt)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o) (__ieee754_pow)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o) (__ieee754_sqrt)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o) (fabs)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_finite.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o) (finite)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_lib_ver.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o) (__fdlib_version)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o) (matherr)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o) (nan)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_rint.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o) (rint)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_scalbn.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o) (scalbn)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_copysign.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_scalbn.o) (copysign)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o) (__aeabi_dsub)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivdf3.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (__aeabi_dmul)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpdf2.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o) (__aeabi_dcmpeq)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_unorddf2.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o) (__aeabi_dcmpun)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunsdfsi.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (__aeabi_d2uiz)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (__aeabi_d2f)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (__aeabi_fsub)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (__aeabi_fmul)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunssfsi.o)
+                              .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o) (__aeabi_f2uiz)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                              .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o (memcpy)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+DMA_1_TD            0x1               .\CortexM3\ARM_GCC_541\Debug\main.o
+ADC_DelSig_CountsPerVolt
+                    0x4               .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+UART_1_txBuffer     0xfa0             .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+RED_samples         0x3e80            .\CortexM3\ARM_GCC_541\Debug\main.o
+samples1            0xfa0             .\CortexM3\ARM_GCC_541\Debug\main.o
+IR_samples          0x3e80            .\CortexM3\ARM_GCC_541\Debug\main.o
+DMA_2_TD            0x2               .\CortexM3\ARM_GCC_541\Debug\main.o
+DMA_2_Chan          0x1               .\CortexM3\ARM_GCC_541\Debug\main.o
+samples2            0xfa0             .\CortexM3\ARM_GCC_541\Debug\main.o
+DMA_1_Chan          0x1               .\CortexM3\ARM_GCC_541\Debug\main.o
+dieTemperature      0x2               .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .text          0x00000000       0x74 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.SetAnalogRoutingPumps
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .data          0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .text._exit    0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .text._sbrk    0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_Stop
+                0x00000000       0xe4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_SetBufferGain
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_SetCoherency
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_SetGCOR
+                0x00000000       0x74 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_ReadGCOR
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_StopConvert
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_IsEndConversion
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_GetResult8
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_GetResult16
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_GetResult32
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_SetOffset
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_SetGain
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_CountsTo_mVolts
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_CountsTo_Volts
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_CountsTo_uVolts
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_SelectConfiguration
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_Read8
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_Read16
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_Read32
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .text.ADC_DelSig_ISR2
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .text.ADC_DelSig_ISR3
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .text.ADC_DelSig_ISR4
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_Stop
+                0x00000000       0x44 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_ReadControlRegister
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_WriteControlRegister
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_SetRxInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_GetChar
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_GetByte
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_GetRxBufferSize
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_SetRxAddressMode
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_SetRxAddress1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_SetRxAddress2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_SetTxInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_WriteTxData
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_ReadTxStatus
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_PutCRLF
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_GetTxBufferSize
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_ClearTxBuffer
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_SendBreak
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text.UART_1_SetTxAddressMode
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .text.DMA_1_DmaRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .text.ADC_DelSig_AMux_FastSelect
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .text.ADC_DelSig_Ext_CP_Clk_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .text.ADC_DelSig_Ext_CP_Clk_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .text.ADC_DelSig_Ext_CP_Clk_StopBlock
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .text.ADC_DelSig_Ext_CP_Clk_StandbyPower
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .text.ADC_DelSig_Ext_CP_Clk_ClearModeRegister
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .text.ADC_DelSig_Ext_CP_Clk_GetModeRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .text.ADC_DelSig_Ext_CP_Clk_SetSourceRegister
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text.ADC_DelSig_theACLK_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text.ADC_DelSig_theACLK_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text.ADC_DelSig_theACLK_StopBlock
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text.ADC_DelSig_theACLK_StandbyPower
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text.ADC_DelSig_theACLK_ClearModeRegister
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text.ADC_DelSig_theACLK_GetModeRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text.ADC_DelSig_theACLK_SetSourceRegister
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text.ADC_DelSig_theACLK_SetPhaseRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text.ADC_DelSig_theACLK_GetPhaseRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_StopBlock
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_StandbyPower
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_GetDividerRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_SetModeRegister
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_ClearModeRegister
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_GetModeRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_GetSourceRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_SetDividerRegister
+                0x00000000       0xdc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text.UART_1_IntClock_SetSourceRegister
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmacError
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmacClearError
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmacErrorAddress
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaChAlloc
+                0x00000000       0x38 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaChFree
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaClearPendingDrq
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaChSetRequest
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaChGetRequest
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaChStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaTdFree
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaTdFreeCount
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaTdGetConfiguration
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaTdGetAddress
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text.CyDmaChRoundRobin
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .bss           0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyUSB_PowerOnCheck
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyBusClk_Internal_SetDivider
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyPLL_OUT_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIMO_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIMO_EnableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIMO_DisableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyMasterClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyMasterClk_SetDivider
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyBusClk_SetDivider
+                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyUsbClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyILO_Start1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyILO_Stop1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyILO_Start100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyILO_Stop100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyPLL_OUT_Start
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIMO_Start
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyILO_Enable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyILO_Disable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyILO_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyILO_SetPowerMode
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Stop
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_Start
+                0x00000000       0xac .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_EnableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_DisableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_ReadStatus
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_EnableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_DisableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_SetStartup
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_SetFbVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_SetWdVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyPLL_OUT_SetPQ
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyPLL_OUT_SetSource
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIMO_SetTrimValue
+                0x00000000       0xcc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIMO_SetFreq
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIMO_SetSource
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyDelay  0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x00000000       0x84 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Start
+                0x00000000       0x74 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyWdtStart
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyWdtClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyVdStickyStatus
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyVdLvDigitEnable
+                0x00000000       0x84 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyVdLvAnalogEnable
+                0x00000000       0x80 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyVdLvDigitDisable
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyVdLvAnalogDisable
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyVdHvAnalogEnable
+                0x00000000       0x54 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyVdHvAnalogDisable
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyVdRealTimeStatus
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyFlushCache
+                0x00000000       0x44 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickGetClockSource
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text.CyGetUniqueId
+                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .bss           0x00000000       0x43 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmHibSlpSaveSet
+                0x00000000      0x1dc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmHibSlpRestore
+                0x00000000       0xd8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmHviLviSaveDisable
+                0x00000000       0xa0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmHibSaveSet
+                0x00000000       0x98 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmHviLviRestore
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmHibRestore
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmSaveClocks
+                0x00000000      0x218 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmRestoreClocks
+                0x00000000      0x24c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmAltAct
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmSleep
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmHibernateEx
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmHibernate
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmReadStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmCtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmOppsSet
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text.CyPmFtwSetInterval
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .rodata        0x00000000        0xf .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .text.Out1_2_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .text.Out1_2_Read
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .text.Out1_2_ReadDataReg
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .text.Out1_1_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .text.Out1_1_Read
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .text.Out1_1_ReadDataReg
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .text.TIA_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text.Filter_1_Stop
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text.Filter_1_Read8
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text.Filter_1_Read16
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text.Filter_1_Read24
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text.Filter_1_Write8
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text.Filter_1_Write16
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text.Filter_1_Write24
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text.Filter_1_SetCoherencyEx
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text.Filter_1_SetDalign
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .text.DMA_2_DmaRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .text.isr_UART_Interrupt
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .text.isr_UART_GetVector
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .text.isr_UART_GetPriority
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .text.isr_UART_GetState
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .text.isr_UART_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .text.isr_UART_Stop
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .text.isr_UART_SetPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .text.isr_UART_ClearPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .text.isr_Filter_End_Interrupt
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .text.isr_Filter_End_GetVector
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .text.isr_Filter_End_GetPriority
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .text.isr_Filter_End_GetState
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .text.isr_Filter_End_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .text.isr_Filter_End_Stop
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .text.isr_Filter_End_SetPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .text.isr_Filter_End_ClearPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CySetTempInt
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyFlash_Start
+                0x00000000       0x54 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyFlash_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyFlash_EraseRow
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyFlashGetSpcAlgorithm
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CySetTemp
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CySetFlashEEBuffer
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyWriteRowFull
+                0x00000000       0xf8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyWriteRowData
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyFlash_SetWaitCycles
+                0x00000000       0x7c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyEEPROM_Start
+                0x00000000       0x54 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyEEPROM_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyEEPROM_ReadReserve
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text.CyEEPROM_ReadRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ COMMON         0x00000000        0x2 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .bss           0x00000000        0x8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcStart
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcStop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcReadData
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcLoadMultiByte
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcLoadRow
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcLoadRowFull
+                0x00000000       0x80 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcWriteRow
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcEraseSector
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcEraseRow
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcGetTemp
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcLock
+                0x00000000       0x4c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcUnlock
+                0x00000000       0x38 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text.CySpcGetAlgorithm
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_finite.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_finite.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_finite.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_lib_ver.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_lib_ver.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_lib_ver.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_rint.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_rint.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_rint.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_scalbn.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_scalbn.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_scalbn.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_copysign.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_copysign.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_copysign.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpdf2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_unorddf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_unorddf2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .text          0x00000000       0x40 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunssfsi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunssfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunssfsi.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x1fff8000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+START GROUP
+LOAD .\CortexM3\ARM_GCC_541\Debug\main.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+LOAD .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000020                CY_ECC_ROW_SIZE = 0x20
+                0x00000000                CY_EE_IN_BTLDR = 0x0
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000800                CY_EE_SIZE = 0x800
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                [!provide]                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + LENGTH (ram)))
+                [!provide]                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((LENGTH (rom) - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                ecc_offset = ((appl_start / CY_FLASH_ROW_SIZE) * CY_ECC_ROW_SIZE)
+                0x00000000                ee_offset = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?((CY_EE_SIZE / CY_APPL_MAX) * (CY_APPL_NUM - 0x1)):0x0
+                0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
+                [!provide]                PROVIDE (CY_ECC_OFFSET, ecc_offset)
+
+.text           0x00000000     0x3846
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010       0x18 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.dma_init)
+                0x00000001                ASSERT ((((appl_start + .) <= 0x10000) || 0x1), DMA Init must be within the first 64k of flash)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000028       0x5c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .text.UARTInput
+                0x00000084       0x88 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000084                UARTInput
+ .text.DMA_1_Init
+                0x0000010c       0x50 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x0000010c                DMA_1_Init
+ .text.DMA_2_Init
+                0x0000015c       0x78 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x0000015c                DMA_2_Init
+ .text.calculateMean
+                0x000001d4       0x28 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000001d4                calculateMean
+ .text.calculateRMS
+                0x000001fc       0x68 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000001fc                calculateRMS
+ .text.calculateOxygen
+                0x00000264       0x64 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000264                calculateOxygen
+ .text.FilterDone
+                0x000002c8      0x190 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000002c8                FilterDone
+ .text.main     0x00000458       0x98 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000458                main
+ .text.CyClockStartupError
+                0x000004f0        0x4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.cfg_write_bytes32
+                0x000004f4       0x34 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.AnalogSetDefault
+                0x00000528       0x60 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.CYMEMZERO
+                0x00000588        0xc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.CYCONFIGCPY
+                0x00000594        0x8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.ClockSetup
+                0x0000059c       0xec .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.ADC_DelSig_AMux_Set
+                0x00000688       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000688                ADC_DelSig_AMux_Set
+ .text.ADC_DelSig_AMux_Unset
+                0x000006a4       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000006a4                ADC_DelSig_AMux_Unset
+ .text.cyfitter_cfg
+                0x000006c0      0x148 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000006c0                cyfitter_cfg
+ .text.IntDefaultHandler
+                0x00000808       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000808                IntDefaultHandler
+ .text.Start_c  0x00000818       0x4c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000818                Start_c
+ .text.initialize_psoc
+                0x00000864       0x6c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000864                initialize_psoc
+ .text.ADC_DelSig_GainCompensation
+                0x000008d0       0xdc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_SetDSMRef0Reg
+                0x000009ac       0x4c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_InitConfig
+                0x000009f8       0xe0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .text.ADC_DelSig_Init
+                0x00000ad8       0xc4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+                0x00000ad8                ADC_DelSig_Init
+ .text.ADC_DelSig_Enable
+                0x00000b9c       0xd8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+                0x00000b9c                ADC_DelSig_Enable
+ .text.ADC_DelSig_Start
+                0x00000c74       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+                0x00000c74                ADC_DelSig_Start
+ .text.ADC_DelSig_StartConvert
+                0x00000c9c       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+                0x00000c9c                ADC_DelSig_StartConvert
+ .text.ADC_DelSig_ISR1
+                0x00000cac        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+                0x00000cac                ADC_DelSig_ISR1
+ .text.UART_1_Init
+                0x00000cb0       0x40 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x00000cb0                UART_1_Init
+ .text.UART_1_Enable
+                0x00000cf0       0x48 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x00000cf0                UART_1_Enable
+ .text.UART_1_Start
+                0x00000d38       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x00000d38                UART_1_Start
+ .text.UART_1_ReadRxData
+                0x00000d54        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x00000d54                UART_1_ReadRxData
+ .text.UART_1_ReadRxStatus
+                0x00000d60       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x00000d60                UART_1_ReadRxStatus
+ .text.UART_1_ClearRxBuffer
+                0x00000d70       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x00000d70                UART_1_ClearRxBuffer
+ .text.UART_1_PutChar
+                0x00000d94       0x7c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x00000d94                UART_1_PutChar
+ .text.UART_1_PutString
+                0x00000e10       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x00000e10                UART_1_PutString
+ .text.UART_1_PutArray
+                0x00000e34       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x00000e34                UART_1_PutArray
+ .text.UART_1_TXISR
+                0x00000e5c       0x5c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+                0x00000e5c                UART_1_TXISR
+ .text.DMA_1_DmaInitialize
+                0x00000eb8       0x3c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+                0x00000eb8                DMA_1_DmaInitialize
+ .text.ADC_DelSig_AMux_Start
+                0x00000ef4       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+                0x00000ef4                ADC_DelSig_AMux_Start
+ .text.ADC_DelSig_AMux_Select
+                0x00000f14       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+                0x00000f14                ADC_DelSig_AMux_Select
+ .text.ADC_DelSig_Ext_CP_Clk_GetDividerRegister
+                0x00000f2c        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+                0x00000f2c                ADC_DelSig_Ext_CP_Clk_GetDividerRegister
+ .text.ADC_DelSig_Ext_CP_Clk_SetModeRegister
+                0x00000f38       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+                0x00000f38                ADC_DelSig_Ext_CP_Clk_SetModeRegister
+ .text.ADC_DelSig_Ext_CP_Clk_GetSourceRegister
+                0x00000f4c       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+                0x00000f4c                ADC_DelSig_Ext_CP_Clk_GetSourceRegister
+ .text.ADC_DelSig_Ext_CP_Clk_SetDividerRegister
+                0x00000f5c       0xd8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+                0x00000f5c                ADC_DelSig_Ext_CP_Clk_SetDividerRegister
+ .text.ADC_DelSig_theACLK_GetDividerRegister
+                0x00001034        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+                0x00001034                ADC_DelSig_theACLK_GetDividerRegister
+ .text.ADC_DelSig_theACLK_SetModeRegister
+                0x00001040       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+                0x00001040                ADC_DelSig_theACLK_SetModeRegister
+ .text.ADC_DelSig_theACLK_GetSourceRegister
+                0x00001054       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+                0x00001054                ADC_DelSig_theACLK_GetSourceRegister
+ .text.ADC_DelSig_theACLK_SetDividerRegister
+                0x00001064       0xd8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+                0x00001064                ADC_DelSig_theACLK_SetDividerRegister
+ .text.UART_1_IntClock_Start
+                0x0000113c       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+                0x0000113c                UART_1_IntClock_Start
+ .text.CyDmacConfigure
+                0x00001158       0x34 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x00001158                CyDmacConfigure
+ .text.CyDmaChEnable
+                0x0000118c       0x38 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x0000118c                CyDmaChEnable
+ .text.CyDmaChDisable
+                0x000011c4       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x000011c4                CyDmaChDisable
+ .text.CyDmaChPriority
+                0x000011e8       0x24 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x000011e8                CyDmaChPriority
+ .text.CyDmaChSetExtendedAddress
+                0x0000120c       0x34 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x0000120c                CyDmaChSetExtendedAddress
+ .text.CyDmaChSetInitialTd
+                0x00001240       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x00001240                CyDmaChSetInitialTd
+ .text.CyDmaChSetConfiguration
+                0x00001258       0x44 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x00001258                CyDmaChSetConfiguration
+ .text.CyDmaTdAllocate
+                0x0000129c       0x34 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x0000129c                CyDmaTdAllocate
+ .text.CyDmaTdSetConfiguration
+                0x000012d0       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x000012d0                CyDmaTdSetConfiguration
+ .text.CyDmaTdSetAddress
+                0x000012f8       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                0x000012f8                CyDmaTdSetAddress
+ .text.CyHalt   0x00001314        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+                0x00001314                CyHalt
+ .text.CyDelayUs
+                0x00001318       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+                0x00001318                CyDelayUs
+ .text.CyIntSetVector
+                0x0000132c       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+                0x0000132c                CyIntSetVector
+ .text.CyIntSetPriority
+                0x00001354       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+                0x00001354                CyIntSetPriority
+ .text.Out1_2_Write
+                0x00001384       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+                0x00001384                Out1_2_Write
+ .text.Out1_1_Write
+                0x0000139c       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+                0x0000139c                Out1_1_Write
+ .text.TIA_Enable
+                0x000013b4       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+                0x000013b4                TIA_Enable
+ .text.TIA_SetPower
+                0x000013dc       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+                0x000013dc                TIA_SetPower
+ .text.TIA_SetResFB
+                0x000013f4       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+                0x000013f4                TIA_SetResFB
+ .text.TIA_SetCapFB
+                0x00001414       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+                0x00001414                TIA_SetCapFB
+ .text.TIA_Init
+                0x00001434       0x2c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+                0x00001434                TIA_Init
+ .text.TIA_Start
+                0x00001460       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+                0x00001460                TIA_Start
+ .text.Filter_1_Init
+                0x0000147c       0xcc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+                0x0000147c                Filter_1_Init
+ .text.Filter_1_Enable
+                0x00001548       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+                0x00001548                Filter_1_Enable
+ .text.Filter_1_Start
+                0x00001570       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+                0x00001570                Filter_1_Start
+ .text.Filter_1_SetCoherency
+                0x0000158c       0x48 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+                0x0000158c                Filter_1_SetCoherency
+ .text.Filter_1_SetInterruptMode
+                0x000015d4       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+                0x000015d4                Filter_1_SetInterruptMode
+ .text.Filter_1_SetDMAMode
+                0x000015e4       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+                0x000015e4                Filter_1_SetDMAMode
+ .text.DMA_2_DmaInitialize
+                0x000015f4       0x3c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+                0x000015f4                DMA_2_DmaInitialize
+ .text.isr_UART_SetVector
+                0x00001630        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+                0x00001630                isr_UART_SetVector
+ .text.isr_UART_SetPriority
+                0x0000163c       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+                0x0000163c                isr_UART_SetPriority
+ .text.isr_UART_Enable
+                0x0000164c        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+                0x0000164c                isr_UART_Enable
+ .text.isr_UART_Disable
+                0x00001658        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+                0x00001658                isr_UART_Disable
+ .text.isr_UART_StartEx
+                0x00001664       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+                0x00001664                isr_UART_StartEx
+ .text.isr_Filter_End_SetVector
+                0x00001680        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+                0x00001680                isr_Filter_End_SetVector
+ .text.isr_Filter_End_SetPriority
+                0x0000168c       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+                0x0000168c                isr_Filter_End_SetPriority
+ .text.isr_Filter_End_Enable
+                0x0000169c        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+                0x0000169c                isr_Filter_End_Enable
+ .text.isr_Filter_End_Disable
+                0x000016a8        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+                0x000016a8                isr_Filter_End_Disable
+ .text.isr_Filter_End_StartEx
+                0x000016b4       0x1c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+                0x000016b4                isr_Filter_End_StartEx
+ .text          0x000016d0       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyBootAsmGnu.o)
+                0x000016d0                CyDelayCycles
+                0x000016e0                CyEnterCriticalSection
+                0x000016e8                CyExitCriticalSection
+ .text.pow      0x000016f0      0x330 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o)
+                0x000016f0                pow
+ .text.sqrt     0x00001a20       0xb8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+                0x00001a20                sqrt
+ .text.__ieee754_pow
+                0x00001ad8      0xac4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o)
+                0x00001ad8                __ieee754_pow
+ .text.__ieee754_sqrt
+                0x0000259c      0x188 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+                0x0000259c                __ieee754_sqrt
+ .text.fabs     0x00002724        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
+                0x00002724                fabs
+ .text.finite   0x0000272c        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_finite.o)
+                0x0000272c                finite
+ .text.matherr  0x00002738        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+                0x00002738                matherr
+ .text.nan      0x0000273c        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
+                0x0000273c                nan
+ .text.rint     0x00002748      0x120 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_rint.o)
+                0x00002748                rint
+ .text.scalbn   0x00002868       0xe4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_scalbn.o)
+                0x00002868                scalbn
+ .text.copysign
+                0x0000294c       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_copysign.o)
+                0x0000294c                copysign
+ .text          0x0000295c      0x370 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
+                0x0000295c                __aeabi_drsub
+                0x00002964                __aeabi_dsub
+                0x00002964                __subdf3
+                0x00002968                __aeabi_dadd
+                0x00002968                __adddf3
+                0x00002be0                __floatunsidf
+                0x00002be0                __aeabi_ui2d
+                0x00002c00                __floatsidf
+                0x00002c00                __aeabi_i2d
+                0x00002c24                __aeabi_f2d
+                0x00002c24                __extendsfdf2
+                0x00002c60                __floatundidf
+                0x00002c60                __aeabi_ul2d
+                0x00002c70                __floatdidf
+                0x00002c70                __aeabi_l2d
+ .text          0x00002ccc      0x424 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivdf3.o)
+                0x00002ccc                __aeabi_dmul
+                0x00002ccc                __muldf3
+                0x00002f20                __divdf3
+                0x00002f20                __aeabi_ddiv
+ .text          0x000030f0      0x110 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpdf2.o)
+                0x000030f0                __gtdf2
+                0x000030f0                __gedf2
+                0x000030f8                __ltdf2
+                0x000030f8                __ledf2
+                0x00003100                __nedf2
+                0x00003100                __eqdf2
+                0x00003100                __cmpdf2
+                0x0000317c                __aeabi_cdrcmple
+                0x0000318c                __aeabi_cdcmpeq
+                0x0000318c                __aeabi_cdcmple
+                0x0000319c                __aeabi_dcmpeq
+                0x000031b0                __aeabi_dcmplt
+                0x000031c4                __aeabi_dcmple
+                0x000031d8                __aeabi_dcmpge
+                0x000031ec                __aeabi_dcmpgt
+ .text          0x00003200       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_unorddf2.o)
+                0x00003200                __unorddf2
+                0x00003200                __aeabi_dcmpun
+ .text          0x0000322c       0x40 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunsdfsi.o)
+                0x0000322c                __aeabi_d2uiz
+                0x0000322c                __fixunsdfsi
+ .text          0x0000326c       0xa0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+                0x0000326c                __truncdfsf2
+                0x0000326c                __aeabi_d2f
+ .text          0x0000330c      0x21c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                0x0000330c                __aeabi_frsub
+                0x00003314                __subsf3
+                0x00003314                __aeabi_fsub
+                0x00003318                __aeabi_fadd
+                0x00003318                __addsf3
+                0x00003478                __aeabi_ui2f
+                0x00003478                __floatunsisf
+                0x00003480                __aeabi_i2f
+                0x00003480                __floatsisf
+                0x0000349c                __aeabi_ul2f
+                0x0000349c                __floatundisf
+                0x000034ac                __aeabi_l2f
+                0x000034ac                __floatdisf
+ .text          0x00003528      0x2a0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                0x00003528                __mulsf3
+                0x00003528                __aeabi_fmul
+                0x00003690                __aeabi_fdiv
+                0x00003690                __divsf3
+ .text.__errno  0x000037c8        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x000037c8                __errno
+ .text.__libc_init_array
+                0x000037d4       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x000037d4                __libc_init_array
+ .text.memcpy   0x00003820       0x16 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x00003820                memcpy
+ .text.memset   0x00003836       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x00003836                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00003846        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00003846        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00003846        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00003848        0x0
+ .v4_bx         0x00003848        0x0 linker stubs
+
+.iplt           0x00003848        0x0
+ .iplt          0x00003848        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00003848        0x4
+ *(.eh_frame)
+ .eh_frame      0x00003848        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x00003848        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000384c                __exidx_end = .
+
+.rodata         0x00003850      0x750
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00003850       0x74 .\CortexM3\ARM_GCC_541\Debug\main.o
+                                 0x77 (size before relaxing)
+ .rodata        0x000038c4       0x46 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000038c4                ADC_DelSig_AMux__addrTable
+                0x000038cc                ADC_DelSig_AMux__maskTable
+ *fill*         0x0000390a        0x2 
+ .rodata        0x0000390c      0x640 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+                0x0000390c                Filter_1_cfsm
+                0x00003a0c                Filter_1_acu
+                0x00003a4c                Filter_1_data_b
+                0x00003c4c                Filter_1_data_a
+                0x00003e4c                Filter_1_control
+ .rodata.str1.4
+                0x00003f4c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o)
+ .rodata.str1.4
+                0x00003f50        0x5 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+ .rodata.str1.4
+                0x00003f55        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o)
+                                  0x1 (size before relaxing)
+ *fill*         0x00003f55        0x3 
+ .rodata.TWO52  0x00003f58       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_rint.o)
+ .rodata.str1.1
+                0x00003f68        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x00003f6c                . = ALIGN (0x4)
+ *fill*         0x00003f6a        0x2 
+ *(.init)
+ .init          0x00003f6c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00003f6c                _init
+ .init          0x00003f70        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00003f78                . = ALIGN (0x4)
+                0x00003f78                __preinit_array_start = .
+ *(.preinit_array)
+                0x00003f78                __preinit_array_end = .
+                0x00003f78                . = ALIGN (0x4)
+                0x00003f78                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00003f78        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x00003f7c        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00003f80                __init_array_end = .
+                0x00003f80                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00003f80        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00003f80                _fini
+ .fini          0x00003f84        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00003f8c                . = ALIGN (0x4)
+                0x00003f8c                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00003f8c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00003f90                __fini_array_end = .
+                0x00003f90                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00003f90                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00003f90                . = ALIGN (0x4)
+                0x00003f90                __cy_regions = .
+                0x00003f90        0x4 LONG 0x3fa0 __cy_region_init_ram
+                0x00003f94        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x00003f98        0x4 LONG 0x88 __cy_region_init_size_ram
+                0x00003f9c        0x4 LONG 0xac38 __cy_region_zero_size_ram
+                0x00003fa0                __cy_regions_end = .
+                0x00003fa0                . = ALIGN (0x8)
+                0x00003fa0                _etext = .
+
+.cy_checksum_exclude
+                0x00003fa0        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x1fff8000       0xc0
+                0x1fff8000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x1fff8000       0xc0 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x1fff8000                CyRamVectors
+
+.noinit         0x1fff80c0        0x1
+ *(.noinit)
+ .noinit        0x1fff80c0        0x1 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+                0x1fff80c0                CyResetStatus
+
+.data           0x1fff80c8       0x88 load address 0x00003fa0
+                0x1fff80c8                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .jcr           0x1fff80c8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x1fff80cc        0x1 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+                0x1fff80cc                ADC_DelSig_Config
+ .data          0x1fff80cd        0x1 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+                0x1fff80cd                DMA_1_DmaHandle
+ .data          0x1fff80ce        0x1 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ *fill*         0x1fff80cf        0x1 
+ .data          0x1fff80d0        0x8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .data          0x1fff80d8       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+                0x1fff80d8                cydelay_32k_ms
+                0x1fff80dc                cydelay_freq_khz
+                0x1fff80e0                cydelay_freq_mhz
+                0x1fff80e4                cydelay_freq_hz
+ .data          0x1fff80e8        0x1 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+                0x1fff80e8                DMA_2_DmaHandle
+ .data.__fdlib_version
+                0x1fff80e9        0x1 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_lib_ver.o)
+                0x1fff80e9                __fdlib_version
+ *fill*         0x1fff80ea        0x2 
+ .data.impure_data
+                0x1fff80ec       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x1fff814c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x1fff814c                _impure_ptr
+                0x1fff8150                . = ALIGN (0x8)
+ *(.ram)
+                0x1fff8150                _edata = .
+
+.igot.plt       0x1fff8150        0x0 load address 0x00004028
+ .igot.plt      0x1fff8150        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.bss            0x1fff8150     0xac38 load address 0x00004028
+                0x1fff8150                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x1fff8150       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .bss           0x1fff816c       0x14 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x1fff816c                count
+                0x1fff8170                last_measure
+                0x1fff8174                acquisition_active
+                0x1fff817c                send_flag
+                0x1fff817e                R
+ .bss           0x1fff8180        0xc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+                0x1fff8184                ADC_DelSig_stopConversion
+                0x1fff8185                ADC_DelSig_convDone
+                0x1fff8186                ADC_DelSig_initVar
+                0x1fff8187                ADC_DelSig_started
+                0x1fff8188                ADC_DelSig_Offset
+ .bss           0x1fff818c        0x7 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x1fff818c                UART_1_initVar
+                0x1fff818e                UART_1_txBufferRead
+                0x1fff8190                UART_1_txBufferWrite
+ .bss           0x1fff8193        0x1 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+                0x1fff8193                TIA_initVar
+ .bss           0x1fff8194        0x1 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+                0x1fff8194                Filter_1_initVar
+ *(COMMON)
+ *fill*         0x1fff8195        0x3 
+ COMMON         0x1fff8198     0x9c49 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x1fff8198                DMA_1_TD
+                0x1fff819c                RED_samples
+                0x1fffc01c                samples1
+                0x1fffcfbc                IR_samples
+                0x20000e3c                DMA_2_TD
+                0x20000e3e                DMA_2_Chan
+                0x20000e40                samples2
+                0x20001de0                DMA_1_Chan
+ *fill*         0x20001de1        0x3 
+ COMMON         0x20001de4        0x4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+                0x20001de4                ADC_DelSig_CountsPerVolt
+ COMMON         0x20001de8      0xfa0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                0x20001de8                UART_1_txBuffer
+                0x20002d88                . = ALIGN (0x8)
+ *(.ram.b)
+                0x20002d88                _end = .
+                0x20002d88                __end = .
+                0x20002d88                PROVIDE (end, .)
+                0x20002d88                PROVIDE (__bss_end__, .)
+                0x00003fa0                __cy_region_init_ram = LOADADDR (.data)
+                0x00000088                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x0000ac38                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x20002d88       0x80 load address 0x00004028
+                0x20002d88                . = _end
+                0x20002e08                . = (. + 0x80)
+ *fill*         0x20002d88       0x80 
+                0x20002e08                __cy_heap_limit = .
+
+.stack          0x20007800      0x800
+                0x20007800                __cy_stack_limit = .
+                0x20008000                . = (. + 0x800)
+ *fill*         0x20007800      0x800 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+
+.cyloadermeta
+ *(.cyloadermeta)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyconfigecc    0x80000000      0x350
+ *(.cyconfigecc)
+ .cyconfigecc   0x80000000      0x350 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x80000000                cy_meta_configecc
+
+.cycustnvl      0x90000000        0x4
+ *(.cycustnvl)
+ .cycustnvl     0x90000000        0x4 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90000000                cy_meta_custnvl
+
+.cywolatch      0x90100000        0x4
+ *(.cywolatch)
+ .cywolatch     0x90100000        0x4 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90100000                cy_meta_wonvl
+
+.cyeeprom       0x90200000        0x0
+ *(.cyeeprom)
+                0x00000001                ASSERT ((. <= ((0x90200000 + ee_offset) + ee_size)), .cyeeprom data will not fit in EEPROM)
+
+.cyflashprotect
+                0x90400000      0x100
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000      0x100 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.rel.dyn        0x00004028        0x0 load address 0x9050000c
+ .rel.iplt      0x00004028        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xce8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_aranges
+                0x00000058       0x68 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_aranges
+                0x000000c0       0x18 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_aranges
+                0x000000d8       0x48 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_aranges
+                0x00000120       0xe8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .debug_aranges
+                0x00000208       0x38 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .debug_aranges
+                0x00000240       0xf0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .debug_aranges
+                0x00000330       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .debug_aranges
+                0x00000350       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .debug_aranges
+                0x00000378       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .debug_aranges
+                0x000003a8       0x70 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_aranges
+                0x00000418       0x80 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .debug_aranges
+                0x00000498       0x70 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .debug_aranges
+                0x00000508       0xd8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .debug_aranges
+                0x000005e0      0x2a0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .debug_aranges
+                0x00000880       0x98 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .debug_aranges
+                0x00000918       0x38 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .debug_aranges
+                0x00000950       0x38 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .debug_aranges
+                0x00000988       0x50 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .debug_aranges
+                0x000009d8       0x80 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .debug_aranges
+                0x00000a58       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .debug_aranges
+                0x00000a80       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+ .debug_aranges
+                0x00000a98       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .debug_aranges
+                0x00000ac0       0x80 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .debug_aranges
+                0x00000b40       0x80 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .debug_aranges
+                0x00000bc0       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000be0       0x88 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .debug_aranges
+                0x00000c68       0x80 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x778d
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x8b8 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_info    0x000008b8      0x6ce .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00000f86      0x135 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x000010bb      0x3cf .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x0000148a      0xa19 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .debug_info    0x00001ea3       0xd3 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .debug_info    0x00001f76      0x6d7 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .debug_info    0x0000264d      0x108 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .debug_info    0x00002755      0x1a7 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .debug_info    0x000028fc      0x165 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .debug_info    0x00002a61      0x283 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_info    0x00002ce4      0x2c4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .debug_info    0x00002fa8      0x283 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .debug_info    0x0000322b      0x94e .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .debug_info    0x00003b79     0x1374 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .debug_info    0x00004eed      0xa2a .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .debug_info    0x00005917      0x11f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .debug_info    0x00005a36      0x11f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .debug_info    0x00005b55      0x1d5 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .debug_info    0x00005d2a      0x4b3 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .debug_info    0x000061dd       0xf2 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .debug_info    0x000062cf      0x137 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+ .debug_info    0x00006406      0x1a8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .debug_info    0x000065ae      0x2d2 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .debug_info    0x00006880      0x2d2 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .debug_info    0x00006b52       0x9e .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyBootAsmGnu.o)
+ .debug_info    0x00006bf0      0x64d .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .debug_info    0x0000723d      0x550 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+
+.debug_abbrev   0x00000000     0x210a
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x1fe .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_abbrev  0x000001fe      0x22d .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x0000042b       0x66 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x00000491      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_abbrev  0x00000679      0x1eb .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .debug_abbrev  0x00000864       0x42 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .debug_abbrev  0x000008a6      0x16f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .debug_abbrev  0x00000a15       0x79 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .debug_abbrev  0x00000a8e       0xcd .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .debug_abbrev  0x00000b5b       0xb1 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .debug_abbrev  0x00000c0c      0x139 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_abbrev  0x00000d45      0x121 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .debug_abbrev  0x00000e66      0x139 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .debug_abbrev  0x00000f9f      0x1b2 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .debug_abbrev  0x00001151      0x254 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .debug_abbrev  0x000013a5      0x1ab .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .debug_abbrev  0x00001550       0x90 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .debug_abbrev  0x000015e0       0x90 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .debug_abbrev  0x00001670       0xf7 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .debug_abbrev  0x00001767      0x1bc .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .debug_abbrev  0x00001923       0x7f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .debug_abbrev  0x000019a2       0x66 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+ .debug_abbrev  0x00001a08       0xcd .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .debug_abbrev  0x00001ad5      0x173 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .debug_abbrev  0x00001c48      0x173 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .debug_abbrev  0x00001dbb       0x14 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00001dcf      0x1a7 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .debug_abbrev  0x00001f76      0x194 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+
+.debug_line     0x00000000     0x3130
+ *(.debug_line)
+ .debug_line    0x00000000      0x3bf .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_line    0x000003bf      0x229 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x000005e8      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00000729      0x241 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x0000096a      0x374 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .debug_line    0x00000cde       0x87 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .debug_line    0x00000d65      0x2fd .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .debug_line    0x00001062       0x81 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .debug_line    0x000010e3       0x82 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .debug_line    0x00001165       0xb3 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .debug_line    0x00001218      0x184 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_line    0x0000139c      0x1a4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .debug_line    0x00001540      0x17e .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .debug_line    0x000016be      0x2e4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .debug_line    0x000019a2      0x816 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .debug_line    0x000021b8      0x367 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .debug_line    0x0000251f       0x93 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .debug_line    0x000025b2       0x93 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .debug_line    0x00002645       0xd5 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .debug_line    0x0000271a      0x176 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .debug_line    0x00002890       0x76 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .debug_line    0x00002906       0x58 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+ .debug_line    0x0000295e       0x82 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .debug_line    0x000029e0      0x135 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .debug_line    0x00002b15      0x13b .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .debug_line    0x00002c50       0x66 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyBootAsmGnu.o)
+ .debug_line    0x00002cb6      0x21a .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .debug_line    0x00002ed0      0x260 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+
+.debug_frame    0x00000000     0x21a0
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x120 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_frame   0x00000120      0x104 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_frame   0x00000224       0xb8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_frame   0x000002dc      0x280 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .debug_frame   0x0000055c       0x50 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .debug_frame   0x000005ac      0x268 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .debug_frame   0x00000814       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .debug_frame   0x00000834       0x54 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .debug_frame   0x00000888       0x64 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .debug_frame   0x000008ec       0xe0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_frame   0x000009cc      0x100 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .debug_frame   0x00000acc       0xe0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .debug_frame   0x00000bac      0x1f8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .debug_frame   0x00000da4      0x738 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .debug_frame   0x000014dc      0x1f8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .debug_frame   0x000016d4       0x50 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .debug_frame   0x00001724       0x50 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .debug_frame   0x00001774       0x98 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .debug_frame   0x0000180c      0x104 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .debug_frame   0x00001910       0x30 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .debug_frame   0x00001940       0x54 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .debug_frame   0x00001994      0x104 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .debug_frame   0x00001a98      0x104 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .debug_frame   0x00001b9c      0x194 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .debug_frame   0x00001d30      0x180 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .debug_frame   0x00001eb0       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o)
+ .debug_frame   0x00001efc       0x44 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+ .debug_frame   0x00001f40       0x68 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o)
+ .debug_frame   0x00001fa8       0x30 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+ .debug_frame   0x00001fd8       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
+ .debug_frame   0x00001ff8       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_finite.o)
+ .debug_frame   0x00002018       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x00002038       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
+ .debug_frame   0x00002058       0x3c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_rint.o)
+ .debug_frame   0x00002094       0x30 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_scalbn.o)
+ .debug_frame   0x000020c4       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_copysign.o)
+ .debug_frame   0x000020e4       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00002104       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000212c       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00002158       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00002180       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x2c1d
+ *(.debug_str)
+ .debug_str     0x00000000      0x447 .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x48f (size before relaxing)
+ .debug_str     0x00000447      0x205 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x3ba (size before relaxing)
+ .debug_str     0x0000064c       0x7f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                                0x1f2 (size before relaxing)
+ .debug_str     0x000006cb      0x154 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                                0x328 (size before relaxing)
+ .debug_str     0x0000081f      0x4d3 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+                                0x6f6 (size before relaxing)
+ .debug_str     0x00000cf2       0x68 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+                                0x1f1 (size before relaxing)
+ .debug_str     0x00000d5a      0x2b5 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+                                0x548 (size before relaxing)
+ .debug_str     0x0000100f       0x31 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+                                0x205 (size before relaxing)
+ .debug_str     0x00001040       0xc1 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+                                0x27a (size before relaxing)
+ .debug_str     0x00001101       0x7b .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+                                0x23e (size before relaxing)
+ .debug_str     0x0000117c      0x1b9 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+                                0x3a4 (size before relaxing)
+ .debug_str     0x00001335      0x1a3 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+                                0x3d1 (size before relaxing)
+ .debug_str     0x000014d8      0x14c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+                                0x35c (size before relaxing)
+ .debug_str     0x00001624      0x2aa .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+                                0x558 (size before relaxing)
+ .debug_str     0x000018ce      0x7cf .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+                                0xa55 (size before relaxing)
+ .debug_str     0x0000209d      0x365 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+                                0x741 (size before relaxing)
+ .debug_str     0x00002402       0x5e .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+                                0x1f5 (size before relaxing)
+ .debug_str     0x00002460       0x53 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+                                0x1f5 (size before relaxing)
+ .debug_str     0x000024b3       0x93 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+                                0x231 (size before relaxing)
+ .debug_str     0x00002546      0x188 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+                                0x376 (size before relaxing)
+ .debug_str     0x000026ce       0x2d .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+                                0x1ef (size before relaxing)
+ .debug_str     0x000026fb       0x2b .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+                                0x206 (size before relaxing)
+ .debug_str     0x00002726       0x44 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+                                0x27a (size before relaxing)
+ .debug_str     0x0000276a       0xff .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+                                0x2de (size before relaxing)
+ .debug_str     0x00002869      0x14d .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+                                0x332 (size before relaxing)
+ .debug_str     0x000029b6      0x1bb .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+                                0x3ce (size before relaxing)
+ .debug_str     0x00002b71       0xac .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+                                0x346 (size before relaxing)
+
+.debug_loc      0x00000000     0x3a14
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x1b6 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_loc     0x000001b6      0x29c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_loc     0x00000452      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_loc     0x00000596      0x681 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .debug_loc     0x00000c17      0x276 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .debug_loc     0x00000e8d       0x84 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .debug_loc     0x00000f11       0x6c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .debug_loc     0x00000f7d      0x12c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_loc     0x000010a9      0x14d .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .debug_loc     0x000011f6      0x128 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .debug_loc     0x0000131e      0xb8e .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .debug_loc     0x00001eac      0xa11 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .debug_loc     0x000028bd      0x1e4 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .debug_loc     0x00002aa1       0x42 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .debug_loc     0x00002ae3       0x42 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .debug_loc     0x00002b25       0x81 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .debug_loc     0x00002ba6      0x24b .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .debug_loc     0x00002df1       0x3c .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .debug_loc     0x00002e2d       0x84 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .debug_loc     0x00002eb1       0x56 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .debug_loc     0x00002f07       0x56 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .debug_loc     0x00002f5d      0x3b2 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .debug_loc     0x0000330f      0x705 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0xb38
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_ranges  0x00000078       0x58 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_ranges  0x000000d0       0x38 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_ranges  0x00000108       0xd8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .debug_ranges  0x000001e0       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .debug_ranges  0x00000208       0xe0 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .debug_ranges  0x000002e8       0x10 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .debug_ranges  0x000002f8       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .debug_ranges  0x00000310       0x20 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .debug_ranges  0x00000330       0x60 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .debug_ranges  0x00000390       0x70 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .debug_ranges  0x00000400       0x60 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .debug_ranges  0x00000460       0xc8 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .debug_ranges  0x00000528      0x290 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .debug_ranges  0x000007b8       0x88 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .debug_ranges  0x00000840       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .debug_ranges  0x00000868       0x28 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .debug_ranges  0x00000890       0x40 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .debug_ranges  0x000008d0       0x70 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .debug_ranges  0x00000940       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .debug_ranges  0x00000958       0x18 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .debug_ranges  0x00000970       0x70 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .debug_ranges  0x000009e0       0x70 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .debug_ranges  0x00000a50       0x78 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .debug_ranges  0x00000ac8       0x70 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e .\CortexM3\ARM_GCC_541\Debug\main.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .ARM.attributes
+                0x0000001d       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x33 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .ARM.attributes
+                0x00000098       0x33 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .ARM.attributes
+                0x000000cb       0x33 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .ARM.attributes
+                0x000000fe       0x33 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .ARM.attributes
+                0x00000131       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig.o)
+ .ARM.attributes
+                0x00000164       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_INT.o)
+ .ARM.attributes
+                0x00000197       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1.o)
+ .ARM.attributes
+                0x000001ca       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_INT.o)
+ .ARM.attributes
+                0x000001fd       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_1_dma.o)
+ .ARM.attributes
+                0x00000230       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_AMux.o)
+ .ARM.attributes
+                0x00000263       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_Ext_CP_Clk.o)
+ .ARM.attributes
+                0x00000296       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(ADC_DelSig_theACLK.o)
+ .ARM.attributes
+                0x000002c9       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(UART_1_IntClock.o)
+ .ARM.attributes
+                0x000002fc       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyDmac.o)
+ .ARM.attributes
+                0x0000032f       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyLib.o)
+ .ARM.attributes
+                0x00000362       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(cyPm.o)
+ .ARM.attributes
+                0x00000395       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_2.o)
+ .ARM.attributes
+                0x000003c8       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Out1_1.o)
+ .ARM.attributes
+                0x000003fb       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(TIA.o)
+ .ARM.attributes
+                0x0000042e       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1.o)
+ .ARM.attributes
+                0x00000461       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_PVT.o)
+ .ARM.attributes
+                0x00000494       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(Filter_1_RAM_Data.o)
+ .ARM.attributes
+                0x000004c7       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(DMA_2_dma.o)
+ .ARM.attributes
+                0x000004fa       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_UART.o)
+ .ARM.attributes
+                0x0000052d       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(isr_Filter_End.o)
+ .ARM.attributes
+                0x00000560       0x21 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x00000581       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CyFlash.o)
+ .ARM.attributes
+                0x000005b4       0x33 .\CortexM3\ARM_GCC_541\Debug\PulseOximetry.a(CySpc.o)
+ .ARM.attributes
+                0x000005e7       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_pow.o)
+ .ARM.attributes
+                0x00000614       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+ .ARM.attributes
+                0x00000641       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_pow.o)
+ .ARM.attributes
+                0x0000066e       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+ .ARM.attributes
+                0x0000069b       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
+ .ARM.attributes
+                0x000006c8       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_finite.o)
+ .ARM.attributes
+                0x000006f5       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_lib_ver.o)
+ .ARM.attributes
+                0x00000722       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+ .ARM.attributes
+                0x0000074f       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
+ .ARM.attributes
+                0x0000077c       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_rint.o)
+ .ARM.attributes
+                0x000007a9       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_scalbn.o)
+ .ARM.attributes
+                0x000007d6       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_copysign.o)
+ .ARM.attributes
+                0x00000803       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000820       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000083d       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x0000085a       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_unorddf2.o)
+ .ARM.attributes
+                0x00000877       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x00000894       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x000008b1       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x000008ce       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x000008eb       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunssfsi.o)
+ .ARM.attributes
+                0x00000908       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000935       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000962       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000098f       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x000009bc       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000009e9       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000a16       0x2d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .ARM.attributes
+                0x00000a43       0x1d c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(C:\UGR\TFG\Proyecto\PSoC Creator\PPG_SerialPortComunication\PulseOximetry.cydsn\CortexM3\ARM_GCC_541\Debug\PulseOximetry.elf elf32-littlearm)

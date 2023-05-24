@@ -1,0 +1,6 @@
+C:\UGR\TFG\Proyecto\PSoC Creator\PPG_SerialPortComunication\PulseOximetry.cydsn\PulseOximetry.cyprj|ce5f918c-d1de-4978-8818-dbd3016f44e7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|5f591732-6c13-4b27-bc30-09cef6d849d6
+C:\Users\ALVAROGA\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|fab102d8-4d0a-4222-b81a-bcd4139a3834
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|96b58313-2a51-4c0f-aaed-d2e66c69b783
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|8df7ebd6-07b9-46f6-97a9-20405ce962d2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|4e4217ca-0593-4180-89d4-5a2daaab4d9e

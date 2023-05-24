@@ -1,0 +1,1379 @@
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cymetadata.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	cy_metadata
+  20              		.global	cy_meta_flashprotect
+  21              		.global	cy_meta_wonvl
+  22              		.global	cy_meta_custnvl
+  23              		.global	cy_meta_configecc
+  24              		.section	.cyconfigecc,"a",%progbits
+  25              		.align	2
+  26              		.type	cy_meta_configecc, %object
+  27              		.size	cy_meta_configecc, 848
+  28              	cy_meta_configecc:
+  29 0000 02       		.byte	2
+  30 0001 52       		.byte	82
+  31 0002 00       		.byte	0
+  32 0003 40       		.byte	64
+  33 0004 03       		.byte	3
+  34 0005 65       		.byte	101
+  35 0006 00       		.byte	0
+  36 0007 40       		.byte	64
+  37 0008 01       		.byte	1
+  38 0009 05       		.byte	5
+  39 000a 01       		.byte	1
+  40 000b 40       		.byte	64
+  41 000c 01       		.byte	1
+  42 000d 0B       		.byte	11
+  43 000e 01       		.byte	1
+  44 000f 40       		.byte	64
+  45 0010 01       		.byte	1
+  46 0011 15       		.byte	21
+  47 0012 01       		.byte	1
+  48 0013 40       		.byte	64
+  49 0014 01       		.byte	1
+  50 0015 17       		.byte	23
+  51 0016 01       		.byte	1
+  52 0017 40       		.byte	64
+  53 0018 63       		.byte	99
+  54 0019 18       		.byte	24
+  55 001a 01       		.byte	1
+  56 001b 40       		.byte	64
+  57 001c 38       		.byte	56
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 2
+
+
+  58 001d 19       		.byte	25
+  59 001e 01       		.byte	1
+  60 001f 40       		.byte	64
+  61 0020 0C       		.byte	12
+  62 0021 1A       		.byte	26
+  63 0022 01       		.byte	1
+  64 0023 40       		.byte	64
+  65 0024 42       		.byte	66
+  66 0025 1B       		.byte	27
+  67 0026 01       		.byte	1
+  68 0027 40       		.byte	64
+  69 0028 04       		.byte	4
+  70 0029 40       		.byte	64
+  71 002a 01       		.byte	1
+  72 002b 40       		.byte	64
+  73 002c 05       		.byte	5
+  74 002d 41       		.byte	65
+  75 002e 01       		.byte	1
+  76 002f 40       		.byte	64
+  77 0030 04       		.byte	4
+  78 0031 42       		.byte	66
+  79 0032 01       		.byte	1
+  80 0033 40       		.byte	64
+  81 0034 03       		.byte	3
+  82 0035 43       		.byte	67
+  83 0036 01       		.byte	1
+  84 0037 40       		.byte	64
+  85 0038 02       		.byte	2
+  86 0039 44       		.byte	68
+  87 003a 01       		.byte	1
+  88 003b 40       		.byte	64
+  89 003c 01       		.byte	1
+  90 003d 45       		.byte	69
+  91 003e 01       		.byte	1
+  92 003f 40       		.byte	64
+  93 0040 04       		.byte	4
+  94 0041 46       		.byte	70
+  95 0042 01       		.byte	1
+  96 0043 40       		.byte	64
+  97 0044 01       		.byte	1
+  98 0045 47       		.byte	71
+  99 0046 01       		.byte	1
+ 100 0047 40       		.byte	64
+ 101 0048 07       		.byte	7
+ 102 0049 48       		.byte	72
+ 103 004a 01       		.byte	1
+ 104 004b 40       		.byte	64
+ 105 004c 03       		.byte	3
+ 106 004d 49       		.byte	73
+ 107 004e 01       		.byte	1
+ 108 004f 40       		.byte	64
+ 109 0050 02       		.byte	2
+ 110 0051 4C       		.byte	76
+ 111 0052 01       		.byte	1
+ 112 0053 40       		.byte	64
+ 113 0054 08       		.byte	8
+ 114 0055 4D       		.byte	77
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 3
+
+
+ 115 0056 01       		.byte	1
+ 116 0057 40       		.byte	64
+ 117 0058 02       		.byte	2
+ 118 0059 50       		.byte	80
+ 119 005a 01       		.byte	1
+ 120 005b 40       		.byte	64
+ 121 005c 01       		.byte	1
+ 122 005d 51       		.byte	81
+ 123 005e 01       		.byte	1
+ 124 005f 40       		.byte	64
+ 125 0060 60       		.byte	96
+ 126 0061 80       		.byte	-128
+ 127 0062 61       		.byte	97
+ 128 0063 80       		.byte	-128
+ 129 0064 89       		.byte	-119
+ 130 0065 0F       		.byte	15
+ 131 0066 8A       		.byte	-118
+ 132 0067 71       		.byte	113
+ 133 0068 8B       		.byte	-117
+ 134 0069 38       		.byte	56
+ 135 006a E0       		.byte	-32
+ 136 006b 02       		.byte	2
+ 137 006c E0       		.byte	-32
+ 138 006d 02       		.byte	2
+ 139 006e E6       		.byte	-26
+ 140 006f 02       		.byte	2
+ 141 0070 E6       		.byte	-26
+ 142 0071 01       		.byte	1
+ 143 0072 03       		.byte	3
+ 144 0073 08       		.byte	8
+ 145 0074 04       		.byte	4
+ 146 0075 0C       		.byte	12
+ 147 0076 06       		.byte	6
+ 148 0077 71       		.byte	113
+ 149 0078 08       		.byte	8
+ 150 0079 14       		.byte	20
+ 151 007a 09       		.byte	9
+ 152 007b 80       		.byte	-128
+ 153 007c 0B       		.byte	11
+ 154 007d 13       		.byte	19
+ 155 007e 0C       		.byte	12
+ 156 007f 10       		.byte	16
+ 157 0080 0E       		.byte	14
+ 158 0081 AC       		.byte	-84
+ 159 0082 14       		.byte	20
+ 160 0083 09       		.byte	9
+ 161 0084 16       		.byte	22
+ 162 0085 D0       		.byte	-48
+ 163 0086 17       		.byte	23
+ 164 0087 0C       		.byte	12
+ 165 0088 19       		.byte	25
+ 166 0089 2C       		.byte	44
+ 167 008a 1B       		.byte	27
+ 168 008b 43       		.byte	67
+ 169 008c 1E       		.byte	30
+ 170 008d 03       		.byte	3
+ 171 008e 20       		.byte	32
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 4
+
+
+ 172 008f 10       		.byte	16
+ 173 0090 22       		.byte	34
+ 174 0091 40       		.byte	64
+ 175 0092 25       		.byte	37
+ 176 0093 71       		.byte	113
+ 177 0094 26       		.byte	38
+ 178 0095 20       		.byte	32
+ 179 0096 27       		.byte	39
+ 180 0097 0E       		.byte	14
+ 181 0098 28       		.byte	40
+ 182 0099 DC       		.byte	-36
+ 183 009a 2A       		.byte	42
+ 184 009b 22       		.byte	34
+ 185 009c 2D       		.byte	45
+ 186 009d 71       		.byte	113
+ 187 009e 2F       		.byte	47
+ 188 009f 06       		.byte	6
+ 189 00a0 31       		.byte	49
+ 190 00a1 30       		.byte	48
+ 191 00a2 33       		.byte	51
+ 192 00a3 0F       		.byte	15
+ 193 00a4 34       		.byte	52
+ 194 00a5 E0       		.byte	-32
+ 195 00a6 35       		.byte	53
+ 196 00a7 C0       		.byte	-64
+ 197 00a8 36       		.byte	54
+ 198 00a9 1F       		.byte	31
+ 199 00aa 39       		.byte	57
+ 200 00ab A2       		.byte	-94
+ 201 00ac 3A       		.byte	58
+ 202 00ad 20       		.byte	32
+ 203 00ae 3B       		.byte	59
+ 204 00af 08       		.byte	8
+ 205 00b0 3F       		.byte	63
+ 206 00b1 41       		.byte	65
+ 207 00b2 40       		.byte	64
+ 208 00b3 01       		.byte	1
+ 209 00b4 45       		.byte	69
+ 210 00b5 40       		.byte	64
+ 211 00b6 49       		.byte	73
+ 212 00b7 FF       		.byte	-1
+ 213 00b8 4A       		.byte	74
+ 214 00b9 07       		.byte	7
+ 215 00ba 4B       		.byte	75
+ 216 00bb FF       		.byte	-1
+ 217 00bc 4C       		.byte	76
+ 218 00bd 40       		.byte	64
+ 219 00be 4D       		.byte	77
+ 220 00bf 20       		.byte	32
+ 221 00c0 4E       		.byte	78
+ 222 00c1 F0       		.byte	-16
+ 223 00c2 4F       		.byte	79
+ 224 00c3 05       		.byte	5
+ 225 00c4 50       		.byte	80
+ 226 00c5 08       		.byte	8
+ 227 00c6 58       		.byte	88
+ 228 00c7 04       		.byte	4
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 5
+
+
+ 229 00c8 59       		.byte	89
+ 230 00c9 04       		.byte	4
+ 231 00ca 5A       		.byte	90
+ 232 00cb 04       		.byte	4
+ 233 00cc 5C       		.byte	92
+ 234 00cd 11       		.byte	17
+ 235 00ce 5D       		.byte	93
+ 236 00cf 01       		.byte	1
+ 237 00d0 5F       		.byte	95
+ 238 00d1 01       		.byte	1
+ 239 00d2 60       		.byte	96
+ 240 00d3 40       		.byte	64
+ 241 00d4 61       		.byte	97
+ 242 00d5 A8       		.byte	-88
+ 243 00d6 62       		.byte	98
+ 244 00d7 40       		.byte	64
+ 245 00d8 63       		.byte	99
+ 246 00d9 20       		.byte	32
+ 247 00da 80       		.byte	-128
+ 248 00db 40       		.byte	64
+ 249 00dc 84       		.byte	-124
+ 250 00dd 13       		.byte	19
+ 251 00de 86       		.byte	-122
+ 252 00df 04       		.byte	4
+ 253 00e0 88       		.byte	-120
+ 254 00e1 03       		.byte	3
+ 255 00e2 89       		.byte	-119
+ 256 00e3 01       		.byte	1
+ 257 00e4 8A       		.byte	-118
+ 258 00e5 14       		.byte	20
+ 259 00e6 8C       		.byte	-116
+ 260 00e7 13       		.byte	19
+ 261 00e8 8E       		.byte	-114
+ 262 00e9 0C       		.byte	12
+ 263 00ea 97       		.byte	-105
+ 264 00eb 02       		.byte	2
+ 265 00ec 99       		.byte	-103
+ 266 00ed 01       		.byte	1
+ 267 00ee 9A       		.byte	-102
+ 268 00ef 08       		.byte	8
+ 269 00f0 9D       		.byte	-99
+ 270 00f1 01       		.byte	1
+ 271 00f2 A0       		.byte	-96
+ 272 00f3 20       		.byte	32
+ 273 00f4 A6       		.byte	-90
+ 274 00f5 15       		.byte	21
+ 275 00f6 A8       		.byte	-88
+ 276 00f7 0A       		.byte	10
+ 277 00f8 AA       		.byte	-86
+ 278 00f9 14       		.byte	20
+ 279 00fa B0       		.byte	-80
+ 280 00fb 10       		.byte	16
+ 281 00fc B1       		.byte	-79
+ 282 00fd 02       		.byte	2
+ 283 00fe B2       		.byte	-78
+ 284 00ff 20       		.byte	32
+ 285 0100 B3       		.byte	-77
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 6
+
+
+ 286 0101 01       		.byte	1
+ 287 0102 B4       		.byte	-76
+ 288 0103 40       		.byte	64
+ 289 0104 B6       		.byte	-74
+ 290 0105 0F       		.byte	15
+ 291 0106 BA       		.byte	-70
+ 292 0107 80       		.byte	-128
+ 293 0108 BE       		.byte	-66
+ 294 0109 15       		.byte	21
+ 295 010a C0       		.byte	-64
+ 296 010b 53       		.byte	83
+ 297 010c C1       		.byte	-63
+ 298 010d 02       		.byte	2
+ 299 010e C5       		.byte	-59
+ 300 010f EC       		.byte	-20
+ 301 0110 C6       		.byte	-58
+ 302 0111 B0       		.byte	-80
+ 303 0112 C8       		.byte	-56
+ 304 0113 0B       		.byte	11
+ 305 0114 C9       		.byte	-55
+ 306 0115 FF       		.byte	-1
+ 307 0116 CA       		.byte	-54
+ 308 0117 FF       		.byte	-1
+ 309 0118 CB       		.byte	-53
+ 310 0119 FF       		.byte	-1
+ 311 011a CE       		.byte	-50
+ 312 011b F0       		.byte	-16
+ 313 011c CF       		.byte	-49
+ 314 011d 44       		.byte	68
+ 315 011e D0       		.byte	-48
+ 316 011f 0C       		.byte	12
+ 317 0120 D4       		.byte	-44
+ 318 0121 01       		.byte	1
+ 319 0122 D6       		.byte	-42
+ 320 0123 04       		.byte	4
+ 321 0124 D8       		.byte	-40
+ 322 0125 04       		.byte	4
+ 323 0126 D9       		.byte	-39
+ 324 0127 04       		.byte	4
+ 325 0128 DA       		.byte	-38
+ 326 0129 04       		.byte	4
+ 327 012a DB       		.byte	-37
+ 328 012b 04       		.byte	4
+ 329 012c DC       		.byte	-36
+ 330 012d 11       		.byte	17
+ 331 012e DD       		.byte	-35
+ 332 012f 11       		.byte	17
+ 333 0130 DF       		.byte	-33
+ 334 0131 01       		.byte	1
+ 335 0132 E6       		.byte	-26
+ 336 0133 C0       		.byte	-64
+ 337 0134 EA       		.byte	-22
+ 338 0135 40       		.byte	64
+ 339 0136 EB       		.byte	-21
+ 340 0137 02       		.byte	2
+ 341 0138 00       		.byte	0
+ 342 0139 22       		.byte	34
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 7
+
+
+ 343 013a 01       		.byte	1
+ 344 013b A0       		.byte	-96
+ 345 013c 03       		.byte	3
+ 346 013d 20       		.byte	32
+ 347 013e 04       		.byte	4
+ 348 013f 24       		.byte	36
+ 349 0140 05       		.byte	5
+ 350 0141 80       		.byte	-128
+ 351 0142 09       		.byte	9
+ 352 0143 10       		.byte	16
+ 353 0144 0E       		.byte	14
+ 354 0145 22       		.byte	34
+ 355 0146 10       		.byte	16
+ 356 0147 80       		.byte	-128
+ 357 0148 12       		.byte	18
+ 358 0149 10       		.byte	16
+ 359 014a 13       		.byte	19
+ 360 014b 20       		.byte	32
+ 361 014c 15       		.byte	21
+ 362 014d 01       		.byte	1
+ 363 014e 16       		.byte	22
+ 364 014f 20       		.byte	32
+ 365 0150 17       		.byte	23
+ 366 0151 20       		.byte	32
+ 367 0152 19       		.byte	25
+ 368 0153 84       		.byte	-124
+ 369 0154 1A       		.byte	26
+ 370 0155 44       		.byte	68
+ 371 0156 1C       		.byte	28
+ 372 0157 06       		.byte	6
+ 373 0158 1E       		.byte	30
+ 374 0159 02       		.byte	2
+ 375 015a 1F       		.byte	31
+ 376 015b 20       		.byte	32
+ 377 015c 21       		.byte	33
+ 378 015d 02       		.byte	2
+ 379 015e 22       		.byte	34
+ 380 015f 08       		.byte	8
+ 381 0160 25       		.byte	37
+ 382 0161 10       		.byte	16
+ 383 0162 26       		.byte	38
+ 384 0163 10       		.byte	16
+ 385 0164 27       		.byte	39
+ 386 0165 6A       		.byte	106
+ 387 0166 2D       		.byte	45
+ 388 0167 80       		.byte	-128
+ 389 0168 2F       		.byte	47
+ 390 0169 20       		.byte	32
+ 391 016a 32       		.byte	50
+ 392 016b 40       		.byte	64
+ 393 016c 33       		.byte	51
+ 394 016d 18       		.byte	24
+ 395 016e 37       		.byte	55
+ 396 016f 28       		.byte	40
+ 397 0170 39       		.byte	57
+ 398 0171 10       		.byte	16
+ 399 0172 3D       		.byte	61
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 8
+
+
+ 400 0173 01       		.byte	1
+ 401 0174 3F       		.byte	63
+ 402 0175 20       		.byte	32
+ 403 0176 42       		.byte	66
+ 404 0177 20       		.byte	32
+ 405 0178 43       		.byte	67
+ 406 0179 20       		.byte	32
+ 407 017a 47       		.byte	71
+ 408 017b 40       		.byte	64
+ 409 017c 48       		.byte	72
+ 410 017d 90       		.byte	-112
+ 411 017e 49       		.byte	73
+ 412 017f 81       		.byte	-127
+ 413 0180 4D       		.byte	77
+ 414 0181 01       		.byte	1
+ 415 0182 50       		.byte	80
+ 416 0183 10       		.byte	16
+ 417 0184 56       		.byte	86
+ 418 0185 30       		.byte	48
+ 419 0186 57       		.byte	87
+ 420 0187 10       		.byte	16
+ 421 0188 59       		.byte	89
+ 422 0189 25       		.byte	37
+ 423 018a 5A       		.byte	90
+ 424 018b 40       		.byte	64
+ 425 018c 60       		.byte	96
+ 426 018d 80       		.byte	-128
+ 427 018e 80       		.byte	-128
+ 428 018f 80       		.byte	-128
+ 429 0190 86       		.byte	-122
+ 430 0191 04       		.byte	4
+ 431 0192 C0       		.byte	-64
+ 432 0193 EF       		.byte	-17
+ 433 0194 C2       		.byte	-62
+ 434 0195 A2       		.byte	-94
+ 435 0196 C4       		.byte	-60
+ 436 0197 7E       		.byte	126
+ 437 0198 CA       		.byte	-54
+ 438 0199 50       		.byte	80
+ 439 019a CC       		.byte	-52
+ 440 019b 6E       		.byte	110
+ 441 019c CE       		.byte	-50
+ 442 019d A4       		.byte	-92
+ 443 019e D0       		.byte	-48
+ 444 019f 16       		.byte	22
+ 445 01a0 D2       		.byte	-46
+ 446 01a1 08       		.byte	8
+ 447 01a2 D6       		.byte	-42
+ 448 01a3 0F       		.byte	15
+ 449 01a4 D8       		.byte	-40
+ 450 01a5 01       		.byte	1
+ 451 01a6 E0       		.byte	-32
+ 452 01a7 02       		.byte	2
+ 453 01a8 93       		.byte	-109
+ 454 01a9 01       		.byte	1
+ 455 01aa 9B       		.byte	-101
+ 456 01ab 01       		.byte	1
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 9
+
+
+ 457 01ac B3       		.byte	-77
+ 458 01ad 01       		.byte	1
+ 459 01ae BB       		.byte	-69
+ 460 01af 80       		.byte	-128
+ 461 01b0 BF       		.byte	-65
+ 462 01b1 04       		.byte	4
+ 463 01b2 D4       		.byte	-44
+ 464 01b3 18       		.byte	24
+ 465 01b4 D6       		.byte	-42
+ 466 01b5 04       		.byte	4
+ 467 01b6 D9       		.byte	-39
+ 468 01b7 04       		.byte	4
+ 469 01b8 DB       		.byte	-37
+ 470 01b9 04       		.byte	4
+ 471 01ba DC       		.byte	-36
+ 472 01bb 10       		.byte	16
+ 473 01bc DD       		.byte	-35
+ 474 01bd 10       		.byte	16
+ 475 01be DF       		.byte	-33
+ 476 01bf 01       		.byte	1
+ 477 01c0 00       		.byte	0
+ 478 01c1 04       		.byte	4
+ 479 01c2 01       		.byte	1
+ 480 01c3 80       		.byte	-128
+ 481 01c4 02       		.byte	2
+ 482 01c5 08       		.byte	8
+ 483 01c6 03       		.byte	3
+ 484 01c7 40       		.byte	64
+ 485 01c8 09       		.byte	9
+ 486 01c9 42       		.byte	66
+ 487 01ca 0A       		.byte	10
+ 488 01cb 10       		.byte	16
+ 489 01cc 10       		.byte	16
+ 490 01cd 80       		.byte	-128
+ 491 01ce 13       		.byte	19
+ 492 01cf 14       		.byte	20
+ 493 01d0 18       		.byte	24
+ 494 01d1 04       		.byte	4
+ 495 01d2 19       		.byte	25
+ 496 01d3 A1       		.byte	-95
+ 497 01d4 1A       		.byte	26
+ 498 01d5 30       		.byte	48
+ 499 01d6 21       		.byte	33
+ 500 01d7 01       		.byte	1
+ 501 01d8 22       		.byte	34
+ 502 01d9 22       		.byte	34
+ 503 01da 23       		.byte	35
+ 504 01db 22       		.byte	34
+ 505 01dc 25       		.byte	37
+ 506 01dd 48       		.byte	72
+ 507 01de 27       		.byte	39
+ 508 01df 01       		.byte	1
+ 509 01e0 29       		.byte	41
+ 510 01e1 A0       		.byte	-96
+ 511 01e2 2A       		.byte	42
+ 512 01e3 02       		.byte	2
+ 513 01e4 32       		.byte	50
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 10
+
+
+ 514 01e5 18       		.byte	24
+ 515 01e6 33       		.byte	51
+ 516 01e7 41       		.byte	65
+ 517 01e8 35       		.byte	53
+ 518 01e9 02       		.byte	2
+ 519 01ea 36       		.byte	54
+ 520 01eb 20       		.byte	32
+ 521 01ec 38       		.byte	56
+ 522 01ed 80       		.byte	-128
+ 523 01ee 39       		.byte	57
+ 524 01ef 02       		.byte	2
+ 525 01f0 3B       		.byte	59
+ 526 01f1 14       		.byte	20
+ 527 01f2 40       		.byte	64
+ 528 01f3 04       		.byte	4
+ 529 01f4 41       		.byte	65
+ 530 01f5 80       		.byte	-128
+ 531 01f6 43       		.byte	67
+ 532 01f7 01       		.byte	1
+ 533 01f8 45       		.byte	69
+ 534 01f9 08       		.byte	8
+ 535 01fa 46       		.byte	70
+ 536 01fb 20       		.byte	32
+ 537 01fc 49       		.byte	73
+ 538 01fd 02       		.byte	2
+ 539 01fe 4A       		.byte	74
+ 540 01ff 0A       		.byte	10
+ 541 0200 50       		.byte	80
+ 542 0201 40       		.byte	64
+ 543 0202 59       		.byte	89
+ 544 0203 01       		.byte	1
+ 545 0204 5F       		.byte	95
+ 546 0205 02       		.byte	2
+ 547 0206 66       		.byte	102
+ 548 0207 A0       		.byte	-96
+ 549 0208 67       		.byte	103
+ 550 0209 40       		.byte	64
+ 551 020a 69       		.byte	105
+ 552 020b 10       		.byte	16
+ 553 020c 6A       		.byte	106
+ 554 020d 80       		.byte	-128
+ 555 020e 6B       		.byte	107
+ 556 020f 10       		.byte	16
+ 557 0210 70       		.byte	112
+ 558 0211 80       		.byte	-128
+ 559 0212 72       		.byte	114
+ 560 0213 02       		.byte	2
+ 561 0214 73       		.byte	115
+ 562 0215 14       		.byte	20
+ 563 0216 81       		.byte	-127
+ 564 0217 80       		.byte	-128
+ 565 0218 83       		.byte	-125
+ 566 0219 48       		.byte	72
+ 567 021a 87       		.byte	-121
+ 568 021b 40       		.byte	64
+ 569 021c 8A       		.byte	-118
+ 570 021d 80       		.byte	-128
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 11
+
+
+ 571 021e 8B       		.byte	-117
+ 572 021f 20       		.byte	32
+ 573 0220 95       		.byte	-107
+ 574 0221 10       		.byte	16
+ 575 0222 96       		.byte	-106
+ 576 0223 80       		.byte	-128
+ 577 0224 9F       		.byte	-97
+ 578 0225 10       		.byte	16
+ 579 0226 A1       		.byte	-95
+ 580 0227 02       		.byte	2
+ 581 0228 A2       		.byte	-94
+ 582 0229 08       		.byte	8
+ 583 022a A7       		.byte	-89
+ 584 022b 08       		.byte	8
+ 585 022c B7       		.byte	-73
+ 586 022d 02       		.byte	2
+ 587 022e C0       		.byte	-64
+ 588 022f 0F       		.byte	15
+ 589 0230 C2       		.byte	-62
+ 590 0231 0D       		.byte	13
+ 591 0232 C4       		.byte	-60
+ 592 0233 0E       		.byte	14
+ 593 0234 CA       		.byte	-54
+ 594 0235 0D       		.byte	13
+ 595 0236 CC       		.byte	-52
+ 596 0237 AF       		.byte	-81
+ 597 0238 CE       		.byte	-50
+ 598 0239 0F       		.byte	15
+ 599 023a D0       		.byte	-48
+ 600 023b 0D       		.byte	13
+ 601 023c D2       		.byte	-46
+ 602 023d 0C       		.byte	12
+ 603 023e D6       		.byte	-42
+ 604 023f 81       		.byte	-127
+ 605 0240 D8       		.byte	-40
+ 606 0241 B0       		.byte	-80
+ 607 0242 E6       		.byte	-26
+ 608 0243 01       		.byte	1
+ 609 0244 32       		.byte	50
+ 610 0245 40       		.byte	64
+ 611 0246 33       		.byte	51
+ 612 0247 08       		.byte	8
+ 613 0248 36       		.byte	54
+ 614 0249 80       		.byte	-128
+ 615 024a CC       		.byte	-52
+ 616 024b 70       		.byte	112
+ 617 024c 12       		.byte	18
+ 618 024d 80       		.byte	-128
+ 619 024e 96       		.byte	-106
+ 620 024f 80       		.byte	-128
+ 621 0250 A6       		.byte	-90
+ 622 0251 80       		.byte	-128
+ 623 0252 A7       		.byte	-89
+ 624 0253 08       		.byte	8
+ 625 0254 C4       		.byte	-60
+ 626 0255 10       		.byte	16
+ 627 0256 87       		.byte	-121
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 12
+
+
+ 628 0257 01       		.byte	1
+ 629 0258 96       		.byte	-106
+ 630 0259 80       		.byte	-128
+ 631 025a A7       		.byte	-89
+ 632 025b 08       		.byte	8
+ 633 025c E0       		.byte	-32
+ 634 025d 40       		.byte	64
+ 635 025e 96       		.byte	-106
+ 636 025f 80       		.byte	-128
+ 637 0260 9F       		.byte	-97
+ 638 0261 01       		.byte	1
+ 639 0262 A7       		.byte	-89
+ 640 0263 08       		.byte	8
+ 641 0264 7C       		.byte	124
+ 642 0265 10       		.byte	16
+ 643 0266 DE       		.byte	-34
+ 644 0267 01       		.byte	1
+ 645 0268 94       		.byte	-108
+ 646 0269 10       		.byte	16
+ 647 026a 45       		.byte	69
+ 648 026b 08       		.byte	8
+ 649 026c 85       		.byte	-123
+ 650 026d 08       		.byte	8
+ 651 026e 94       		.byte	-108
+ 652 026f 10       		.byte	16
+ 653 0270 D0       		.byte	-48
+ 654 0271 01       		.byte	1
+ 655 0272 94       		.byte	-108
+ 656 0273 10       		.byte	16
+ 657 0274 27       		.byte	39
+ 658 0275 01       		.byte	1
+ 659 0276 82       		.byte	-126
+ 660 0277 40       		.byte	64
+ 661 0278 96       		.byte	-106
+ 662 0279 80       		.byte	-128
+ 663 027a 9F       		.byte	-97
+ 664 027b 01       		.byte	1
+ 665 027c A7       		.byte	-89
+ 666 027d 08       		.byte	8
+ 667 027e C8       		.byte	-56
+ 668 027f 20       		.byte	32
+ 669 0280 E6       		.byte	-26
+ 670 0281 80       		.byte	-128
+ 671 0282 87       		.byte	-121
+ 672 0283 08       		.byte	8
+ 673 0284 A7       		.byte	-89
+ 674 0285 08       		.byte	8
+ 675 0286 E6       		.byte	-26
+ 676 0287 40       		.byte	64
+ 677 0288 87       		.byte	-121
+ 678 0289 80       		.byte	-128
+ 679 028a 94       		.byte	-108
+ 680 028b 10       		.byte	16
+ 681 028c 11       		.byte	17
+ 682 028d 02       		.byte	2
+ 683 028e 77       		.byte	119
+ 684 028f 80       		.byte	-128
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 13
+
+
+ 685 0290 81       		.byte	-127
+ 686 0291 01       		.byte	1
+ 687 0292 9B       		.byte	-101
+ 688 0293 80       		.byte	-128
+ 689 0294 B4       		.byte	-76
+ 690 0295 10       		.byte	16
+ 691 0296 C4       		.byte	-60
+ 692 0297 08       		.byte	8
+ 693 0298 DE       		.byte	-34
+ 694 0299 04       		.byte	4
+ 695 029a E8       		.byte	-24
+ 696 029b 08       		.byte	8
+ 697 029c 10       		.byte	16
+ 698 029d 02       		.byte	2
+ 699 029e 1C       		.byte	28
+ 700 029f 02       		.byte	2
+ 701 02a0 00       		.byte	0
+ 702 02a1 3F       		.byte	63
+ 703 02a2 00       		.byte	0
+ 704 02a3 00       		.byte	0
+ 705 02a4 81       		.byte	-127
+ 706 02a5 00       		.byte	0
+ 707 02a6 00       		.byte	0
+ 708 02a7 01       		.byte	1
+ 709 02a8 E7       		.byte	-25
+ 710 02a9 04       		.byte	4
+ 711 02aa 18       		.byte	24
+ 712 02ab 00       		.byte	0
+ 713 02ac 00       		.byte	0
+ 714 02ad 0C       		.byte	12
+ 715 02ae C6       		.byte	-58
+ 716 02af 00       		.byte	0
+ 717 02b0 39       		.byte	57
+ 718 02b1 00       		.byte	0
+ 719 02b2 C4       		.byte	-60
+ 720 02b3 01       		.byte	1
+ 721 02b4 00       		.byte	0
+ 722 02b5 3E       		.byte	62
+ 723 02b6 01       		.byte	1
+ 724 02b7 00       		.byte	0
+ 725 02b8 B9       		.byte	-71
+ 726 02b9 00       		.byte	0
+ 727 02ba 42       		.byte	66
+ 728 02bb 22       		.byte	34
+ 729 02bc 00       		.byte	0
+ 730 02bd 0C       		.byte	12
+ 731 02be 00       		.byte	0
+ 732 02bf 32       		.byte	50
+ 733 02c0 FF       		.byte	-1
+ 734 02c1 20       		.byte	32
+ 735 02c2 00       		.byte	0
+ 736 02c3 00       		.byte	0
+ 737 02c4 10       		.byte	16
+ 738 02c5 08       		.byte	8
+ 739 02c6 00       		.byte	0
+ 740 02c7 00       		.byte	0
+ 741 02c8 08       		.byte	8
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 14
+
+
+ 742 02c9 00       		.byte	0
+ 743 02ca 00       		.byte	0
+ 744 02cb 00       		.byte	0
+ 745 02cc 18       		.byte	24
+ 746 02cd 32       		.byte	50
+ 747 02ce 00       		.byte	0
+ 748 02cf 0C       		.byte	12
+ 749 02d0 00       		.byte	0
+ 750 02d1 0E       		.byte	14
+ 751 02d2 00       		.byte	0
+ 752 02d3 30       		.byte	48
+ 753 02d4 20       		.byte	32
+ 754 02d5 0E       		.byte	14
+ 755 02d6 58       		.byte	88
+ 756 02d7 01       		.byte	1
+ 757 02d8 98       		.byte	-104
+ 758 02d9 10       		.byte	16
+ 759 02da 1F       		.byte	31
+ 760 02db 20       		.byte	32
+ 761 02dc 00       		.byte	0
+ 762 02dd 20       		.byte	32
+ 763 02de A8       		.byte	-88
+ 764 02df 00       		.byte	0
+ 765 02e0 00       		.byte	0
+ 766 02e1 00       		.byte	0
+ 767 02e2 01       		.byte	1
+ 768 02e3 04       		.byte	4
+ 769 02e4 26       		.byte	38
+ 770 02e5 04       		.byte	4
+ 771 02e6 05       		.byte	5
+ 772 02e7 00       		.byte	0
+ 773 02e8 01       		.byte	1
+ 774 02e9 E0       		.byte	-32
+ 775 02ea 0C       		.byte	12
+ 776 02eb 00       		.byte	0
+ 777 02ec 06       		.byte	6
+ 778 02ed FF       		.byte	-1
+ 779 02ee FF       		.byte	-1
+ 780 02ef FF       		.byte	-1
+ 781 02f0 62       		.byte	98
+ 782 02f1 A0       		.byte	-96
+ 783 02f2 F0       		.byte	-16
+ 784 02f3 41       		.byte	65
+ 785 02f4 0C       		.byte	12
+ 786 02f5 00       		.byte	0
+ 787 02f6 00       		.byte	0
+ 788 02f7 00       		.byte	0
+ 789 02f8 00       		.byte	0
+ 790 02f9 00       		.byte	0
+ 791 02fa 02       		.byte	2
+ 792 02fb 13       		.byte	19
+ 793 02fc 04       		.byte	4
+ 794 02fd 04       		.byte	4
+ 795 02fe 04       		.byte	4
+ 796 02ff 04       		.byte	4
+ 797 0300 11       		.byte	17
+ 798 0301 11       		.byte	17
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 15
+
+
+ 799 0302 00       		.byte	0
+ 800 0303 01       		.byte	1
+ 801 0304 00       		.byte	0
+ 802 0305 00       		.byte	0
+ 803 0306 00       		.byte	0
+ 804 0307 00       		.byte	0
+ 805 0308 00       		.byte	0
+ 806 0309 00       		.byte	0
+ 807 030a 40       		.byte	64
+ 808 030b 02       		.byte	2
+ 809 030c 00       		.byte	0
+ 810 030d 10       		.byte	16
+ 811 030e 30       		.byte	48
+ 812 030f 10       		.byte	16
+ 813 0310 00       		.byte	0
+ 814 0311 10       		.byte	16
+ 815 0312 10       		.byte	16
+ 816 0313 12       		.byte	18
+ 817 0314 00       		.byte	0
+ 818 0315 00       		.byte	0
+ 819 0316 00       		.byte	0
+ 820 0317 00       		.byte	0
+ 821 0318 00       		.byte	0
+ 822 0319 00       		.byte	0
+ 823 031a 00       		.byte	0
+ 824 031b 00       		.byte	0
+ 825 031c 00       		.byte	0
+ 826 031d 00       		.byte	0
+ 827 031e 00       		.byte	0
+ 828 031f 00       		.byte	0
+ 829 0320 00       		.byte	0
+ 830 0321 00       		.byte	0
+ 831 0322 00       		.byte	0
+ 832 0323 00       		.byte	0
+ 833 0324 40       		.byte	64
+ 834 0325 00       		.byte	0
+ 835 0326 00       		.byte	0
+ 836 0327 80       		.byte	-128
+ 837 0328 C0       		.byte	-64
+ 838 0329 00       		.byte	0
+ 839 032a 80       		.byte	-128
+ 840 032b 00       		.byte	0
+ 841 032c 00       		.byte	0
+ 842 032d 00       		.byte	0
+ 843 032e 00       		.byte	0
+ 844 032f 00       		.byte	0
+ 845 0330 00       		.byte	0
+ 846 0331 02       		.byte	2
+ 847 0332 02       		.byte	2
+ 848 0333 00       		.byte	0
+ 849 0334 02       		.byte	2
+ 850 0335 00       		.byte	0
+ 851 0336 00       		.byte	0
+ 852 0337 00       		.byte	0
+ 853 0338 00       		.byte	0
+ 854 0339 0B       		.byte	11
+ 855 033a 0B       		.byte	11
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 16
+
+
+ 856 033b 00       		.byte	0
+ 857 033c 00       		.byte	0
+ 858 033d 00       		.byte	0
+ 859 033e 00       		.byte	0
+ 860 033f 00       		.byte	0
+ 861 0340 00       		.byte	0
+ 862 0341 07       		.byte	7
+ 863 0342 07       		.byte	7
+ 864 0343 00       		.byte	0
+ 865 0344 01       		.byte	1
+ 866 0345 00       		.byte	0
+ 867 0346 80       		.byte	-128
+ 868 0347 00       		.byte	0
+ 869 0348 BB       		.byte	-69
+ 870 0349 00       		.byte	0
+ 871 034a 18       		.byte	24
+ 872 034b 01       		.byte	1
+ 873 034c 00       		.byte	0
+ 874 034d 08       		.byte	8
+ 875 034e 00       		.byte	0
+ 876 034f 00       		.byte	0
+ 877              		.section	.cywolatch,"a",%progbits
+ 878              		.align	2
+ 879              		.type	cy_meta_wonvl, %object
+ 880              		.size	cy_meta_wonvl, 4
+ 881              	cy_meta_wonvl:
+ 882 0000 BC       		.byte	-68
+ 883 0001 90       		.byte	-112
+ 884 0002 AC       		.byte	-84
+ 885 0003 AF       		.byte	-81
+ 886              		.section	.cycustnvl,"a",%progbits
+ 887              		.align	2
+ 888              		.type	cy_meta_custnvl, %object
+ 889              		.size	cy_meta_custnvl, 4
+ 890              	cy_meta_custnvl:
+ 891 0000 00       		.byte	0
+ 892 0001 00       		.byte	0
+ 893 0002 40       		.byte	64
+ 894 0003 05       		.byte	5
+ 895              		.section	.cymeta,"a",%progbits
+ 896              		.align	2
+ 897              		.type	cy_metadata, %object
+ 898              		.size	cy_metadata, 12
+ 899              	cy_metadata:
+ 900 0000 00       		.byte	0
+ 901 0001 01       		.byte	1
+ 902 0002 2E       		.byte	46
+ 903 0003 16       		.byte	22
+ 904 0004 10       		.byte	16
+ 905 0005 69       		.byte	105
+ 906 0006 00       		.byte	0
+ 907 0007 01       		.byte	1
+ 908 0008 00       		.byte	0
+ 909 0009 00       		.byte	0
+ 910 000a 00       		.byte	0
+ 911 000b 00       		.byte	0
+ 912              		.section	.cyflashprotect,"a",%progbits
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 17
+
+
+ 913              		.align	2
+ 914              		.type	cy_meta_flashprotect, %object
+ 915              		.size	cy_meta_flashprotect, 256
+ 916              	cy_meta_flashprotect:
+ 917 0000 00000000 		.space	256
+ 917      00000000 
+ 917      00000000 
+ 917      00000000 
+ 917      00000000 
+ 918              		.text
+ 919              	.Letext0:
+ 920              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 921              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 922              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 923              		.section	.debug_info,"",%progbits
+ 924              	.Ldebug_info0:
+ 925 0000 31010000 		.4byte	0x131
+ 926 0004 0400     		.2byte	0x4
+ 927 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 928 000a 04       		.byte	0x4
+ 929 000b 01       		.uleb128 0x1
+ 930 000c 2C000000 		.4byte	.LASF17
+ 931 0010 0C       		.byte	0xc
+ 932 0011 CE010000 		.4byte	.LASF18
+ 933 0015 25010000 		.4byte	.LASF19
+ 934 0019 00000000 		.4byte	.Ldebug_line0
+ 935 001d 02       		.uleb128 0x2
+ 936 001e 01       		.byte	0x1
+ 937 001f 06       		.byte	0x6
+ 938 0020 C2010000 		.4byte	.LASF0
+ 939 0024 03       		.uleb128 0x3
+ 940 0025 00000000 		.4byte	.LASF9
+ 941 0029 01       		.byte	0x1
+ 942 002a 1D       		.byte	0x1d
+ 943 002b 2F000000 		.4byte	0x2f
+ 944 002f 02       		.uleb128 0x2
+ 945 0030 01       		.byte	0x1
+ 946 0031 08       		.byte	0x8
+ 947 0032 1E000000 		.4byte	.LASF1
+ 948 0036 02       		.uleb128 0x2
+ 949 0037 02       		.byte	0x2
+ 950 0038 05       		.byte	0x5
+ 951 0039 AF010000 		.4byte	.LASF2
+ 952 003d 02       		.uleb128 0x2
+ 953 003e 02       		.byte	0x2
+ 954 003f 07       		.byte	0x7
+ 955 0040 CC000000 		.4byte	.LASF3
+ 956 0044 02       		.uleb128 0x2
+ 957 0045 04       		.byte	0x4
+ 958 0046 05       		.byte	0x5
+ 959 0047 B9010000 		.4byte	.LASF4
+ 960 004b 02       		.uleb128 0x2
+ 961 004c 04       		.byte	0x4
+ 962 004d 07       		.byte	0x7
+ 963 004e BA000000 		.4byte	.LASF5
+ 964 0052 02       		.uleb128 0x2
+ 965 0053 08       		.byte	0x8
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 18
+
+
+ 966 0054 05       		.byte	0x5
+ 967 0055 A1010000 		.4byte	.LASF6
+ 968 0059 02       		.uleb128 0x2
+ 969 005a 08       		.byte	0x8
+ 970 005b 07       		.byte	0x7
+ 971 005c 0E010000 		.4byte	.LASF7
+ 972 0060 04       		.uleb128 0x4
+ 973 0061 04       		.byte	0x4
+ 974 0062 05       		.byte	0x5
+ 975 0063 696E7400 		.ascii	"int\000"
+ 976 0067 02       		.uleb128 0x2
+ 977 0068 04       		.byte	0x4
+ 978 0069 07       		.byte	0x7
+ 979 006a 01010000 		.4byte	.LASF8
+ 980 006e 03       		.uleb128 0x3
+ 981 006f 0A000000 		.4byte	.LASF10
+ 982 0073 02       		.byte	0x2
+ 983 0074 18       		.byte	0x18
+ 984 0075 24000000 		.4byte	0x24
+ 985 0079 05       		.uleb128 0x5
+ 986 007a 91000000 		.4byte	0x91
+ 987 007e 8A000000 		.4byte	0x8a
+ 988 0082 06       		.uleb128 0x6
+ 989 0083 8A000000 		.4byte	0x8a
+ 990 0087 4F03     		.2byte	0x34f
+ 991 0089 00       		.byte	0
+ 992 008a 02       		.uleb128 0x2
+ 993 008b 04       		.byte	0x4
+ 994 008c 07       		.byte	0x7
+ 995 008d 98010000 		.4byte	.LASF11
+ 996 0091 07       		.uleb128 0x7
+ 997 0092 6E000000 		.4byte	0x6e
+ 998 0096 08       		.uleb128 0x8
+ 999 0097 EF000000 		.4byte	.LASF12
+ 1000 009b 03       		.byte	0x3
+ 1001 009c 1F       		.byte	0x1f
+ 1002 009d A7000000 		.4byte	0xa7
+ 1003 00a1 05       		.uleb128 0x5
+ 1004 00a2 03       		.byte	0x3
+ 1005 00a3 00000000 		.4byte	cy_meta_configecc
+ 1006 00a7 07       		.uleb128 0x7
+ 1007 00a8 79000000 		.4byte	0x79
+ 1008 00ac 05       		.uleb128 0x5
+ 1009 00ad 91000000 		.4byte	0x91
+ 1010 00b1 BC000000 		.4byte	0xbc
+ 1011 00b5 09       		.uleb128 0x9
+ 1012 00b6 8A000000 		.4byte	0x8a
+ 1013 00ba 03       		.byte	0x3
+ 1014 00bb 00       		.byte	0
+ 1015 00bc 08       		.uleb128 0x8
+ 1016 00bd DF000000 		.4byte	.LASF13
+ 1017 00c1 03       		.byte	0x3
+ 1018 00c2 96       		.byte	0x96
+ 1019 00c3 CD000000 		.4byte	0xcd
+ 1020 00c7 05       		.uleb128 0x5
+ 1021 00c8 03       		.byte	0x3
+ 1022 00c9 00000000 		.4byte	cy_meta_custnvl
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 19
+
+
+ 1023 00cd 07       		.uleb128 0x7
+ 1024 00ce AC000000 		.4byte	0xac
+ 1025 00d2 08       		.uleb128 0x8
+ 1026 00d3 8A010000 		.4byte	.LASF14
+ 1027 00d7 03       		.byte	0x3
+ 1028 00d8 A4       		.byte	0xa4
+ 1029 00d9 E3000000 		.4byte	0xe3
+ 1030 00dd 05       		.uleb128 0x5
+ 1031 00de 03       		.byte	0x3
+ 1032 00df 00000000 		.4byte	cy_meta_wonvl
+ 1033 00e3 07       		.uleb128 0x7
+ 1034 00e4 AC000000 		.4byte	0xac
+ 1035 00e8 05       		.uleb128 0x5
+ 1036 00e9 91000000 		.4byte	0x91
+ 1037 00ed F8000000 		.4byte	0xf8
+ 1038 00f1 09       		.uleb128 0x9
+ 1039 00f2 8A000000 		.4byte	0x8a
+ 1040 00f6 FF       		.byte	0xff
+ 1041 00f7 00       		.byte	0
+ 1042 00f8 08       		.uleb128 0x8
+ 1043 00f9 75010000 		.4byte	.LASF15
+ 1044 00fd 03       		.byte	0x3
+ 1045 00fe B2       		.byte	0xb2
+ 1046 00ff 09010000 		.4byte	0x109
+ 1047 0103 05       		.uleb128 0x5
+ 1048 0104 03       		.byte	0x3
+ 1049 0105 00000000 		.4byte	cy_meta_flashprotect
+ 1050 0109 07       		.uleb128 0x7
+ 1051 010a E8000000 		.4byte	0xe8
+ 1052 010e 05       		.uleb128 0x5
+ 1053 010f 91000000 		.4byte	0x91
+ 1054 0113 1E010000 		.4byte	0x11e
+ 1055 0117 09       		.uleb128 0x9
+ 1056 0118 8A000000 		.4byte	0x8a
+ 1057 011c 0B       		.byte	0xb
+ 1058 011d 00       		.byte	0
+ 1059 011e 08       		.uleb128 0x8
+ 1060 011f 12000000 		.4byte	.LASF16
+ 1061 0123 03       		.byte	0x3
+ 1062 0124 DF       		.byte	0xdf
+ 1063 0125 2F010000 		.4byte	0x12f
+ 1064 0129 05       		.uleb128 0x5
+ 1065 012a 03       		.byte	0x3
+ 1066 012b 00000000 		.4byte	cy_metadata
+ 1067 012f 07       		.uleb128 0x7
+ 1068 0130 0E010000 		.4byte	0x10e
+ 1069 0134 00       		.byte	0
+ 1070              		.section	.debug_abbrev,"",%progbits
+ 1071              	.Ldebug_abbrev0:
+ 1072 0000 01       		.uleb128 0x1
+ 1073 0001 11       		.uleb128 0x11
+ 1074 0002 01       		.byte	0x1
+ 1075 0003 25       		.uleb128 0x25
+ 1076 0004 0E       		.uleb128 0xe
+ 1077 0005 13       		.uleb128 0x13
+ 1078 0006 0B       		.uleb128 0xb
+ 1079 0007 03       		.uleb128 0x3
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 20
+
+
+ 1080 0008 0E       		.uleb128 0xe
+ 1081 0009 1B       		.uleb128 0x1b
+ 1082 000a 0E       		.uleb128 0xe
+ 1083 000b 10       		.uleb128 0x10
+ 1084 000c 17       		.uleb128 0x17
+ 1085 000d 00       		.byte	0
+ 1086 000e 00       		.byte	0
+ 1087 000f 02       		.uleb128 0x2
+ 1088 0010 24       		.uleb128 0x24
+ 1089 0011 00       		.byte	0
+ 1090 0012 0B       		.uleb128 0xb
+ 1091 0013 0B       		.uleb128 0xb
+ 1092 0014 3E       		.uleb128 0x3e
+ 1093 0015 0B       		.uleb128 0xb
+ 1094 0016 03       		.uleb128 0x3
+ 1095 0017 0E       		.uleb128 0xe
+ 1096 0018 00       		.byte	0
+ 1097 0019 00       		.byte	0
+ 1098 001a 03       		.uleb128 0x3
+ 1099 001b 16       		.uleb128 0x16
+ 1100 001c 00       		.byte	0
+ 1101 001d 03       		.uleb128 0x3
+ 1102 001e 0E       		.uleb128 0xe
+ 1103 001f 3A       		.uleb128 0x3a
+ 1104 0020 0B       		.uleb128 0xb
+ 1105 0021 3B       		.uleb128 0x3b
+ 1106 0022 0B       		.uleb128 0xb
+ 1107 0023 49       		.uleb128 0x49
+ 1108 0024 13       		.uleb128 0x13
+ 1109 0025 00       		.byte	0
+ 1110 0026 00       		.byte	0
+ 1111 0027 04       		.uleb128 0x4
+ 1112 0028 24       		.uleb128 0x24
+ 1113 0029 00       		.byte	0
+ 1114 002a 0B       		.uleb128 0xb
+ 1115 002b 0B       		.uleb128 0xb
+ 1116 002c 3E       		.uleb128 0x3e
+ 1117 002d 0B       		.uleb128 0xb
+ 1118 002e 03       		.uleb128 0x3
+ 1119 002f 08       		.uleb128 0x8
+ 1120 0030 00       		.byte	0
+ 1121 0031 00       		.byte	0
+ 1122 0032 05       		.uleb128 0x5
+ 1123 0033 01       		.uleb128 0x1
+ 1124 0034 01       		.byte	0x1
+ 1125 0035 49       		.uleb128 0x49
+ 1126 0036 13       		.uleb128 0x13
+ 1127 0037 01       		.uleb128 0x1
+ 1128 0038 13       		.uleb128 0x13
+ 1129 0039 00       		.byte	0
+ 1130 003a 00       		.byte	0
+ 1131 003b 06       		.uleb128 0x6
+ 1132 003c 21       		.uleb128 0x21
+ 1133 003d 00       		.byte	0
+ 1134 003e 49       		.uleb128 0x49
+ 1135 003f 13       		.uleb128 0x13
+ 1136 0040 2F       		.uleb128 0x2f
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 21
+
+
+ 1137 0041 05       		.uleb128 0x5
+ 1138 0042 00       		.byte	0
+ 1139 0043 00       		.byte	0
+ 1140 0044 07       		.uleb128 0x7
+ 1141 0045 26       		.uleb128 0x26
+ 1142 0046 00       		.byte	0
+ 1143 0047 49       		.uleb128 0x49
+ 1144 0048 13       		.uleb128 0x13
+ 1145 0049 00       		.byte	0
+ 1146 004a 00       		.byte	0
+ 1147 004b 08       		.uleb128 0x8
+ 1148 004c 34       		.uleb128 0x34
+ 1149 004d 00       		.byte	0
+ 1150 004e 03       		.uleb128 0x3
+ 1151 004f 0E       		.uleb128 0xe
+ 1152 0050 3A       		.uleb128 0x3a
+ 1153 0051 0B       		.uleb128 0xb
+ 1154 0052 3B       		.uleb128 0x3b
+ 1155 0053 0B       		.uleb128 0xb
+ 1156 0054 49       		.uleb128 0x49
+ 1157 0055 13       		.uleb128 0x13
+ 1158 0056 3F       		.uleb128 0x3f
+ 1159 0057 19       		.uleb128 0x19
+ 1160 0058 02       		.uleb128 0x2
+ 1161 0059 18       		.uleb128 0x18
+ 1162 005a 00       		.byte	0
+ 1163 005b 00       		.byte	0
+ 1164 005c 09       		.uleb128 0x9
+ 1165 005d 21       		.uleb128 0x21
+ 1166 005e 00       		.byte	0
+ 1167 005f 49       		.uleb128 0x49
+ 1168 0060 13       		.uleb128 0x13
+ 1169 0061 2F       		.uleb128 0x2f
+ 1170 0062 0B       		.uleb128 0xb
+ 1171 0063 00       		.byte	0
+ 1172 0064 00       		.byte	0
+ 1173 0065 00       		.byte	0
+ 1174              		.section	.debug_aranges,"",%progbits
+ 1175 0000 14000000 		.4byte	0x14
+ 1176 0004 0200     		.2byte	0x2
+ 1177 0006 00000000 		.4byte	.Ldebug_info0
+ 1178 000a 04       		.byte	0x4
+ 1179 000b 00       		.byte	0
+ 1180 000c 0000     		.2byte	0
+ 1181 000e 0000     		.2byte	0
+ 1182 0010 00000000 		.4byte	0
+ 1183 0014 00000000 		.4byte	0
+ 1184              		.section	.debug_line,"",%progbits
+ 1185              	.Ldebug_line0:
+ 1186 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ 1186      02003701 
+ 1186      00000201 
+ 1186      FB0E0D00 
+ 1186      01010101 
+ 1187              	.LASF9:
+ 1188 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 1188      6E74385F 
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 22
+
+
+ 1188      7400
+ 1189              	.LASF10:
+ 1190 000a 75696E74 		.ascii	"uint8_t\000"
+ 1190      385F7400 
+ 1191              	.LASF16:
+ 1192 0012 63795F6D 		.ascii	"cy_metadata\000"
+ 1192      65746164 
+ 1192      61746100 
+ 1193              	.LASF1:
+ 1194 001e 756E7369 		.ascii	"unsigned char\000"
+ 1194      676E6564 
+ 1194      20636861 
+ 1194      7200
+ 1195              	.LASF17:
+ 1196 002c 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1196      43313120 
+ 1196      352E342E 
+ 1196      31203230 
+ 1196      31363036 
+ 1197 005f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1197      20726576 
+ 1197      6973696F 
+ 1197      6E203233 
+ 1197      37373135 
+ 1198 0092 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1198      66756E63 
+ 1198      74696F6E 
+ 1198      2D736563 
+ 1198      74696F6E 
+ 1199              	.LASF5:
+ 1200 00ba 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1200      20756E73 
+ 1200      69676E65 
+ 1200      6420696E 
+ 1200      7400
+ 1201              	.LASF3:
+ 1202 00cc 73686F72 		.ascii	"short unsigned int\000"
+ 1202      7420756E 
+ 1202      7369676E 
+ 1202      65642069 
+ 1202      6E7400
+ 1203              	.LASF13:
+ 1204 00df 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 1204      6574615F 
+ 1204      63757374 
+ 1204      6E766C00 
+ 1205              	.LASF12:
+ 1206 00ef 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 1206      6574615F 
+ 1206      636F6E66 
+ 1206      69676563 
+ 1206      6300
+ 1207              	.LASF8:
+ 1208 0101 756E7369 		.ascii	"unsigned int\000"
+ 1208      676E6564 
+ 1208      20696E74 
+ 1208      00
+ARM GAS  C:\Users\ALVAROGA\AppData\Local\Temp\cc1KhKHu.s 			page 23
+
+
+ 1209              	.LASF7:
+ 1210 010e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1210      206C6F6E 
+ 1210      6720756E 
+ 1210      7369676E 
+ 1210      65642069 
+ 1211              	.LASF19:
+ 1212 0125 433A5C55 		.ascii	"C:\\UGR\\TFG\\Proyecto\\PSoC Creator\\PPG_SerialPor"
+ 1212      47525C54 
+ 1212      46475C50 
+ 1212      726F7965 
+ 1212      63746F5C 
+ 1213 0153 74436F6D 		.ascii	"tComunication\\PulseOximetry.cydsn\000"
+ 1213      756E6963 
+ 1213      6174696F 
+ 1213      6E5C5075 
+ 1213      6C73654F 
+ 1214              	.LASF15:
+ 1215 0175 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 1215      6574615F 
+ 1215      666C6173 
+ 1215      6870726F 
+ 1215      74656374 
+ 1216              	.LASF14:
+ 1217 018a 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 1217      6574615F 
+ 1217      776F6E76 
+ 1217      6C00
+ 1218              	.LASF11:
+ 1219 0198 73697A65 		.ascii	"sizetype\000"
+ 1219      74797065 
+ 1219      00
+ 1220              	.LASF6:
+ 1221 01a1 6C6F6E67 		.ascii	"long long int\000"
+ 1221      206C6F6E 
+ 1221      6720696E 
+ 1221      7400
+ 1222              	.LASF2:
+ 1223 01af 73686F72 		.ascii	"short int\000"
+ 1223      7420696E 
+ 1223      7400
+ 1224              	.LASF4:
+ 1225 01b9 6C6F6E67 		.ascii	"long int\000"
+ 1225      20696E74 
+ 1225      00
+ 1226              	.LASF0:
+ 1227 01c2 7369676E 		.ascii	"signed char\000"
+ 1227      65642063 
+ 1227      68617200 
+ 1228              	.LASF18:
+ 1229 01ce 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 1229      72617465 
+ 1229      645F536F 
+ 1229      75726365 
+ 1229      5C50536F 
+ 1230              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
