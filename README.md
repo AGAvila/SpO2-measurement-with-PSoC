@@ -13,6 +13,6 @@ The design has been made assuming that you have at your disposal a broadband pho
 
 Consider adapting the assigned pins depending on your specific hardware.
 
-## Additional notes
+## Additional notes:
 
 In the schematic there are two pins called "EN_1" and "EN_2", being labeled as "Ports power supply control". I used this pins due to my specific hardware, in other cases they could be deleted.
