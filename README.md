@@ -1,4 +1,4 @@
-# SpO2-measurement-with-PSoC
+# SpO2 Measurement With PSoC
 This program is intended to acquire the SpO2 (blood oxygen saturation) value using a PSoC 5LP. 
 
 ## Values obtained:
